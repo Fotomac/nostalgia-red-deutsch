@@ -4,7 +4,7 @@ _OaksLabGaryText1::
 	cont "gerade nicht da!"
 	done
 
-_OaksLabText40::
+_OaksLabText41::
 	text "<RIVAL>: Ich bin"
 	line "nicht so"
 	cont "ungeduldig wie"
@@ -14,13 +14,13 @@ _OaksLabText40::
 	line "wählen, <PLAYER>!"
 	done
 
-_OaksLabText41::
+_OaksLabText42::
 	text "<RIVAL>: Mein"
 	line "#MON sieht"
 	cont "viel stärker aus!"
 	done
 
-_OaksLabText39::
+_OaksLabText40::
 	text "Dies hier sind"
 	line "#BÄLLE."
 	cont "Sie enthalten "
@@ -124,53 +124,9 @@ _OaksLabAroundWorldText::
 	line "überall in dieser"
 	cont "Welt erwarten"
 	cont "Dich #MON!"
-	done
 
-_OaksLabGivePokeballsText1::
-	text "PROF. EICH:"
-	line "Es reicht nicht, "
-	cont "#MON zu sehen,"
-	cont "um detaillierte"
-	cont "Informationen"
-	cont "über sie zu"
-	cont "sammeln!"
-
-	para "Du mußt sie"
-	line "fangen! Benutze"
-	cont "das hier, um"
-	cont "wilde #MON"
-	cont "einzufangen."
-
-	para "<PLAYER> erhält"
-	line "fünf #BÄLLE!@@"
-
-_OaksLabGivePokeballsText2::
-	text ""
-
-	para "Taucht ein wildes"
-	line "#MON auf,"
-	cont "so kannst Du es "
-	cont "fangen."
-
-	para "Werfe einfach"
-	line "einen #BALL"
-	line "und versuche es!"
-
-	para "Doch Du wirst"
-	line "oftmals keinen"
-	cont "Erfolg haben."
-
-	para "Ein gesundes"
-	line "#MON entkommt"
-	cont "schnell! Man muß"
-	cont "schon etwas Glück"
-	cont "haben!"
-	done
-
-_OaksLabPleaseVisitText::
-	text "PROF. EICH:"
-	line "Besuche mich von"
-	cont "Zeit zu Zeit."
+	para "Besuche mich von"
+	line "Zeit zu Zeit."
 
 	para "Es interessiert"
 	line "mich, wie Du mit"
@@ -270,9 +226,8 @@ _OaksLabLeavingText::
 	done
 
 _OaksLabRivalPickingMonText::
-	text "<RIVAL>:"
-	line "Ich nehme dieses"
-	cont "hier."
+	text "<RIVAL>: Ich nehme"
+	line "dieses hier."
 	done
 
 _OaksLabRivalReceivedMonText::
@@ -284,12 +239,16 @@ _OaksLabRivalReceivedMonText::
 _OaksLabRivalChallengeText::
 	text "<RIVAL>: Warte,"
 	line "<PLAYER>!"
-	cont "Laß uns unsere"
-	cont "#MON testen!"
+	cont "Wir haben von Opa"
+	cont "neue #MON"
+	cont "erhalten, nein?"
 
-	para "Komm schon!"
-	line "Ich fordere Dich"
-	cont "heraus!"
+	para "Komm schon! Ihm"
+	line "zeigen, welches"
+	cont "stärker ist, ist"
+	cont "das Mindestes,"
+	cont "was wir tun"
+	cont "können!"
 	done
 
 _OaksLabText_1d3be::
@@ -306,16 +265,14 @@ _OaksLabText_1d3c3::
 	prompt
 
 _OaksLabRivalToughenUpText::
-	text "<RIVAL>: OK!"
-	line "Ich werde meine"
-	cont "#MON"
-	cont "trainieren, damit"
-	cont "sie stärker"
-	cont "werden!"
+	text "<RIVAL>: Verstehe!"
+	line "Wenn mein #MON"
+	cont "kämpft, es wird"
+	cont "stärker werden!"
 
 	para "<PLAYER>! Opa!"
 	line "Wir sehen uns"
-	cont "später!"
+	cont "spinäter!"
 	done
 
 _OaksLabText21::
@@ -363,7 +320,43 @@ _OaksLabText25::
 	cont "PROF. EICH!@@"
 
 _OaksLabText26::
-	text "Ein Lexikon über"
+	text "Es reicht nicht,"
+	line "#MON zu sehen,"
+	cont "um detaillierte"
+	cont "Informationen"
+	cont "über sie zu"
+	cont "sammeln!"
+
+	para "Ihr müßt sie"
+	line "fangen! Benutzt"
+	cont "diese hier, um"
+	cont "wilde #MON"
+	cont "einzufangen."
+
+	para "<PLAYER> erhält"
+	line "fünf #BÄLLE!@@"
+
+_OaksLabText27::
+	text "Taucht ein wildes"
+	line "#MON auf,"
+	cont "so könnt Ihr es"
+	cont "fangen."
+
+	para "Werft einfach"
+	line "einen #BALL"
+	cont "und versucht es!"
+
+	para "Doch Ihr werdet"
+	line "oftmals keinen"
+	cont "Erfolg haben."
+
+	para "Ein gesundes"
+	line "#MON entkommt"
+	cont "schnell! Man muß"
+	cont "schon etwas Glück"
+	cont "haben!"
+
+	para "Ein Lexikon über"
 	line "alle #MON der"
 	cont "Welt..."
 
@@ -380,7 +373,7 @@ _OaksLabText26::
 	cont "verwirklichen!"
 
 	para "Macht Euch auf"
-	line "den Weg, Jungs!"
+	line "den Weg!"
 
 	para "Dies ist eines"
 	line "der bedeutendsten"
@@ -389,13 +382,13 @@ _OaksLabText26::
 	cont "#MON!"
 	done
 
-_OaksLabText27::
-	text "<RIVAL>:"
-	line "Alles klar, Opa!"
-	cont "Überlaß es"
-	cont "ruhig mir!"
+_OaksLabText28::
+	text "<RIVAL>: Alles"
+	line "klar, Opa! Du"
+	cont "kannst dich auf"
+	cont "mich verlassen!"
 
-	para "<PLAYER>,  es tut"
+	para "<PLAYER>, es tut"
 	line "mir leid, aber"
 	cont "ich brauche Deine"
 	cont "Hilfe nicht!"
@@ -407,7 +400,12 @@ _OaksLabText27::
 
 	para "Und Dir soll sie"
 	line "keine geben,"
-	cont "<PLAYER>! Hahaha!"
+	cont "<PLAYER>, weil"
+	cont "ich glaube, das"
+	cont "ist ein Familien-"
+	cont "betrieb! Und Du"
+	cont "bist nicht von"
+	cont "meine Familie, ja?"
 	done
 
 _OaksLabText_1d405::

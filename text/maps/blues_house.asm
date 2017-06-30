@@ -40,6 +40,8 @@ _BluesHouseText2::
 	done
 
 _BluesHouseText3::
-	text "Eine große Karte!"
-	line "Sie ist nützlich!"
+	text "Eine Karte von"
+	line "KANTO! Ich hoffe,"
+	cont "sie gibt mir"
+	cont "sie..."
 	done

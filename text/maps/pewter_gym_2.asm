@@ -4,8 +4,19 @@ _PewterGymText_5c4a3::
 	cont "Trainer auf der"
 	cont "Welt!"
 
-	para "Du scheinst ein"
-	line "sehr begabter"
+	para "Manche trainieren"
+	line "#MON für"
+	cont "Kämpfe, andere"
+	cont "halten sie als"
+	cont "Kuscheltiere."
+
+	para "Ich aber möchte"
+	line "#MON-Züchter"
+	cont "werden."
+
+	para "Und Du..."
+	line "Du scheinst ein"
+	cont "sehr begabter"
 	cont "#MON-TRAINER"
 	cont "zu sein!"
 
@@ -16,16 +27,16 @@ _PewterGymText_5c4a3::
 	cont "Können!"
 	done
 
-_TM34PreReceiveText::
+_TM39PreReceiveText::
 	text "Warte! Nimm das"
 	line "hier mit!"
 	done
 
-_ReceivedTM34Text::
+_ReceivedTM39Text::
 	text "<PLAYER> erhält"
-	line "TM34!@@"
+	line "TM39!@@"
 
-_TM34ExplanationText::
+_TM39ExplanationText::
 	text ""
 
 	para "Eine TM enthält"
@@ -42,18 +53,20 @@ _TM34ExplanationText::
 	cont "TM geben"
 	cont "möchtest!"
 
-	para "TM34 ist"
-	line "GEDULD!"
+	para "TM39 ist"
+	line "FELSGRAB!"
 
-	para "Dein #MON"
-	line "absorbiert die"
-	cont "gegnerischen"
-	cont "Attacken und"
-	cont "kontert mit"
-	cont "doppelter Kraft!"
+	para "Der Gegner wird"
+	line "mit Felsen"
+	cont "beworfen und"
+	cont "unter ihnen"
+	cont "begraben! Der"
+	cont "INIT-Wert des"
+	cont "Gegners wird"
+	cont "zugleich gesenkt!"
 	done
 
-_TM34NoRoomText::
+_TM39NoRoomText::
 	text "Du hast momentan"
 	line "keinen Platz für"
 	cont "weitere Items!"
@@ -88,11 +101,16 @@ _PewterGymText_5c4c1::
 	line "Deine #MON"
 	cont "jederzeit BLITZ"
 	cont "einsetzen!"
+
+	para "Natürlich muß"
+	line "die Attacke"
+	cont "beherrscht"
+	cont "werden!"
 	prompt
 
 _PewterGymBattleText1::
 	text "Bleib stehen wo"
-	line "Du bist, Kleiner!"
+	line "Du bist, Kind!"
 
 	para "Es dauert noch"
 	line "Lichtjahre, bis"

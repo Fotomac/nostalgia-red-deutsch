@@ -51,7 +51,7 @@ _ViridianGymText_74ad9::
 
 _ViridianGymText12::
 	text "Als Träger des"
-	line "ERDORDENS  werden"
+	line "ERDORDENS werden"
 	cont "Dir alle #MON"
 	cont "jeglichen Levels"
 	cont "gehorchen!"
@@ -72,19 +72,19 @@ _ViridianGymText12::
 	cont "Abenteuer!"
 	done
 
-_ReceivedTM27Text::
+_ReceivedTM26Text::
 	text "<PLAYER> erhält"
-	line "TM27!@@"
+	line "TM26!@@"
 
-_TM27ExplanationText::
+_TM26ExplanationText::
 	text ""
 
-	para "TM27 ist"
-	line "GEOFISSUR!"
-	cont "Man kann damit"
-	cont "ein #MON"
-	cont "mit nur einem"
-	cont "Treffer besiegen!"
+	para "TM26 ist"
+	line "ERDBEBEN!"
+	cont "Eine sehr starke"
+	cont "Attacke, die ein"
+	cont "starkes Beben"
+	cont "verursacht!"
 
 	para "Ich habe sie vor"
 	line "langer Zeit"
@@ -93,7 +93,7 @@ _TM27ExplanationText::
 	cont "ARENALEITER war."
 	done
 
-_TM27NoRoomText::
+_TM26NoRoomText::
 	text "Du kannst sie"
 	line "momentan nicht"
 	cont "tragen!"

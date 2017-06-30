@@ -3,6 +3,19 @@ _RocketHideout4Text_4557a::
 	line "beeindruckt. Du"
 	cont "bist tatsächlich"
 	cont "weit gekommen!"
+
+	para "Das TEAM ROCKET"
+	line "finanziert mit"
+	cont "#MON seine"
+	cont "finsteren Pläne."
+
+	para "Ich bin der Boss,"
+	line "GIOVANNI!"
+
+	para "Mach Dich bereit,"
+	line "Höllenqualen zu"
+	cont "durchleiden,"
+	cont "Wicht!"
 	done
 
 _RocketHideout4Text_4557f::

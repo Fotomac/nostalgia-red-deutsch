@@ -62,3 +62,8 @@ _OakSpeechText3::
 	cont "Kurz gesagt, ein"
 	cont "Traum wird wahr!"
 	done
+
+_BoyGirlText::
+	text "Bist Du ein Junge?"
+	line "Oder ein Mädchen?"
+	done

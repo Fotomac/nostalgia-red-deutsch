@@ -3,7 +3,7 @@ _LavenderHouse2Text1::
 	line "Kiajahuu!@@"
 
 _LavenderHouse2Text_1d9dc::
-	text "Ich hasse dieses"
+	text "Dieses verdammte"
 	line "furchtbare TEAM"
 	cont "ROCKET!"
 

@@ -17,7 +17,11 @@ _Route22GateText_1e715::
 	done
 
 _Route22GateText_1e71a::
-	text "Oh! Du trägst"
+	text "Hier dürfen nur"
+	line "erfahrene Trainer"
+	cont "passieren!"
+
+	para "Oh! Du trägst"
 	line "den FELSORDEN!"
 	cont "Dann darfst Du"
 	cont "weitergehen!@@"

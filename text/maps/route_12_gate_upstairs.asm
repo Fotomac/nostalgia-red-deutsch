@@ -1,4 +1,4 @@
-_TM39PreReceiveText::
+_TM27PreReceiveText::
 	text "Meine #MON"
 	line "wurden im"
 	cont "#MON-TURM zur"
@@ -11,23 +11,23 @@ _TM39PreReceiveText::
 	cont "nicht länger..."
 	prompt
 
-_ReceivedTM39Text::
+_ReceivedTM27Text::
 	text "<PLAYER> erhält"
-	line "TM39!@@"
+	line "TM27!@@"
 
-_TM39ExplanationText::
-	text "TM39 ist"
-	line "STERNSCHAUER."
+_TM27ExplanationText::
+	text "TM27 ist"
+	line "RÜCKKEHR."
 
-	para "STERNSCHAUER ist"
-	line "eine treffsichere"
-	cont "Technik, die in"
-	cont "wichtigen Kämpfen"
-	cont "von großem Nutzen"
-	cont "sein kann!"
+	para "RÜCKKEHR kann eine"
+	line "mächtige Technik"
+	cont "sein, wenn Du"
+	cont "liebst Deine"
+	cont "#MON wie ich"
+	cont "liebte meine."
 	done
 
-_TM39NoRoomText::
+_TM27NoRoomText::
 	text "Oh, Du kannst sie"
 	line "im Moment nicht"
 	cont "tragen."

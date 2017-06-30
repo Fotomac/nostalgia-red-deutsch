@@ -10,6 +10,18 @@ _MomWakeUpText::
 	cont "Dir gefragt."
 	done
 
+_MomWakeUpText2::
+	text "MUTTER: ...Genau!"
+	line "Jedes Mädchen"
+	cont "träumt vom"
+	cont "Reisen. Das sieht"
+	cont "man im Fernsehen."
+
+	para "PROF. EICH von"
+	line "nebenan hat nach"
+	cont "Dir gefragt."
+	done
+
 _MomHealText1::
 	text "MUTTER: <PLAYER>!"
 	line "Du solltest eine"
@@ -32,6 +44,20 @@ _StandByMeText::
 	cont "laufen ein"
 	cont "Bahngleis"
 	cont "entlang!"
+
+	para "Den Film kenne"
+	line "ich schon! Ich"
+	cont "mache mich besser"
+	cont "auf den Weg!"
+	done
+
+_WizardOfOzText::
+	text "Im Fernsehen"
+	line "läuft ein Film."
+	cont "Ein bezopftes"
+	cont "Mädchen läuft"
+	cont "einen gelben"
+	cont "Steinweg entlang!"
 
 	para "Den Film kenne"
 	line "ich schon! Ich"

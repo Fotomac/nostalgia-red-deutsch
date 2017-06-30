@@ -50,10 +50,18 @@ _ViridianCityText_19157::
 	done
 
 _ViridianCityText_19175::
-	text "Großvater! Sei"
-	line "nicht so gemein!"
-	cont "Er hatte noch"
-	cont "keinen Kaffee!!!"
+	text "Menschenskind"
+	line "Großvater!"
+	cont "Mußt Du in der"
+	cont "Öffentlichkeit"
+	cont "schlafen? Und"
+	cont "ausgerechnet"
+	cont "hier!"
+
+	para "Da kann man nichts"
+	line "machen. Wir mußen"
+	cont "warten, bis er"
+	cont "nüchtert sich aus."
 	done
 
 _ViridianCityText_1917a::
@@ -67,11 +75,13 @@ _ViridianCityText_1917a::
 	done
 
 _ViridianCityText_19191::
-	text "Du kannst hier"
-	line "nicht durch!"
+	text "Wüürg...! Hick..."
+	line "Keine Bevegunk!"
+	cont "Ik vill dir etvas"
+	cont "viktik erzellen!"
 
-	para "Das ist ein"
-	line "Privatgelände!"
+	para "...Hey! Geh nix,"
+	line "ik abe gesakt!"
 	done
 
 _ViridianCityText_191ca::
@@ -107,12 +117,13 @@ _TM42NoRoomText::
 	done
 
 _ViridianCityText_1920a::
-	text "Ahh, ich habe"
-	line "endlich meinen"
-	cont "Kaffee bekommen!"
+	text "Mmn..."
+	line "Es sieht so aus,"
+	cont "ich war ziemlich"
+	cont "betrunken!"
 
-	para "Natürlich kannst"
-	line "Du passieren!"
+	para "Mein Kopf tut"
+	line "weh..."
 
 	para "Hast Du es"
 	line "etwa eilig?"

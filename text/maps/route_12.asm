@@ -65,7 +65,8 @@ _Route12BattleText3::
 	done
 
 _Route12EndBattleText3::
-	text "Aua!"
+	text "Himmel,"
+	line "Arsch und Zwirn!"
 	prompt
 
 _Route12AfterBattleText3::

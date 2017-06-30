@@ -1,6 +1,6 @@
 _BikeShopText_1d810::
 	text "Hallo! Willkommen"
-	line "im FAHRRADLADEN!"
+	line "in MIRACLE CYCLE!"
 
 	para "Wir haben"
 	line "garantiert das"

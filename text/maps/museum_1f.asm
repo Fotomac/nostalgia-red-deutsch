@@ -57,9 +57,13 @@ _Museum1FText_5c242::
 	done
 
 _Museum1FText_5c251::
-	text "Dies ist ein"
-	line "außergewöhnliches"
-	cont "Fossil!"
+	text "Ich habe nicht"
+	line "geglaubt, ich"
+	cont "wurde genug lang"
+	cont "leben, die"
+	cont "Knochen der"
+	cont "Drachengott zu"
+	cont "sehen!"
 	done
 
 _Museum1FText_5c28e::

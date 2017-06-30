@@ -620,7 +620,7 @@ _CinnabarGymQuizIntroText::
 
 _CinnabarQuizQuestionsText1::
 	text "Entwickelt sich"
-	line "RAUPY zu SMETTBO?"
+	line "RAUPY zu SAFCON?"
 	done
 
 _CinnabarQuizQuestionsText2::
@@ -635,7 +635,7 @@ _CinnabarQuizQuestionsText3::
 	done
 
 _CinnabarQuizQuestionsText4::
-	text "Sind DONNER-"
+	text "Sind ELEKTRO-"
 	line "ATTACKEN gegen"
 	cont "BODEN-#MON"
 	cont "sehr effektiv?"
@@ -649,7 +649,7 @@ _CinnabarQuizQuestionsText5::
 	done
 
 _CinnabarQuizQuestionsText6::
-	text "Ist TM28 die "
+	text "Ist TM28 die"
 	line "FROSCH-ATTACKE?"
 	done
 
@@ -1327,14 +1327,23 @@ _IsFrozenText::
 	line "ist festgefroren!"
 	prompt
 
+_DefrostedText::
+	text "<USER>"
+	line "wurde aufgetaut!"
+	prompt
+
 _FullyParalyzedText::
 	text "<USER>"
 	line "ist paralysiert!"
+	cont "Es kann nicht"
+	cont "angreifen!"
 	prompt
 
 _FlinchedText::
 	text "<USER>"
-	line "ist ausgewichen!"
+	line "ist zurückge-"
+	cont "schreckt und kann"
+	cont "nicht angreifen!"
 	prompt
 
 _MustRechargeText::
@@ -1460,7 +1469,7 @@ _DoesntAffectMonText::
 	prompt
 
 _CriticalHitText::
-	text "Volltreffer!"
+	text "Ein Volltreffer!"
 	prompt
 
 _OHKOText::
@@ -1629,13 +1638,13 @@ _ComeBackText::
 	done
 
 _SuperEffectiveText::
-	text "Die Attacke ist"
-	line "sehr effektiv!"
+	text "Das ist sehr"
+	line "effektiv!"
 	prompt
 
 _NotVeryEffectiveText::
-	text "Die Attacke ist"
-	line "nicht effektiv..."
+	text "Das ist nicht sehr"
+	line "effektiv..."
 	prompt
 
 _SafariZoneEatingText::
@@ -2195,13 +2204,13 @@ _ChooseABoxText::
 	line "<pkmn>-BOX!@@"
 
 _EvolvedText::
+	text "Glückwunsch!"
+	line "@"
 	TX_RAM wcf50
-	text " wurde"
-	done
+	text " wurde@@"
 
 _IntoText::
-	text ""
-	line "zu @"
+	text $4c,"zu @"
 	TX_RAM wcd6d
 	text "!"
 	done
@@ -2215,7 +2224,7 @@ _StoppedEvolvingText::
 	prompt
 
 _IsEvolvingText::
-	text "Hey! @"
+	text "Nanu? @"
 	TX_RAM wcf50
 	text ""
 	line "entwickelt sich!"
@@ -2356,8 +2365,7 @@ _NothingHappenedText::
 	prompt
 
 _NoEffectText::
-	text "Es hat keine"
-	line "Wirkung!"
+	text "Nichts geschieht!"
 	prompt
 
 _ButItFailedText::
@@ -2408,6 +2416,12 @@ _GettingPumpedText::
 _WasSeededText::
 	text "<TARGET>"
 	line "wurde bepflanzt!"
+	prompt
+
+_AlreadySeededText::
+	text "<TARGET>"
+	line "ist bereits"
+	cont "bepflanzt!"
 	prompt
 
 _EvadedAttackText::
@@ -2896,7 +2910,7 @@ _NotHealthyEnoughText::
 	prompt
 
 _NewBadgeRequiredText::
-	text "Nein! Hier"
+	text "Tut mir leid! Hier"
 	line "benötigt man"
 	cont "einen neuen"
 	cont "ORDEN!"
@@ -2969,18 +2983,18 @@ _ItemUseBallText00::
 	prompt
 
 _ItemUseBallText01::
-	text "Du hast das"
-	line "#MON verfehlt!"
-	prompt
-
-_ItemUseBallText02::
 	text "Mist! Das #MON"
 	line "hat sich befreit!"
 	prompt
 
+_ItemUseBallText02::
+	text "Oh! Fast hätte es"
+	line "geklappt!"
+	prompt
+
 _ItemUseBallText03::
-	text "Fast hätte es"
-	line "geklappt! "
+	text "Mist! Das war"
+	line "knapp!"
 	prompt
 
 _ItemUseBallText04::
@@ -2990,11 +3004,10 @@ _ItemUseBallText04::
 	prompt
 
 _ItemUseBallText05::
-	text "Wunderbar!"
-	line "@"
+	text "Klasse! @"
 	TX_RAM wEnemyMonNick
-	text " wurde"
-	cont "gefangen!@@"
+	text ""
+	line "wurde gefangen!@@"
 
 _ItemUseBallText07::
 	TX_RAM wBoxMonNicks
@@ -3014,15 +3027,15 @@ _ItemUseBallText06::
 	text "Für @"
 	TX_RAM wEnemyMonNick
 	text ""
-	line "wird ein neuer"
-	cont "Eintrag im"
-	cont "#DEX angelegt!@@"
+	line "wurde ein Eintrag"
+	cont "im #DEX"
+	cont "angelegt!@@"
 
 _SurfingGotOnText::
-	text "<PLAYER> steigt"
-	line "auf @"
+	text "@"
 	TX_RAM wcd6d
-	text "!"
+	text ""
+	line "ben. SURFER!"
 	prompt
 
 _SurfingNoPlaceToGetOffText::

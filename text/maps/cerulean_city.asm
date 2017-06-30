@@ -140,15 +140,13 @@ _CeruleanCityText6::
 	text "Die Leute hier"
 	line "wurden beraubt."
 
-	para "Das TEAM ROCKET"
-	line "steckt hinter den"
-	cont "abscheulichen"
-	cont "Verbrechen!"
+	para "Wir sind sicher,"
+	line "daß TEAM ROCKET"
+	cont "dahinter steckt!"
 
 	para "Sogar die POLIZEI"
-	line "ist gegen das"
-	cont "TEAM ROCKET"
-	cont "machtlos!"
+	line "ist gegen TEAM"
+	cont "ROCKET machtlos!"
 	done
 
 _CeruleanCityText_19730::
@@ -241,7 +239,7 @@ _CeruleanCityText13::
 	done
 
 _CeruleanCityText16::
-	text "FAHRRADLADEN"
+	text "MIRACLE CYCLE"
 	line "Fahre leicht und"
 	cont "schnell mit dem"
 	cont "Rad durch Höhlen"

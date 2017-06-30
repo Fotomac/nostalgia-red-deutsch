@@ -4,10 +4,11 @@ _OakAppearsText::
 
 _OakWalksUpText::
 	text "PROF. EICH:"
-	line "Draußen ist es"
-	cont "gefährlich! Wilde"
-	cont "#MON leben im"
-	cont "hohen Gras!"
+	line "Das war knapp!"
+	
+	para "Wilde #MON"
+	line "leben im hohen"
+	cont "Gras!"
 
 	para "Du brauchst eigene"
 	line "#MON, um"

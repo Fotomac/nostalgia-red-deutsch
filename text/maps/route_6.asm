@@ -23,8 +23,9 @@ _Route6BattleText2::
 
 _Route6EndBattleText2::
 	text ""
-	line "Grr! Ich hasse"
-	cont "es, zu verlieren!"
+	line "Verdammt! Ich"
+	cont "hasse es, zu"
+	cont "verlieren!"
 	prompt
 
 _Route6BattleText3::
