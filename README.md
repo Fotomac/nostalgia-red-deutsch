@@ -1,21 +1,27 @@
-# Pokémon: Rote Edition and Blaue Edition
+# Pokémon Tri-Color Nostalgia Series
 
-This is a disassembly of Pokémon: Rote Edition and Blaue Edition.
+This is based on the [**Pokémon Rot disassembly**][pokered-de]
 
 It builds the following roms:
 
-* Pokemon - Rote Edition (G) [S][!].gb  `md5: 8ed0e8d45a81ca34de625d930148a512`
-* Pokemon - Blaue Edition (G) [S][!].gb  `md5: a1ec7f07c7b4251d5fafc50622d546f8`
+* Pokemon Rot
+* Pokemon Grün
+* Pokemon Blau
 
-To set up the repository, see [**INSTALL.md**](INSTALL.md).
+It's also an update of all three, with bug fixes and new features. It's still a work in progress, but there's still potential.
+
+The current version is v10.0.3 (Summer of Adventure)
+
+To set up the repository, see [**INSTALL.md**](INSTALL.md). Also see the main Pokered repository for more information.
+
+Special thanks to BettyNewbie, _Crystal, DarioEMeloD, MadameFrog, Mateo, and others.
 
 
 ## See also
 
-* Disassembly of [**Pokémon Red & Blue**][pokered]
 * Disassembly of [**Pokémon Crystal**][pokecrystal]
 * irc: **irc.freenode.net** [**#pret**][irc]
 
-[pokered]: https://github.com/pret/pokered
+[pokered-de]: https://github.com/einstein95/pokered-de
 [pokecrystal]: https://github.com/kanzure/pokecrystal
 [irc]: https://kiwiirc.com/client/irc.freenode.net/?#pret

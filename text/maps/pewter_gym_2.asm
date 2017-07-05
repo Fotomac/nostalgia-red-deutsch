@@ -132,6 +132,27 @@ _PewterGymAfterBattleText1::
 	cont "gut wie ROCKO!"
 	done
 
+_PewterGymBattleText2::
+	text "Rock and roll!"
+	line "Los geh",$b3,"'s!"
+	done
+
+_PewterGymEndBattleText2::
+	text "Das war"
+	line "nur der Anfang!"
+	prompt
+
+_PewterGymAfterBattleText2::
+	text "Ruh dich aus noch"
+	line "nicht auf deinen"
+	cont "Lorbeeren!"
+
+	para "ROCKO ist hier"
+	line "unter den"
+	cont "stärksten"
+	cont "Trainern!"
+	done
+
 _PewterGymText_5c515::
 	text "Hallo! Sieht aus,"
 	line "als hättest Du"

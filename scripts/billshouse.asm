@@ -161,7 +161,14 @@ BillsHouseText2:
 	TX_ASM
 	CheckEvent EVENT_GOT_SS_TICKET
 	jr nz, .asm_1e8a9
+	ld a, [wPlayerGender]
+	bit 2, a
+	jr nz, .girl
 	ld hl, BillThankYouText
+	jr .continue
+.girl
+	ld hl, BillThankYouText2
+.continue
 	call PrintText
 	lb bc, S_S_TICKET, 1
 	call GiveItem
@@ -180,13 +187,24 @@ BillsHouseText2:
 	call PrintText
 	jr .asm_1e8b7
 .BagFull
+	ld a, [wPlayerGender]
+	bit 2, a
+	jr nz, .girl2
 	ld hl, SSTicketNoRoomText
+	jr .continue2
+.girl2
+	ld hl, SSTicketNoRoomText2
+.continue2
 	call PrintText
 .asm_1e8b7
 	jp TextScriptEnd
 
 BillThankYouText:
 	TX_FAR _BillThankYouText
+	db "@"
+
+BillThankYouText2:
+	TX_FAR _BillThankYouText2
 	db "@"
 
 SSTicketReceivedText:
@@ -197,6 +215,10 @@ SSTicketReceivedText:
 
 SSTicketNoRoomText:
 	TX_FAR _SSTicketNoRoomText
+	db "@"
+
+SSTicketNoRoomText2:
+	TX_FAR _SSTicketNoRoomText2
 	db "@"
 
 BillsHouseText_1e8cb:

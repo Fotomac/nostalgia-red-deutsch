@@ -61,6 +61,24 @@ _BillThankYouText::
 	cont "hier..."
 	prompt
 
+_BillThankYouText2::
+	text "BILL: Klasse!"
+	line "Danke, Kleine!"
+	cont "Du hast bei mir"
+	cont "etwas gut!"
+
+	para "Bist Du hier, um"
+	line "Dir meine"
+	cont "#MON-SAMMLUNG"
+	cont "anzusehen? Nein?"
+	cont "Das ist schade!"
+
+	para "Wie kann ich Dir"
+	line "nur danken?"
+	cont "Nimm einfach das"
+	cont "hier..."
+	prompt
+
 _SSTicketReceivedText::
 	text "<PLAYER> erhält"
 	line "ein @"
@@ -69,6 +87,12 @@ _SSTicketReceivedText::
 
 _SSTicketNoRoomText::
 	text "Hey Kumpel, Du"
+	line "trägst zuviel"
+	cont "mit Dir herum!"
+	done
+
+_SSTicketNoRoomText2::
+	text "Hey Kleine, Du"
 	line "trägst zuviel"
 	cont "mit Dir herum!"
 	done
