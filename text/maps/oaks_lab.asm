@@ -28,19 +28,37 @@ _OaksLabText40::
 	done
 
 _OaksLabCharmanderText::
-	text "Möchtest Du"
+	text "Ah! GLUMANDA soll"
+	line "es sein!"
+
+	para "Trainiere es"
+	line "geduldig!"
+
+	para "Möchtest Du"
 	line "GLUMANDA, das"
 	cont "FEUER-#MON?"
 	done
 
 _OaksLabSquirtleText::
-	text "Möchtest Du"
+	text "Ah! SCHIGGY soll"
+	line "es sein!"
+
+	para "Es ist das"
+	line "Training wert!"
+
+	para "Möchtest Du"
 	line "SCHIGGY, das"
 	cont "WASSER-#MON?"
 	done
 
 _OaksLabBulbasaurText::
-	text "Möchtest Du"
+	text "Ah! BISASAM soll"
+	line "es sein!"
+
+	para "Es ist leicht zu"
+	line "trainieren!"
+
+	para "Möchtest Du"
 	line "BISASAM, das"
 	cont "PFLANZEN-#MON?"
 	done

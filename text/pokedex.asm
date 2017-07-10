@@ -78,6 +78,7 @@ _SlowbroDexEntry::
 	dex
 
 _IvysaurDexEntry::
+IF DEF(_BLUE)
 	text "Sobald die Knospe"
 	next "auf seinem Rücken"
 	next "aufgeht, kann"
@@ -85,6 +86,15 @@ _IvysaurDexEntry::
 	page "BISAKNOSP nicht"
 	next "mehr auf zwei"
 	next "Beinen stehen."
+ELSE
+	text "Es trägt eine"
+	next "Knospe auf seinem"
+	next "Rücken. Nimmt es"
+
+	page "Nahrung zu sich,"
+	next "soll eine blühende"
+	next "Blume werden."
+ENDC
 	dex
 
 _ExeggutorDexEntry::
@@ -267,6 +277,7 @@ _StaryuDexEntry::
 	dex
 
 _BlastoiseDexEntry::
+IF DEF(_BLUE)
 	text "Ein mächtiges"
 	next "und schnelles"
 	next "#MON, das auf"
@@ -274,6 +285,15 @@ _BlastoiseDexEntry::
 	page "dem Rücken zwei"
 	next "Hochdruckwasser-"
 	next "werfer trägt."
+ELSE
+	text "Es begräbt seine"
+	next "Gegner mit seinem"
+	next "Körpergewicht."
+
+	page "Wenn es ist Ärger,"
+	next "zieht es sich in"
+	next "seinen Panzer."
+ENDC
 	dex
 
 _PinsirDexEntry::
@@ -1246,6 +1266,16 @@ _StarmieDexEntry::
 	dex
 
 _BulbasaurDexEntry::
+IF DEF(_RED)
+	text "Von Geburt an hat"
+	next "dieses #MON"
+	next "einen Samen auf"
+
+	page "dem Rücken,"
+	next "welcher langsam"
+	next "wächst."
+ENDC
+IF DEF(_GREEN)
 	text "Dieses #MON"
 	next "trägt von Geburt"
 	next "an einen Samen"
@@ -1253,9 +1283,20 @@ _BulbasaurDexEntry::
 	page "auf dem Rücken,"
 	next "der mit ihm"
 	next "keimt und wächst."
+ENDC
+IF DEF(_BLUE)
+	text "Nach der Geburt"
+	next "nimmt es für eine"
+	next "Weile Nährstoffe"
+
+	page "über den Samen"
+	next "auf seinem Rücken"
+	next "auf."
+ENDC
 	dex
 
 _VenusaurDexEntry::
+IF DEF(_BLUE)
 	text "Dieses #MON"
 	next "folgt der Sonne."
 	next "Die Pflanze auf"
@@ -1263,6 +1304,14 @@ _VenusaurDexEntry::
 	page "seinem Rücken"
 	next "absorbiert"
 	next "Solarenergie."
+ELSE
+	text "Die Blume"
+	next "verströmt einen"
+	next "zauberhaften Duft."
+
+	page "Er beschwichtigt"
+	next "erhitzte Kämpfer."
+ENDC
 	dex
 
 _TentacruelDexEntry::
@@ -1396,6 +1445,25 @@ _MagnemiteDexEntry::
 	dex
 
 _CharmanderDexEntry::
+IF DEF(_RED)
+	text "Die Flamme auf"
+	next "seiner Schweif-"
+	next "spitze zeigt die"
+
+	page "Lebensenergie an."
+	next "Ist es gesund,"
+	next "leuchtet sie hell."
+ENDC
+IF DEF(_GREEN)
+	text "Eine Flamme brennt"
+	next "auf seiner"
+	next "Schwanzspitze. So-"
+
+	page "bald sie erlischt,"
+	next "erlischt auch sein"
+	next "Lebenslicht."
+ENDC
+IF DEF(_BLUE)
 	text "Dieses #MON"
 	next "bevorzugt heiße"
 	next "Lebensräume."
@@ -1403,9 +1471,20 @@ _CharmanderDexEntry::
 	page "Bei Regen dampft"
 	next "die Schwanzspitze"
 	next "von GLUMANDA."
+ENDC
 	dex
 
 _SquirtleDexEntry::
+IF DEF(_RED)
+	text "Zieht es seinen"
+	next "langen Hals in"
+	next "seinen Panzer"
+
+	page "zurück, verspritzt"
+	next "es Wasser mit"
+	next "unbändiger Kraft."
+ENDC
+IF DEF(_GREEN)
 	text "Nach der Geburt"
 	next "bildet sich auf"
 	next "SCHIGGYS Rücken"
@@ -1413,18 +1492,39 @@ _SquirtleDexEntry::
 	page "ein Panzer."
 	next "Es attackiert"
 	next "mit Sprühschaum."
+ENDC
+IF DEF(_BLUE)
+	text "Es zieht sich in"
+	next "seinen Panzer"
+	next "zurück und greift"
+
+	page "dann mit Wasser-"
+	next "strahlen seine"
+	next "Gegner an."
+ENDC
 	dex
 
 _CharmeleonDexEntry::
+IF DEF(_BLUE)
 	text "Wenn GLUTEXO mit"
 	next "seinem Schwanz"
 	next "schwingt, steigt"
 
 	page "die Temperatur"
 	next "ins Unermeßliche."
+ELSE
+	text "Es schlägt mit"
+	next "seinem Schwanz"
+	next "nach seinen"
+
+	page "Gegnern und mit"
+	next "seinen Klauen"
+	next "es zerfetzt."
+ENDC
 	dex
 
 _WartortleDexEntry::
+IF DEF(_BLUE)
 	text "Dieses #MON"
 	next "lauert im Wasser"
 	next "auf Beute."
@@ -1432,9 +1532,19 @@ _WartortleDexEntry::
 	page "Die Ohren dienen"
 	next "beim Schwimmen"
 	next "zur Orientierung."
+ELSE
+	text "Dieses #MON ist"
+	next "als Haustier sehr"
+	next "beliebt. Sein mit"
+
+	page "Fell überzogener"
+	next "Schwanz ist Beweis"
+	next "von Langlebigkeit."
+ENDC
 	dex
 
 _CharizardDexEntry::
+IF DEF(_BLUE)
 	text "Dieses #MON"
 	next "kann mit seinem"
 	next "Feueratem Felsen"
@@ -1442,6 +1552,15 @@ _CharizardDexEntry::
 	page "schmelzen. Es"
 	next "verursacht ab und"
 	next "zu Waldbrände."
+ELSE
+	text "Dieses #MON"
+	next "kann eine Höhe von"
+	next "bis zu 1400 Metern"
+
+	page "erreichen. Es"
+	next "verspuckt sehr"
+	next "heißes Feuer."
+ENDC
 	dex
 
 _OddishDexEntry::
