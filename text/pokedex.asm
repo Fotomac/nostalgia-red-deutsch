@@ -18,6 +18,25 @@ _KangaskhanDexEntry::
 	dex
 
 _NidoranMDexEntry::
+IF DEF(_RED)
+	text "Es untersucht die"
+	next "Umgebung, indem es"
+	next "die Ohren spitzt"
+
+	page "und lauscht. Sein"
+	next "giftiges Horn"
+	next "schützt es."
+ENDC
+IF DEF(_GREEN)
+	text "Seine großen Ohren"
+	next "schlagen wie"
+	next "Flügel. Es fährt"
+
+	page "giftige Stacheln"
+	next "aus, wenn es"
+	next "verärgert ist."
+ENDC
+IF DEF(_BLUE)
 	text "Die großen Ohren"
 	next "bemerken Gefahren"
 	next "frühzeitig."
@@ -25,6 +44,7 @@ _NidoranMDexEntry::
 	page "Die großen Hörner"
 	next "enthalten ein"
 	next "starkes Gift."
+ENDC
 	dex
 
 _ClefairyDexEntry::
@@ -38,6 +58,25 @@ _ClefairyDexEntry::
 	dex
 
 _SpearowDexEntry::
+IF DEF(_RED)
+	text "Auch wenn es"
+	next "schwach erscheint,"
+	next "kann es ein"
+
+	page "starker Gegner"
+	next "sein, der SPIEGEL-"
+	next "TRICK einsetzt."
+ENDC
+IF DEF(_GREEN)
+	text "Es beschützt sein"
+	next "Gebiet stets vor"
+	next "Eindringlingen."
+
+	page "Daher fliegt es"
+	next "ständig wild"
+	next "umher."
+ENDC
+IF DEF(_BLUE)
 	text "Es ernährt sich"
 	next "von Insekten, die"
 	next "es im Gras findet."
@@ -45,6 +84,7 @@ _SpearowDexEntry::
 	page "Ein starker"
 	next "Flügelschlag hält"
 	next "es in der Luft."
+ENDC
 	dex
 
 _VoltorbDexEntry::
@@ -148,6 +188,15 @@ _GengarDexEntry::
 	dex
 
 _NidoranFDexEntry::
+IF DEF(_BLUE)
+	text "Es ist klein und"
+	next "scheu. Es"
+	next "verteidigt sich"
+
+	page "mit seinem"
+	next "kleinen, aber"
+	next "giftigen Horn."
+ELSE
 	text "Dieses #MON"
 	next "ist sehr klein,"
 	next "verfügt aber über"
@@ -155,6 +204,7 @@ _NidoranFDexEntry::
 	page "starke Gifte. Das"
 	next "Weibchen hat"
 	next "kleinere Hörner."
+ENDC
 	dex
 
 _NidoqueenDexEntry::
@@ -347,6 +397,16 @@ _FearowDexEntry::
 	dex
 
 _PidgeyDexEntry::
+IF DEF(_RED)
+	text "Es verschmäht den"
+	next "Kampf und verbirgt"
+	next "sich im hohen"
+
+	page "Gras, wo es nach"
+	next "Nahrung Ausschau"
+	next "hält."
+ENDC
+IF DEF(_GREEN)
 	text "Ein vorwiegend in"
 	next "Wäldern lebendes"
 	next "#MON, das"
@@ -354,6 +414,14 @@ _PidgeyDexEntry::
 	page "zur Verteidigung"
 	next "mit den Flügeln"
 	next "Sand aufwirbelt."
+ENDC
+IF DEF(_BLUE)
+	text "Reizt man dieses"
+	next "an sich gutmütige"
+	next "#MON, wehrt es"
+
+	page "sich wütend."
+ENDC
 	dex
 
 _SlowpokeDexEntry::
@@ -527,6 +595,25 @@ _KoffingDexEntry::
 	dex
 
 _MankeyDexEntry::
+IF DEF(_RED)
+	text "Es lebt in Baum-"
+	next "kronen. Wird eines"
+	next "von ihnen wütend,"
+
+	page "werden alle"
+	next "anderen auch"
+	next "wütend."
+ENDC
+IF DEF(_GREEN)
+	text "Leichtfüßig, be-"
+	next "schwingt und unge-"
+	next "zügelt. Wenn es"
+
+	page "wütend ist,"
+	next "verfällt es in"
+	next "Raserei."
+ENDC
+IF DEF(_BLUE)
 	text "Ein reizbares und"
 	next "unberechenbares"
 	next "#MON, dessen"
@@ -534,6 +621,7 @@ _MankeyDexEntry::
 	page "Gemütszustand"
 	next "binnen Sekunden"
 	next "wechselt."
+ENDC
 	dex
 
 _SeelDexEntry::
@@ -1027,6 +1115,16 @@ _DewgongDexEntry::
 	dex
 
 _CaterpieDexEntry::
+IF DEF(_RED)
+	text "Seine Haut ist"
+	next "grün. Beim Wachsen"
+	next "streift es sie ab"
+
+	page "und verpuppt sich"
+	next "in einen Seiden-"
+	next "kokon."
+ENDC
+IF DEF(_GREEN)
 	text "Dieses #MON"
 	next "trägt Saugnäpfe"
 	next "an den Beinchen."
@@ -1034,6 +1132,16 @@ _CaterpieDexEntry::
 	page "Es kann mühelos"
 	next "Steigungen und"
 	next "Mauern erklimmen."
+ENDC
+IF DEF(_BLUE)
+	text "Es sucht im Laub"
+	next "Schutz und tarnt"
+	next "sich mit Blättern,"
+
+	page "die der Farbe"
+	next "seines Körpers"
+	next "entsprechen."
+ENDC
 	dex
 
 _MetapodDexEntry::
@@ -1365,6 +1473,24 @@ _RapidashDexEntry::
 	dex
 
 _RattataDexEntry::
+IF DEF(_RED)
+	text "Es baut sein Nest,"
+	next "wo es Futter"
+	next "findet. Es ist den"
+
+	page "ganzen Tag auf der"
+	next "Suche nach etwas"
+	next "Essbarem."
+ENDC
+IF DEF(_GREEN)
+	text "Seine Reißzähne"
+	next "sind lang und"
+	next "scharf. Es nagt"
+
+	page "immerzu an etwas,"
+	next "um sie abzuwetzen."
+ENDC
+IF DEF(_BLUE)
 	text "Ein kleines, sehr"
 	next "wendiges und"
 	next "bissiges #MON,"
@@ -1372,6 +1498,7 @@ _RattataDexEntry::
 	page "welches in vielen"
 	next "Gegenden heimisch"
 	next "ist."
+ENDC
 	dex
 
 _RaticateDexEntry::
