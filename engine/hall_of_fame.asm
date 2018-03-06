@@ -33,7 +33,7 @@ AnimateHallOfFame:
 .skipInc
 	ld a, $90
 	ld [hWY], a
-	ld c, BANK(Music_HallOfFame)
+	ld c, 0 ; BANK(Music_HallOfFame)
 	ld a, MUSIC_HALL_OF_FAME
 	call PlayMusic
 	ld hl, wPartySpecies
@@ -211,9 +211,11 @@ HoFLoadPlayerPics:
 	ld a, BANK(LeafPicBack)
 .routine2 ; original routine
 	call UncompressSpriteFromDE
-	predef ScaleSpriteByTwo
+	ld a, $66
 	ld de, vBackPic
-	call InterlaceMergeSpriteBuffers
+	push de
+	jp LoadUncompressedBackSprite
+	nop
 	ld c, $1
 
 HoFLoadMonPlayerPicTileIDs:

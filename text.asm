@@ -37,7 +37,7 @@ _CardKeyFailText::
 	done
 
 _TrainerNameText::
-	TX_RAM wcd6d
+	TX_RAM wTrainerName
 	text ": @@"
 
 _NoNibbleText::
@@ -243,15 +243,45 @@ INCLUDE "text/maps/rock_tunnel_b2f_2.asm"
 INCLUDE "text/maps/seafoam_islands_b4f.asm"
 
 _AIBattleWithdrawText::
+	text "Der @"
 	TX_RAM wTrainerName
-	text " ruft"
+	text ""
 	line "@"
+	TX_RAM wCurTrainerName
+	text " ruft"
+	cont "@"
+	TX_RAM wEnemyMonNick
+	text ""
+	cont "zurück!"
+	prompt
+
+_AIBattleWithdrawText2::
+	text "Der @"
+	TX_RAM wTrainerName
+	text ""
+	line "ruft @"
 	TX_RAM wEnemyMonNick
 	text ""
 	cont "zurück!"
 	prompt
 
 _AIBattleUseItemText::
+	text "Der @"
+	TX_RAM wTrainerName
+	text ""
+	line "@"
+	TX_RAM wCurTrainerName
+	text " gibt"
+	cont "@"
+	TX_RAM wcd6d
+	text ""
+	cont "@"
+	TX_RAM wEnemyMonNick
+	text "!"
+	prompt
+
+_AIBattleUseItemText2::
+	text "Der @"
 	TX_RAM wTrainerName
 	text ""
 	line "gibt @"
@@ -1186,7 +1216,17 @@ _MoneyForWinningText::
 
 _TrainerDefeatedText::
 	text "<PLAYER> besiegt"
-	line "@"
+	line "der @"
+	TX_RAM wTrainerName
+	text ""
+	cont "@"
+	TX_RAM wCurTrainerName
+	text "!"
+	prompt
+
+_TrainerDefeatedText2::
+	text "<PLAYER> besiegt"
+	line "der @"
 	TX_RAM wTrainerName
 	text "!"
 	prompt
@@ -1223,9 +1263,13 @@ _LinkBattleLostText::
 	prompt
 
 _TrainerAboutToUseText::
+	text "Der @"
 	TX_RAM wTrainerName
-	text " wird"
+	text ""
 	line "@"
+	TX_RAM wCurTrainerName
+	text " wird"
+	cont "@"
 	TX_RAM wEnemyMonNick
 	text " in den"
 	cont "Kampf schicken!"
@@ -1234,10 +1278,38 @@ _TrainerAboutToUseText::
 	line "#MON wechseln?"
 	done
 
-_TrainerSentOutText::
+_TrainerAboutToUseText2::
+	text "Der @"
 	TX_RAM wTrainerName
-	text " setzt"
+	text ""
+	line "wird @"
+	TX_RAM wEnemyMonNick
+	text ""
+	cont "in den Kampf"
+	cont "schicken!"
+
+	para "Möchtest Du das"
+	line "#MON wechseln?"
+	done
+
+_TrainerSentOutText::
+	text "Der @"
+	TX_RAM wTrainerName
+	text ""
 	line "@"
+	TX_RAM wCurTrainerName
+	text " setzt"
+	cont "@"
+	TX_RAM wEnemyMonNick
+	text " ein!"
+	done
+
+_TrainerSentOutText2::
+	text "Der @"
+	TX_RAM wTrainerName
+	text ""
+	line "setzt"
+	cont "@"
 	TX_RAM wEnemyMonNick
 	text " ein!"
 	done
@@ -1584,6 +1656,17 @@ _EnemyAppearedText::
 	prompt
 
 _TrainerWantsToFightText::
+	text "Der @"
+	TX_RAM wTrainerName
+	text ""
+	line "@"
+	TX_RAM wCurTrainerName
+	text ""
+	cont "möchte kämpfen!"
+	prompt
+
+_TrainerWantsToFightText2::
+	text "Der @"
 	TX_RAM wTrainerName
 	text ""
 	line "möchte kämpfen!"
@@ -1849,12 +1932,10 @@ _WithdrewItemText::
 	line "mitgenommen."
 	prompt
 
-
 _NothingStoredText::
 	text "Hier lagern keine"
 	line "Items."
 	prompt
-
 
 _CantCarryMoreText::
 	text "Du kannst keine"
@@ -1862,18 +1943,15 @@ _CantCarryMoreText::
 	cont "tragen."
 	prompt
 
-
 _WhatToTossText::
 	text "Welches Item"
 	line "möchtest Du"
 	cont "ausmustern?"
 	done
 
-
 _TossHowManyText::
 	text "Anzahl?"
 	done
-
 
 _AccessedHoFPCText::
 	text "Verbindung zur"
@@ -1885,16 +1963,13 @@ _AccessedHoFPCText::
 	cont "der RUHMESHALLE."
 	prompt
 
-
 _SwitchOnText::
 	text "Schalte ein!"
 	prompt
 
-
 _WhatText::
 	text "Wähle!"
 	done
-
 
 _DepositWhichMonText::
 	text "Welches #MON"
@@ -1915,7 +1990,6 @@ _CantDepositLastMonText::
 	line "letztes #MON"
 	cont "nicht lagern!"
 	prompt
-
 
 _BoxFullText::
 	text "In dieser Box ist"
@@ -1940,7 +2014,6 @@ _NoMonText::
 	line "keine #MON!"
 	prompt
 
-
 _CantTakeMonText::
 	text "Du kannst keine"
 	line "#MON mehr"
@@ -1951,13 +2024,11 @@ _CantTakeMonText::
 	cont "lagern."
 	prompt
 
-
 _ReleaseWhichMonText::
 	text "Welches #MON"
 	line "soll freigelassen"
 	cont "werden?"
 	done
-
 
 _OnceReleasedText::
 	text "Ist es erstmal"
@@ -2216,7 +2287,7 @@ _IntoText::
 	done
 
 _StoppedEvolvingText::
-	text "Hmm? @"
+	text "Was? @"
 	TX_RAM wcf50
 	text "s"
 	line "Entwicklung ist"
@@ -2369,8 +2440,7 @@ _NoEffectText::
 	prompt
 
 _ButItFailedText::
-	text "Die Attacke"
-	line "schlug fehl!"
+	text "Es schlug fehl!"
 	prompt
 
 _DidntAffectText::

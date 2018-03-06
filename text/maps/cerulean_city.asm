@@ -18,13 +18,13 @@ _CeruleanCityText_19668::
 	done
 
 _CeruleanCityText_1966d::
-	text "Hey, "
+	text "<RIVAL>: Hey,"
 	line "schon gut! Du"
 	cont "hast gewonnen!"
 	prompt
 
 _CeruleanCityText_19672::
-	text "Ha!"
+	text "<RIVAL>: Ha!"
 	line "Meiner Genialität"
 	cont "kannst Du nichts"
 	cont "entgegensetzen!"
@@ -150,51 +150,49 @@ _CeruleanCityText6::
 	done
 
 _CeruleanCityText_19730::
-	text "OK! LAHMUS!"
-	line "Setze ULTRASCHALL"
-	cont "ein! Los, mach"
-	cont "schon, LAHMUS!"
+	text "ULTRASCHALL, los!"
+	line "Jetzt mach schon!"
 	done
 
 _CeruleanCityText_19735::
-	text "LAHMUS, schlage"
-	line "zu! Oh nein!"
-	cont "Wieder nicht..."
+	text "Oh nein!"
+	line "Wieder nicht..."
 	done
 
 _CeruleanCityText_1973a::
-	text "LAHMUS, ZURÜCK!"
-	line "Nein, nicht!!!"
+	text "Nein, nicht!!!"
 
 	para "Es ist schwer,"
 	line "ein #MON"
 	cont "zu kontrollieren!"
 
 	para "Ob Dein #MON"
-	line "gehorcht,  hängt"
+	line "gehorcht, hängt"
 	cont "von Deinen"
 	cont "Fähigkeiten als"
 	cont "Trainer ab!"
 	done
 
 _CeruleanCityText_1976f::
-	text "LAHMUS macht"
-	line "ein Nickerchen..."
+	text "LEKTROBALL"
+	line "macht ein"
+	cont "Nickerchen..."
 	done
 
 _CeruleanCityText_19774::
-	text "LAHMUS bummelt"
-	line "herum..."
+	text "LEKTROBALL"
+	line "bummelt herum..."
 	done
 
 _CeruleanCityText_19779::
-	text "LAHMUS wendet"
-	line "sich ab..."
+	text "LEKTROBALL"
+	line "wendet sich ab..."
 	done
 
 _CeruleanCityText_1977e::
-	text "LAHMUS ignoriert"
-	line "die Befehle..."
+	text "LEKTROBALL"
+	line "ignoriert die"
+	cont "Befehle..."
 	done
 
 _CeruleanCityText9::

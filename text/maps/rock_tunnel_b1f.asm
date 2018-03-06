@@ -4,8 +4,8 @@ _RockTunnel1BattleText1::
 	done
 
 _RockTunnel1EndBattleText1::
-	text "Oha! Du"
-	line "hast gewonnen!"
+	text "Oha! Du hast"
+	line "gewonnen!"
 	prompt
 
 _RockTunnel1AfterBattleText1::
@@ -22,10 +22,9 @@ _RockTunnel1BattleText2::
 	done
 
 _RockTunnel1EndBattleText2::
-	text "Sachte!"
-	line "Wo bin ich?"
-	cont "Wo geht es nach"
-	cont "draußen?"
+	text "Sachte! Wo bin"
+	line "ich? Wo geht es"
+	cont "nach draußen?"
 	prompt
 
 _RockTunnel1AfterBattleText2::
@@ -44,8 +43,7 @@ _RockTunnel1BattleText3::
 	done
 
 _RockTunnel1EndBattleText3::
-	text ""
-	line "Ich gebe auf!"
+	text "Ich gebe auf!"
 	prompt
 
 _RockTunnel1AfterBattleText3::
@@ -61,8 +59,7 @@ _RockTunnel1BattleText4::
 	done
 
 _RockTunnel1EndBattleText4::
-	text ""
-	line "GAME OVER!"
+	text "GAME OVER!"
 	prompt
 
 _RockTunnel1AfterBattleText4::
@@ -78,8 +75,7 @@ _RockTunnel1BattleText5::
 	done
 
 _RockTunnel1EndBattleText5::
-	text "Es"
-	line "war zu dunkel!"
+	text "Es war zu dunkel!"
 	prompt
 
 _RockTunnel1AfterBattleText5::
@@ -95,9 +91,8 @@ _RockTunnel1BattleText6::
 	done
 
 _RockTunnel1EndBattleText6::
-	text ""
-	line "Alle meine"
-	cont "#MON wurden"
+	text "Alle meine"
+	line "#MON wurden"
 	cont "besiegt!"
 	prompt
 
@@ -108,15 +103,14 @@ _RockTunnel1AfterBattleText6::
 	done
 
 _RockTunnel1BattleText7::
-	text "Du  besitzt"
+	text "Du besitzt"
 	line "#MON!"
 	cont "Laß uns kämpfen!"
 	done
 
 _RockTunnel1EndBattleText7::
-	text ""
-	line "Du bist ein"
-	cont "harter Brocken!"
+	text "Du bist ein"
+	line "harter Brocken!"
 	prompt
 
 _RockTunnel1AfterBattleText7::

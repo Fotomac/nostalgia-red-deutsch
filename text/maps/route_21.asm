@@ -22,8 +22,7 @@ _Route21BattleText2::
 	done
 
 _Route21EndBattleText2::
-	text "NEIN!"
-	line "KARPADOR!"
+	text "NEIN! KARPADOR!"
 	prompt
 
 _Route21AfterBattleText2::
@@ -55,8 +54,7 @@ _Route21BattleText4::
 	done
 
 _Route21EndBattleText4::
-	text "Das"
-	line "war unter der"
+	text "Das war unter der"
 	cont "Gürtellinie!"
 	prompt
 
@@ -74,9 +72,8 @@ _Route21BattleText5::
 	done
 
 _Route21EndBattleText5::
-	text ""
-	line "Auweia! Ich bin"
-	cont "untergegangen!"
+	text "Auweia! Ich bin"
+	line "untergegangen!"
 	prompt
 
 _Route21AfterBattleText5::
@@ -91,8 +88,7 @@ _Route21BattleText6::
 	done
 
 _Route21EndBattleText6::
-	text "Ächz,"
-	line "schnauf..."
+	text "Ächz, schnauf..."
 	prompt
 
 _Route21AfterBattleText6::
@@ -110,8 +106,8 @@ _Route21BattleText7::
 	done
 
 _Route21EndBattleText7::
-	text "Ups!"
-	line "Ich hab verloren!"
+	text "Ups! Ich hab"
+	line "verloren!"
 	prompt
 
 _Route21AfterBattleText7::
@@ -127,9 +123,8 @@ _Route21BattleText8::
 	done
 
 _Route21EndBattleText8::
-	text ""
-	line "Entschuldigung,"
-	cont "ich wollte nicht"
+	text "Entschuldigung,"
+	line "ich wollte nicht"
 	cont "so barsch sein!"
 	prompt
 
@@ -147,9 +142,8 @@ _Route21BattleText9::
 	done
 
 _Route21EndBattleText9::
-	text "Naja,"
-	line "Wenigstens ist"
-	cont "etwas Zeit"
+	text "Naja, Wenigstens"
+	line "ist etwas Zeit"
 	cont "vergangen!"
 	prompt
 

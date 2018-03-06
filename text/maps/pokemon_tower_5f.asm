@@ -31,8 +31,8 @@ _PokemonTower5BattleText2::
 	done
 
 _PokemonTower5EndBattleText2::
-	text "Welch"
-	line "ein Alptraum!"
+	text "Welch ein"
+	line "Alptraum!"
 	prompt
 
 _PokemonTower5AfterBattleText2::
@@ -59,8 +59,7 @@ _PokemonTower5BattleText4::
 	done
 
 _PokemonTower5EndBattleText4::
-	text "Das"
-	line "war knapp!"
+	text "Das war knapp!"
 	prompt
 
 _PokemonTower5AfterBattleText4::

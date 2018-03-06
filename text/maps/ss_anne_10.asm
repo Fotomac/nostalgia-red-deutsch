@@ -9,8 +9,8 @@ _SSAnne10BattleText1::
 	done
 
 _SSAnne10EndBattleText1::
-	text "JA! Was"
-	line "für ein Kampf!!!"
+	text "JA! Was für ein"
+	line "Kampf!!!"
 	prompt
 
 _SSAnne10AfterBattleText1::
@@ -25,9 +25,8 @@ _SSAnne10BattleText2::
 	done
 
 _SSAnne10EndBattleText2::
-	text ""
-	line "Kiel unter! Das"
-	cont "war's für mich!"
+	text "Kiel unter! Das"
+	line "war's für mich!"
 	prompt
 
 _SSAnne10AfterBattleText2::
@@ -81,8 +80,7 @@ _SSAnne10BattleText5::
 	done
 
 _SSAnne10EndBattleText5::
-	text "Argh!"
-	line "Von einem"
+	text "Argh! Von einem"
 	cont "Kind besiegt..."
 	prompt
 
@@ -102,8 +100,7 @@ _SSAnne10BattleText6::
 	done
 
 _SSAnne10EndBattleText6::
-	text "Mist!"
-	line "Der ist mir"
+	text "Mist! Der ist mir"
 	cont "entwischt!"
 	prompt
 

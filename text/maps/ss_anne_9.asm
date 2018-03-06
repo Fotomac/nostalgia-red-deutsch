@@ -76,8 +76,7 @@ _SSAnne9BattleText2::
 	done
 
 _SSAnne9EndBattleText2::
-	text "OK!"
-	line "Das war's für"
+	text "OK! Das war's für"
 	cont "mich! Tschüss!!!"
 	prompt
 
@@ -97,8 +96,7 @@ _SSAnne9BattleText3::
 	done
 
 _SSAnne9EndBattleText3::
-	text "Ich"
-	line "ziehe meinen"
+	text "Ich ziehe meinen"
 	cont "Hut vor Dir! Wow!"
 	prompt
 

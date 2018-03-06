@@ -8,8 +8,7 @@ _Route15BattleText1::
 	done
 
 _Route15EndBattleText1::
-	text ""
-	line "Nicht gut genug!"
+	text "Nicht gut genug!"
 	prompt
 
 _Route15AfterBattleText1::
@@ -32,9 +31,8 @@ _Route15BattleText2::
 	done
 
 _Route15EndBattleText2::
-	text "Du"
-	line "bist ein Wolf im"
-	cont "Schafspelz!"
+	text "Du bist ein Wolf"
+	line "im Schafspelz!"
 	prompt
 
 _Route15AfterBattleText2::
@@ -52,8 +50,8 @@ _Route15BattleText3::
 	done
 
 _Route15EndBattleText3::
-	text "Au!"
-	line "Das ist tragisch!"
+	text "Au! Das ist"
+	line "tragisch!"
 	prompt
 
 _Route15AfterBattleText3::
@@ -71,8 +69,8 @@ _Route15BattleText4::
 	done
 
 _Route15EndBattleText4::
-	text "Ich"
-	line "lag also richtig!"
+	text "Ich lag also"
+	line "richtig!"
 	prompt
 
 _Route15AfterBattleText4::
@@ -89,9 +87,8 @@ _Route15BattleText5::
 	done
 
 _Route15EndBattleText5::
-	text ""
-	line "Und Du siehst"
-	cont "so süß aus!"
+	text "Und Du siehst"
+	line "so süß aus!"
 	prompt
 
 _Route15AfterBattleText5::
@@ -107,9 +104,8 @@ _Route15BattleText6::
 	done
 
 _Route15EndBattleText6::
-	text "So"
-	line "habe ich es"
-	cont "mir aber nicht"
+	text "So habe ich es"
+	line "mir aber nicht"
 	cont "vorgestellt!"
 	prompt
 
@@ -126,8 +122,8 @@ _Route15BattleText7::
 	done
 
 _Route15EndBattleText7::
-	text "Warum"
-	line "hab ich verloren?"
+	text "Warum hab ich"
+	line "verloren?"
 	prompt
 
 _Route15AfterBattleText7::
@@ -146,8 +142,8 @@ _Route15BattleText8::
 	done
 
 _Route15EndBattleText8::
-	text "Das darf"
-	line "nicht wahr sein!"
+	text "Das darf nicht"
+	line "wahr sein!"
 	prompt
 
 _Route15AfterBattleText8::
@@ -163,8 +159,8 @@ _Route15BattleText9::
 	done
 
 _Route15EndBattleText9::
-	text "Ich"
-	line "sagte tauschen!"
+	text "Ich sagte"
+	line "tauschen!"
 	prompt
 
 _Route15AfterBattleText9::
@@ -180,8 +176,8 @@ _Route15BattleText10::
 	done
 
 _Route15EndBattleText10::
-	text "Ich"
-	line "war zu ungestüm!"
+	text "Ich war zu"
+	line "ungestüm!"
 	prompt
 
 _Route15AfterBattleText10::

@@ -6,8 +6,8 @@ _Route10BattleText1::
 	done
 
 _Route10EndBattleText1::
-	text "Naja,"
-	line "macht nichts!"
+	text "Naja, macht"
+	line "nichts!"
 	prompt
 
 _Route10AfterBattleText1::
@@ -38,8 +38,8 @@ _Route10BattleText3::
 	done
 
 _Route10EndBattleText3::
-	text "Nein!"
-	line "Meine #MON!"
+	text "Nein! Meine"
+	line "#MON!"
 	prompt
 
 _Route10AfterBattleText3::
@@ -58,9 +58,8 @@ _Route10BattleText4::
 	done
 
 _Route10EndBattleText4::
-	text ""
-	line "Nein! Nicht"
-	cont "schon wieder!"
+	text "Nein! Nicht"
+	line "schon wieder!"
 	prompt
 
 _Route10AfterBattleText4::
@@ -77,9 +76,8 @@ _Route10BattleText5::
 	done
 
 _Route10EndBattleText5::
-	text "Ich"
-	line "kann wieder"
-	cont "klar denken!"
+	text "Ich kann wieder"
+	line "klar denken!"
 	prompt
 
 _Route10AfterBattleText5::
@@ -96,8 +94,7 @@ _Route10BattleText6::
 	done
 
 _Route10EndBattleText6::
-	text "Ich"
-	line "bin nicht fit!"
+	text "Ich bin nicht fit!"
 	prompt
 
 _Route10AfterBattleText6::

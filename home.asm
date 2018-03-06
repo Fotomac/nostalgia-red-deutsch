@@ -299,11 +299,7 @@ LoadFrontSpriteByMonIndex::
 	ret
 
 
-PlayCry::
-; Play monster a's cry.
-	call GetCryData
-	call PlaySound
-	jp WaitForSoundToFinish
+;PlayCry
 
 GetCryData::
 ; Load cry data for monster a.
@@ -557,8 +553,6 @@ GetMonHeader::
 	ld b,$77 ; size of Aerodactyl fossil sprite
 	cp FOSSIL_AERODACTYL ; Aerodactyl fossil
 	jr z,.specialID
-	cp a,MEW
-	jr z,.mew
 	predef IndexToPokedex   ; convert pokemon ID in [wd11e] to pokedex number
 	ld a,[wd11e]
 	dec a
@@ -576,13 +570,6 @@ GetMonHeader::
 	ld [hl],e ; write front sprite pointer
 	inc hl
 	ld [hl],d
-	jr .done
-.mew
-	ld hl,MewBaseStats
-	ld de,wMonHeader
-	ld bc,MonBaseStatsEnd - MonBaseStats
-	ld a,BANK(MewBaseStats)
-	call FarCopyData
 .done
 	ld a,[wd0b5]
 	ld [wMonHIndex],a
@@ -712,33 +699,20 @@ UncompressMonSprite::
 ; $74 ≤ index < $99, bank $C
 ; $99 ≤ index,       bank $D
 	ld a,[wcf91] ; XXX name for this ram location
-	ld b,a
-	cp MEW
-	ld a,BANK(MewPicFront)
-	jr z,.GotBank
-	ld a,b
 	cp FOSSIL_KABUTOPS
+	jr z, .RecallBank
+	cp FOSSIL_AERODACTYL
+	jr z, .RecallBank
+	cp MON_GHOST
+	jr z, .RecallBank
+	ld a,[wMonHPicBank]
+	jr .GotBank
+.RecallBank
 	ld a,BANK(FossilKabutopsPic)
-	jr z,.GotBank
-	ld a,b
-	cp TANGELA + 1
-	ld a,BANK(TangelaPicFront)
-	jr c,.GotBank
-	ld a,b
-	cp MOLTRES + 1
-	ld a,BANK(MoltresPicFront)
-	jr c,.GotBank
-	ld a,b
-	cp BEEDRILL + 2
-	ld a,BANK(BeedrillPicFront)
-	jr c,.GotBank
-	ld a,b
-	cp STARMIE + 1
-	ld a,BANK(StarmiePicFront)
-	jr c,.GotBank
-	ld a,BANK(VictreebelPicFront)
 .GotBank
 	jp UncompressSpriteData
+
+	ds $19
 
 ; de: destination location
 LoadMonFrontSprite::
@@ -747,6 +721,7 @@ LoadMonFrontSprite::
 	call UncompressMonSprite
 	ld hl, wMonHSpriteDim
 	ld a, [hli]
+LoadUncompressedBackSprite:
 	ld c, a
 	pop de
 	; fall through
@@ -917,8 +892,6 @@ UpdateSprites::
 	ld [H_LOADEDROMBANK], a
 	ld [MBC1RomBank], a
 	ret
-
-INCLUDE "data/mart_inventories.asm"
 
 TextScriptEndingChar::
 	db "@"
@@ -2378,16 +2351,20 @@ EndTrainerBattle::
 	res 0, [hl]                  ; player is no longer engaged by any trainer
 	ld a, [wIsInBattle]
 	cp $ff
-	jp z, ResetButtonPressedAndMapScript
+	jr z, EndTrainerBattleWhiteout
 	ld a, $2
 	call ReadTrainerHeaderInfo
 	ld a, [wTrainerHeaderFlagBit]
 	ld c, a
 	ld b, FLAG_SET
 	call TrainerFlagAction   ; flag trainer as fought
-	ld a, [wEnemyMonOrTrainerClass]
-	cp 200
-	jr nc, .skipRemoveSprite    ; test if trainer was fought (in that case skip removing the corresponding sprite)
+	ld a, [wWasTrainerBattle]
+	and a
+	jr nz, .skipRemoveSprite    ; test if trainer was fought (in that case skip removing the corresponding sprite)
+	ld a, [wCurMap]
+	cp POKEMONTOWER_7
+	jr z, .skipRemoveSprite ; the tower 7f scripts call EndTrainerBattle manually after
+	; wIsTrainerBattle has been unset
 	ld hl, wMissableObjectList
 	ld de, $2
 	ld a, [wSpriteIndex]
@@ -2397,6 +2374,8 @@ EndTrainerBattle::
 	ld [wMissableObjectIndex], a               ; load corresponding missable object index and remove it
 	predef HideObject
 .skipRemoveSprite
+	xor a
+	ld [wWasTrainerBattle], a
 	ld hl, wd730
 	bit 4, [hl]
 	res 4, [hl]
@@ -2411,6 +2390,12 @@ ResetButtonPressedAndMapScript::
 	ld [wCurMapScript], a               ; reset battle status
 	ret
 
+EndTrainerBattleWhiteout:
+	xor a
+	ld [wIsTrainerBattle], a
+	ld [wWasTrainerBattle], a
+	jp ResetButtonPressedAndMapScript
+
 ; calls TrainerWalkUpToPlayer
 TrainerWalkUpToPlayer_Bank0::
 	jpba TrainerWalkUpToPlayer
@@ -2420,12 +2405,14 @@ InitBattleEnemyParameters::
 	ld a, [wEngagedTrainerClass]
 	ld [wCurOpponent], a
 	ld [wEnemyMonOrTrainerClass], a
-	cp 200
+	ld a, [wIsTrainerBattle]
+	and a
+	jr z, .noTrainer
 	ld a, [wEngagedTrainerSet]
-	jr c, .noTrainer
 	ld [wTrainerNo], a
 	ret
 .noTrainer
+	ld a, [wEngagedTrainerSet]
 	ld [wCurEnemyLVL], a
 	ret
 
@@ -2521,7 +2508,17 @@ EngageMapTrainer::
 	ld a, [hli]    ; load trainer class
 	ld [wEngagedTrainerClass], a
 	ld a, [hl]     ; load trainer mon set
-	ld [wEngagedTrainerSet], a
+	bit 7, a
+	jr nz, .pokemon
+	ld [wEnemyMonAttackMod], a
+	ld a, 1
+	ld [wIsTrainerBattle], a
+	jp PlayTrainerMusic
+.pokemon
+	and $7F
+	ld [wEnemyMonAttackMod], a
+	xor a
+	ld [wIsTrainerBattle], a
 	jp PlayTrainerMusic
 
 PrintEndBattleText::
@@ -2537,7 +2534,6 @@ PrintEndBattleText::
 	ld [H_LOADEDROMBANK], a
 	ld [MBC1RomBank], a
 	push hl
-	callba SaveTrainerName
 	ld hl, TrainerEndBattleText
 	call PrintText
 	pop hl
@@ -2565,7 +2561,6 @@ GetSavedEndBattleTextPointer::
 	ret
 
 TrainerEndBattleText::
-	TX_FAR _TrainerNameText
 	TX_ASM
 	call GetSavedEndBattleTextPointer
 	call TextCommandProcessor
@@ -2597,7 +2592,7 @@ PlayTrainerMusic::
 	ld [wAudioFadeOutControl], a
 	ld a, $ff
 	call PlaySound
-	ld a, BANK(Music_MeetEvilTrainer)
+	ld a, 0 ; BANK(Music_MeetEvilTrainer)
 	ld [wAudioROMBank], a
 	ld [wAudioSavedROMBank], a
 	ld a, [wEngagedTrainerClass]
@@ -2612,6 +2607,16 @@ PlayTrainerMusic::
 	ld a, MUSIC_MEET_EVIL_TRAINER
 	jr .PlaySound
 .noEvilTrainer
+	ld hl, CuteTrainerList
+.cuteTrainerListLoop
+	ld a, [hli]
+	cp $ff
+	jr z, .noCuteTrainer
+	cp b
+	jr nz, .cuteTrainerListLoop
+	ld a, MUSIC_MEET_CUTE_TRAINER
+	jr .PlaySound
+.noCuteTrainer
 	ld hl, FemaleTrainerList
 .femaleTrainerListLoop
 	ld a, [hli]
@@ -2625,7 +2630,7 @@ PlayTrainerMusic::
 	ld a, MUSIC_MEET_MALE_TRAINER
 .PlaySound
 	ld [wNewSoundID], a
-	jp PlaySound
+	jp PlayMusic
 
 INCLUDE "data/trainer_types.asm"
 
@@ -2882,20 +2887,14 @@ GetTrainerInformation::
 	call GetTrainerName
 	ld a, [wLinkState]
 	and a
-	jr nz, .linkBattle
+	ret nz
 	ld a, Bank(TrainerPicAndMoneyPointers)
 	call BankswitchHome
 	ld a, [wTrainerClass]
 	dec a
 	ld hl, TrainerPicAndMoneyPointers
-	ld bc, $5
+	ld bc, $3
 	call AddNTimes
-	ld de, wTrainerPicPointer
-	ld a, [hli]
-	ld [de], a
-	inc de
-	ld a, [hli]
-	ld [de], a
 	ld de, wTrainerBaseMoney
 	ld a, [hli]
 	ld [de], a
@@ -2903,13 +2902,6 @@ GetTrainerInformation::
 	ld a, [hli]
 	ld [de], a
 	jp BankswitchBack
-.linkBattle
-	ld hl, wTrainerPicPointer
-	ld de, RedPicFront
-	ld [hl], e
-	inc hl
-	ld [hl], d
-	ret
 
 GetTrainerName::
 	jpba GetTrainerName_
@@ -3100,21 +3092,15 @@ LoadTextBoxTilePatterns::
 	lb bc, BANK(TextBoxGraphics), (TextBoxGraphicsEnd - TextBoxGraphics) / $10
 	jp CopyVideoData ; if LCD is on, transfer during V-blank
 
-LoadHpBarAndStatusTilePatterns::
-	ld a, [rLCDC]
-	bit 7, a ; is the LCD enabled?
-	jr nz, .on
-.off
-	ld hl, HpBarAndStatusGraphics
-	ld de, vChars2 + $620
-	ld bc, HpBarAndStatusGraphicsEnd - HpBarAndStatusGraphics
-	ld a, BANK(HpBarAndStatusGraphics)
-	jp FarCopyData2 ; if LCD is off, transfer all at once
-.on
-	ld de, HpBarAndStatusGraphics
-	ld hl, vChars2 + $620
-	lb bc, BANK(HpBarAndStatusGraphics), (HpBarAndStatusGraphicsEnd - HpBarAndStatusGraphics) / $10
-	jp CopyVideoData ; if LCD is on, transfer during V-blank
+LoadHpBarAndStatusTilePatterns::	
+	ld de,HpBarAndStatusGraphics
+	ld hl,vChars2 + $620
+	lb bc,BANK(HpBarAndStatusGraphics), (HpBarAndStatusGraphicsEnd - HpBarAndStatusGraphics) / $10
+	call GoodCopyVideoData
+	ld de,EXPBarGraphics
+	ld hl,vChars1 + $400
+	lb bc,BANK(EXPBarGraphics), (EXPBarGraphicsEnd - EXPBarGraphics) / $10
+	jp GoodCopyVideoData
 
 
 FillMemory::
@@ -3195,21 +3181,65 @@ PlaySoundWaitForCurrent::
 
 ; Wait for sound to finish playing
 WaitForSoundToFinish::
+WaitSFX::
+; infinite loop until sfx is done playing
+	ld a, [Danger]
+	and a
+	ret nz
+	ld a, [wSFXDontWait]
+	and a
 	ld a, [wLowHealthAlarm]
 	and $80
 	ret nz
 	push hl
-.waitLoop
-	ld hl, wChannelSoundIDs + Ch4
-	xor a
-	or [hl]
-	inc hl
-	or [hl]
-	inc hl
-	inc hl
-	or [hl]
-	jr nz, .waitLoop
+.loop
+	; ch5 on?
+	ld hl, Channel5 + Channel1Flags - Channel1
+	bit 0, [hl]
+	jr nz, .loop
+	; ch6 on?
+	ld hl, Channel6 + Channel1Flags - Channel1
+	bit 0, [hl]
+	jr nz, .loop
+	; ch7 on?
+	ld hl, Channel7 + Channel1Flags - Channel1
+	bit 0, [hl]
+	jr nz, .loop
+	; ch8 on?
+	ld hl, Channel8 + Channel1Flags - Channel1
+	bit 0, [hl]
+	jr nz, .loop
 	pop hl
+	ret
+
+WaitForSongToFinish::
+.loop
+	call IsSongPlaying
+	jr c, .loop
+	ret
+
+IsSongPlaying::
+	; ch1 on?
+	ld hl, Channel1 + Channel1Flags - Channel1
+	bit 0, [hl]
+	jr nz, .playing
+	; ch2 on?
+	ld hl, Channel2 + Channel1Flags - Channel1
+	bit 0, [hl]
+	jr nz, .playing
+	; ch3 on?
+	ld hl, Channel3 + Channel1Flags - Channel1
+	bit 0, [hl]
+	jr nz, .playing
+	; ch4 on?
+	ld hl, Channel4 + Channel1Flags - Channel1
+	bit 0, [hl]
+	jr z, .notPlaying
+.playing
+	scf
+	ret
+.notPlaying
+	xor a
 	ret
 
 NamePointers::
@@ -4705,3 +4735,59 @@ const_value = 1
 	add_tx_pre BookOrSculptureText                  ; 40
 	add_tx_pre ElevatorText                         ; 41
 	add_tx_pre PokemonStuffText                     ; 42
+
+GoodCopyVideoData:
+	ld a,[rLCDC]
+	bit 7,a ; is the LCD enabled?
+	jp nz, CopyVideoData ; if LCD is on, transfer during V-blank
+	ld a, b
+	push hl
+	push de
+	ld h, 0
+	ld l, c
+	add hl, hl
+	add hl, hl
+	add hl, hl
+	add hl, hl
+	ld b, h
+	ld c, l
+	pop hl
+	pop de
+	jp FarCopyData2 ; if LCD is off, transfer all at once
+
+SetCustomName:
+; INPUTS: hl = pointer to name
+; OUTPUTS: trainer name stored in wCurTrainerName, hl points to byte immediately after name
+	ld de, wCurTrainerName
+.loop
+	ld a, [hli]
+	ld [de],a
+	inc de
+	cp "@"
+	ret z
+	jr .loop
+
+IsTrainerSpecial::
+    ld hl, SpecialTrainerIDs
+    ld a, [wTrainerClass]
+    ld de, 1
+    jp IsInArray
+
+SpecialTrainerIDs:
+	db SONY1
+	db GIOVANNI
+	db BRUNO
+	db BROCK
+	db MISTY
+	db LT_SURGE
+	db ERIKA
+	db KOGA
+	db BLAINE
+	db SABRINA
+	db SONY2
+	db SONY3
+	db LORELEI
+	db AGATHA
+	db LANCE
+	db JANINE
+	db $FF

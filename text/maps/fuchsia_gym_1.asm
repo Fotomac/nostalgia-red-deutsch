@@ -19,10 +19,10 @@ _KogaBeforeBattleText::
 	done
 
 _KogaAfterBattleText::
-	text "Na sowas!"
+	text "KOGA: Na sowas!"
 	line "Du bist ein"
 	cont "würdiger Kämpfer!"
 
 	para "Ich reiche Dir"
-	line "den SEELENORDEN!"
+	line "den SUMPFORDEN!"
 	prompt

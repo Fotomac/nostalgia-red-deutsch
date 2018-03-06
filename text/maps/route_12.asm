@@ -29,9 +29,8 @@ _Route12BattleText1::
 	done
 
 _Route12EndBattleText1::
-	text "Mist!"
-	line "Bloß ein kleiner"
-	cont "Fisch!"
+	text "Mist! Bloß ein"
+	line "kleiner Fisch!"
 	prompt
 
 _Route12AfterBattleText1::
@@ -48,8 +47,8 @@ _Route12BattleText2::
 	done
 
 _Route12EndBattleText2::
-	text "Der ist"
-	line "mir entwischt!"
+	text "Der ist mir"
+	line "entwischt!"
 	prompt
 
 _Route12AfterBattleText2::
@@ -65,8 +64,8 @@ _Route12BattleText3::
 	done
 
 _Route12EndBattleText3::
-	text "Himmel,"
-	line "Arsch und Zwirn!"
+	text "Himmel, Arsch"
+	line "und Zwirn!"
 	prompt
 
 _Route12AfterBattleText3::
@@ -83,9 +82,8 @@ _Route12BattleText4::
 	done
 
 _Route12EndBattleText4::
-	text ""
-	line "Stromkreis"
-	cont "unterbrochen!"
+	text "Stromkreis"
+	line "unterbrochen!"
 	prompt
 
 _Route12AfterBattleText4::
@@ -103,8 +101,7 @@ _Route12BattleText5::
 	done
 
 _Route12EndBattleText5::
-	text "Das war"
-	line "spitze!"
+	text "Das war spitze!"
 	prompt
 
 _Route12AfterBattleText5::
@@ -141,8 +138,7 @@ _Route12BattleText7::
 	done
 
 _Route12EndBattleText7::
-	text "Ich hab"
-	line "verloren!"
+	text "Ich hab verloren!"
 	prompt
 
 _Route12AfterBattleText7::

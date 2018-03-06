@@ -5,9 +5,8 @@ _Route19BattleText1::
 	done
 
 _Route19EndBattleText1::
-	text ""
-	line "Wunderbar, jetzt"
-	cont "ist mir warm!"
+	text "Wunderbar, jetzt"
+	line "ist mir warm!"
 	prompt
 
 _Route19AfterBattleText1::
@@ -23,8 +22,8 @@ _Route19BattleText2::
 	done
 
 _Route19EndBattleText2::
-	text "Wuah!"
-	line "Mich fröstel",$B3,"'s!"
+	text "Wuah! Mich"
+	line "fröstel",$B3,"'s!"
 	prompt
 
 _Route19AfterBattleText2::
@@ -39,9 +38,8 @@ _Route19BattleText3::
 	done
 
 _Route19EndBattleText3::
-	text ""
-	line "Mann, war das ein"
-	cont "Bauchplatscher!"
+	text "Mann, war das ein"
+	line "Bauchplatscher!"
 	prompt
 
 _Route19AfterBattleText3::
@@ -58,8 +56,7 @@ _Route19BattleText4::
 	done
 
 _Route19EndBattleText4::
-	text ""
-	line "Blubber! Gluck!"
+	text "Blubber! Gluck!"
 	prompt
 
 _Route19AfterBattleText4::
@@ -92,8 +89,8 @@ _Route19BattleText6::
 	done
 
 _Route19EndBattleText6::
-	text "Nein!"
-	line "Ein traumatisches"
+	text "Nein! Ein"
+	line "traumatisches"
 	cont "Erlebnis!"
 	prompt
 
@@ -111,8 +108,8 @@ _Route19BattleText7::
 	done
 
 _Route19EndBattleText7::
-	text "Oh! Ich"
-	line "habe verloren!"
+	text "Oh! Ich habe"
+	line "verloren!"
 	prompt
 
 _Route19AfterBattleText7::
@@ -130,9 +127,8 @@ _Route19BattleText8::
 	done
 
 _Route19EndBattleText8::
-	text "Du"
-	line "bist ein ganz"
-	cont "schlimmer Finger!"
+	text "Du bist ein ganz"
+	line "schlimmer Finger!"
 	prompt
 
 _Route19AfterBattleText8::
@@ -148,8 +144,8 @@ _Route19BattleText9::
 	done
 
 _Route19EndBattleText9::
-	text "Das"
-	line "war gefährlich!"
+	text "Das war"
+	line "gefährlich!"
 	prompt
 
 _Route19AfterBattleText9::
@@ -165,9 +161,8 @@ _Route19BattleText10::
 	done
 
 _Route19EndBattleText10::
-	text ""
-	line "Ich bin am Ende"
-	cont "meiner Kraft..."
+	text "Ich bin am Ende"
+	line "meiner Kraft..."
 	prompt
 
 _Route19AfterBattleText10::

@@ -18,11 +18,11 @@ db 0
 db 0
 db 0 ; growth rate
 ; learnset
-	tmlearn 6,8
-	tmlearn 9,10,15
+	tmlearn 5,6,8
+	tmlearn 10,15
 	tmlearn 20,24
 	tmlearn 25,31,32
 	tmlearn 33,34,40
 	tmlearn 44,45
 	tmlearn 50,55
-db 0 ; padding
+db BANK(JolteonPicFront)

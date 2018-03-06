@@ -69,8 +69,8 @@ _SilphCo6BattleText2::
 	done
 
 _SilphCo6EndBattleText2::
-	text "Nein!"
-	line "Ich bin raus!"
+	text "Nein! Ich bin"
+	line "raus!"
 	prompt
 
 _SilphCo6AfterBattleText2::
@@ -85,7 +85,8 @@ _SilphCo6BattleText3::
 
 	para "Warum will er"
 	line "ausgerechnet"
-	cont "mich nach TIKSI"
+	cont "mich nach"
+	cont "STEINIGE TUNGUSKA"
 	cont "schicken?"
 	done
 
@@ -94,8 +95,8 @@ _SilphCo6EndBattleText3::
 	prompt
 
 _SilphCo6AfterBattleText3::
-	text "TIKSI? Das"
-	line "liegt tief im"
+	text "STEINIGE TUNGUSKA?"
+	line "Das liegt tief im"
 	cont "Niemandsland!"
 	done
 
@@ -107,8 +108,8 @@ _SilphCo6BattleText4::
 	done
 
 _SilphCo6EndBattleText4::
-	text "Du"
-	line "elender Verräter!"
+	text "Du elender"
+	line "Verräter!"
 	prompt
 
 _SilphCo6AfterBattleText4::

@@ -5,8 +5,7 @@ _VictoryRoad1BattleText1::
 	done
 
 _VictoryRoad1EndBattleText1::
-	text "Ich"
-	line "bin raus!"
+	text "Ich bin raus!"
 	prompt
 
 _VictoryRoad1AfterBattleText1::
@@ -22,9 +21,8 @@ _VictoryRoad1BattleText2::
 	done
 
 _VictoryRoad1EndBattleText2::
-	text "Immerhin"
-	line "hatte ich eine"
-	cont "Chance!"
+	text "Immerhin hatte ich"
+	line "eine Chance!"
 	prompt
 
 _VictoryRoad1AfterBattleText2::

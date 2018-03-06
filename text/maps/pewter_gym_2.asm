@@ -73,7 +73,7 @@ _TM39NoRoomText::
 	done
 
 _PewterGymText_5c4bc::
-	text "Ich habe"
+	text "ROCKO: Ich habe"
 	line "Dich falsch"
 	cont "eingeschätzt!"
 
@@ -138,8 +138,8 @@ _PewterGymBattleText2::
 	done
 
 _PewterGymEndBattleText2::
-	text "Das war"
-	line "nur der Anfang!"
+	text "Das war nur der"
+	line "Anfang!"
 	prompt
 
 _PewterGymAfterBattleText2::

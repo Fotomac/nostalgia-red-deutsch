@@ -17,8 +17,7 @@ _SilphCo10BattleText1::
 	done
 
 _SilphCo10EndBattleText1::
-	text "Ich bin"
-	line "geschockt!"
+	text "Ich bin geschockt!"
 	prompt
 
 _SilphCo10AfterBattleText1::
@@ -35,9 +34,8 @@ _SilphCo10BattleText2::
 	done
 
 _SilphCo10EndBattleText2::
-	text "Meine"
-	line "Reserven sind"
-	cont "erschöpft!"
+	text "Meine Reserven"
+	line "sind erschöpft!"
 	prompt
 
 _SilphCo10AfterBattleText2::

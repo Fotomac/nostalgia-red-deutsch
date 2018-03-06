@@ -16,7 +16,9 @@ Route1Text1:
 	call GiveItem
 	jr nc, .BagFull
 	ld hl, Route1Text_1cae8
-	jr .asm_1cadd
+	call PrintText
+	call Delay3
+	jr .asm_1cada
 .BagFull
 	ld hl, Route1Text_1caf3
 	jr .asm_1cadd

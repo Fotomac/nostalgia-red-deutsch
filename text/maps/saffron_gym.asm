@@ -23,7 +23,7 @@ _SaffronGymText_5d162::
 	done
 
 _SaffronGymText_5d167::
-	text "Ich bin"
+	text "SABRINA: Ich bin"
 	line "erschüttert!"
 	cont "Aber verloren ist"
 	cont "verloren."
@@ -34,7 +34,7 @@ _SaffronGymText_5d167::
 	cont "angestrengt!"
 
 	para "Ich schenke Dir"
-	line "den SUMPFORDEN!@@"
+	line "den SEELENORDEN!@@"
 
 _SaffronGymText_5d16e::
 	text "Theoretisch"
@@ -46,7 +46,7 @@ _SaffronGymText_5d16e::
 	done
 
 _SaffronGymText_5d173::
-	text "Der SUMPFORDEN"
+	text "Der SEELENORDEN"
 	line "läßt #MON bis"
 	cont "Level 70 Deinen"
 	cont "Befehlen folgen!"
@@ -66,22 +66,23 @@ _SaffronGymText_5d173::
 	line "diese TM von mir!"
 	done
 
-ReceivedTM46Text::
+ReceivedTM04Text::
 	text "<PLAYER> erhält"
-	line "TM46!@@"
+	line "TM04!@@"
 
-_TM46ExplanationText::
+_TM04ExplanationText::
 	text ""
 
-	para "TM46 ist"
-	line "PSYWELLE!"
-	cont "Sie macht sich"
-	cont "übernatürliche"
-	cont "Strömungen"
-	cont "zunutze!"
+	para "TM04 ist"
+	line "GEDANKENGUT!"
+	cont "Das #MON"
+	cont "konzentriert sich"
+	cont "um sowohl den"
+	cont "SPEZIAL zu"
+	cont "steigern!"
 	done
 
-_TM46NoRoomText::
+_TM04NoRoomText::
 	text "Dein Rucksack"
 	line "ist zu voll!"
 	done
@@ -123,9 +124,8 @@ _SaffronGymBattleText1::
 	done
 
 _SaffronGymEndBattleText1::
-	text ""
-	line "Ich bin nicht"
-	cont "gut genug!"
+	text "Ich bin nicht"
+	line "gut genug!"
 	prompt
 
 _SaffronGymAfterBattleText1::
@@ -147,8 +147,8 @@ _SaffronGymBattleText2::
 	done
 
 _SaffronGymEndBattleText2::
-	text "Ich"
-	line "glaube es nicht:"
+	text "Ich glaube es"
+	line "nicht:"
 	cont "Ich hab verloren!"
 	prompt
 
@@ -170,8 +170,7 @@ _SaffronGymBattleText3::
 	done
 
 _SaffronGymEndBattleText3::
-	text "Ich"
-	line "wußte es!"
+	text "Ich wußte es!"
 	prompt
 
 _SaffronGymAfterBattleText3::
@@ -188,8 +187,7 @@ _SaffronGymBattleText4::
 	done
 
 _SaffronGymEndBattleText4::
-	text "Das "
-	line "ist unfassbar!"
+	text "Das ist unfassbar!"
 	prompt
 
 _SaffronGymAfterBattleText4::
@@ -206,9 +204,8 @@ _SaffronGymBattleText5::
 	done
 
 _SaffronGymEndBattleText5::
-	text ""
-	line "Ich habe nun"
-	cont "doch verloren!"
+	text "Ich habe nun"
+	line "doch verloren!"
 	prompt
 
 _SaffronGymAfterBattleText5::
@@ -228,8 +225,8 @@ _SaffronGymBattleText6::
 	done
 
 _SaffronGymEndBattleText6::
-	text "Ich habe"
-	line "die Konzentration"
+	text "Ich habe die"
+	line "Konzentration"
 	cont "verloren!"
 	prompt
 

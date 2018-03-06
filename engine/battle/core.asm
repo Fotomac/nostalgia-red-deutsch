@@ -954,7 +954,7 @@ EndLowHealthAlarm:
 ; This function is called when the player has the won the battle. It turns off
 ; the low health alarm and prevents it from reactivating until the next battle.
 	xor a
-	ld [wLowHealthAlarm], a ; turn off low health alarm
+	ld [wDanger], a ; turn off low health alarm
 	ld [wChannelSoundIDs + Ch4], a
 	inc a
 	ld [wLowHealthAlarmDisabled], a ; prevent it from reactivating
@@ -980,7 +980,7 @@ AnyEnemyPokemonAliveCheck:
 ; stores whether enemy ran in Z flag
 ReplaceFaintedEnemyMon:
 	ld hl, wEnemyHPBarColor
-	ld e, $30
+	ld e, $00
 	call GetBattleHealthBarColor
 	callab DrawEnemyPokeballs
 	ld a, [wLinkState]
@@ -1020,7 +1020,16 @@ TrainerBattleVictory:
 	cp LINK_STATE_BATTLING
 	ld a, b
 	call nz, PlayBattleVictoryMusic
+	ld hl, SpecialTrainerIDs
+	ld a, [wTrainerClass]
+	ld de, 1
+	call IsInArray
+	jr c, .specialTrainer3
 	ld hl, TrainerDefeatedText
+	jr .next12
+.specialTrainer3
+	ld hl, TrainerDefeatedText2
+.next12
 	call PrintText
 	ld a, [wLinkState]
 	cp LINK_STATE_BATTLING
@@ -1045,12 +1054,16 @@ TrainerDefeatedText:
 	TX_FAR _TrainerDefeatedText
 	db "@"
 
+TrainerDefeatedText2:
+	TX_FAR _TrainerDefeatedText2
+	db "@"
+
 PlayBattleVictoryMusic:
 	push af
 	ld a, $ff
 	ld [wNewSoundID], a
 	call PlaySoundWaitForCurrent
-	ld c, BANK(Music_DefeatedTrainer)
+	ld c, 0 ; BANK(Music_DefeatedTrainer)
 	pop af
 	call PlayMusic
 	jp Delay3
@@ -1097,11 +1110,11 @@ RemoveFaintedPlayerMon:
 	predef FlagActionPredef ; clear gain exp flag for fainted mon
 	ld hl, wEnemyBattleStatus1
 	res 2, [hl]   ; reset "attacking multiple times" flag
-	ld a, [wLowHealthAlarm]
+	ld a, [wDanger]
 	bit 7, a      ; skip sound flag (red bar (?))
 	jr z, .skipWaitForSound
 	ld a, $ff
-	ld [wLowHealthAlarm], a ;disable low health alarm
+	ld [wDanger], a ;disable low health alarm
 	call WaitForSoundToFinish
 .skipWaitForSound
 ; a is 0, so this zeroes the enemy's accumulated damage.
@@ -1219,6 +1232,8 @@ ChooseNextMon:
 ; called when player is out of usable mons.
 ; prints approriate lose message, sets carry flag if player blacked out (special case for initial rival fight)
 HandlePlayerBlackOut:
+	xor a
+	ld [wIsTrainerBattle], a
 	ld a, [wLinkState]
 	cp LINK_STATE_BATTLING
 	jr z, .notSony1Battle
@@ -1463,7 +1478,16 @@ EnemySendOutFirstMon:
 	ld a,[wOptions]
 	bit 6,a
 	jr nz,.next4
+	ld hl, SpecialTrainerIDs
+	ld a, [wTrainerClass]
+	ld de, 1
+	call IsInArray
+	jr c, .specialTrainer2
 	ld hl, TrainerAboutToUseText
+	jr .next11
+.specialTrainer2
+	ld hl, TrainerAboutToUseText2
+.next11
 	call PrintText
 	coord hl, 0, 7
 	lb bc, 8, 1
@@ -1506,7 +1530,16 @@ EnemySendOutFirstMon:
 	ld b, SET_PAL_BATTLE
 	call RunPaletteCommand
 	call GBPalNormal
+	ld hl, SpecialTrainerIDs
+	ld a, [wTrainerClass]
+	ld de, 1
+	call IsInArray
+	jr c, .specialTrainer1
 	ld hl,TrainerSentOutText
+	jr .next10
+.specialTrainer1
+	ld hl,TrainerSentOutText2
+.next10
 	call PrintText
 	ld a,[wEnemyMonSpecies2]
 	ld [wcf91],a
@@ -1534,8 +1567,16 @@ TrainerAboutToUseText:
 	TX_FAR _TrainerAboutToUseText
 	db "@"
 
+TrainerAboutToUseText2:
+	TX_FAR _TrainerAboutToUseText2
+	db "@"
+
 TrainerSentOutText:
 	TX_FAR _TrainerSentOutText
+	db "@"
+
+TrainerSentOutText2:
+	TX_FAR _TrainerSentOutText2
 	db "@"
 
 ; tests if the player has any pokemon that are not fainted
@@ -1912,6 +1953,7 @@ DrawPlayerHUDAndHPBar:
 	coord hl, 10, 7
 	call CenterMonName
 	call PlaceString
+	call PrintEXPBar
 	ld hl, wBattleMonSpecies
 	ld de, wLoadedMon
 	ld bc, wBattleMonDVs - wBattleMonSpecies
@@ -1948,7 +1990,7 @@ DrawPlayerHUDAndHPBar:
 	cp HP_BAR_RED
 	jr z, .setLowHealthAlarm
 .fainted
-	ld hl, wLowHealthAlarm
+	ld hl, wDanger
 	bit 7, [hl] ;low health alarm enabled?
 	ld [hl], $0
 	ret z
@@ -1956,7 +1998,7 @@ DrawPlayerHUDAndHPBar:
 	ld [wChannelSoundIDs + Ch4], a
 	ret
 .setLowHealthAlarm
-	ld hl, wLowHealthAlarm
+	ld hl, wDanger
 	set 7, [hl] ;enable low health alarm
 	ret
 
@@ -1971,7 +2013,7 @@ DrawEnemyHUDAndHPBar:
 	coord hl, 1, 0
 	call CenterMonName
 	call PlaceString
-	coord hl, 4, 1
+	coord hl, 6, 1
 	push hl
 	inc hl
 	ld de, wEnemyMonStatus
@@ -5576,8 +5618,11 @@ MoveHitTest:
 	ld a,[wEnemyMoveAccuracy]
 	ld b,a
 .doAccuracyCheck
-; if the random number generated is greater than or equal to the scaled accuracy, the move misses
-; note that this means that even the highest accuracy is still just a 255/256 chance, not 100%
+; if the move is 100% accurate, don't miss
+	ld a, b
+	cp $FF
+	ret z
+; else if the random number generated is greater than or equal to the scaled accuracy, the move misses
 	call BattleRandom
 	cp b
 	jr nc,.moveMissed
@@ -6484,7 +6529,7 @@ LoadPlayerBackPic:
 .next
 	ld a, BANK(RedPicBack)
 	call UncompressSpriteFromDE
-	predef ScaleSpriteByTwo
+	call LoadBackSpriteUnzoomed
 	ld hl, wOAMBuffer
 	xor a
 	ld [hOAMTile], a ; initial tile number
@@ -6516,8 +6561,6 @@ LoadPlayerBackPic:
 	ld e, a
 	dec b
 	jr nz, .loop
-	ld de, vBackPic
-	call InterlaceMergeSpriteBuffers
 	ld a, $a
 	ld [$0], a
 	xor a
@@ -6934,12 +6977,17 @@ InitBattleCommon:
 	push af
 	res 1, [hl]
 	callab InitBattleVariables
+	ld a, [wIsTrainerBattle]
+	and a
+	jp z, InitWildBattle
 	ld a, [wEnemyMonSpecies2]
-	sub 200
-	jp c, InitWildBattle
+	sub 204
 	ld [wTrainerClass], a
+	ld [wTrainerPicID], a
+	ld [wTrainerAINumber], a
 	call GetTrainerInformation
 	callab ReadTrainer
+	callab LoadTrainerPicPointer
 	call DoBattleTransitionAndInitBattleVariables
 	call _LoadTrainerPic
 	xor a
@@ -7052,12 +7100,7 @@ _LoadTrainerPic:
 	ld e, a
 	ld a, [wTrainerPicPointer + 1]
 	ld d, a ; de contains pointer to trainer pic
-	ld a, [wLinkState]
-	and a
-	ld a, Bank(TrainerPics) ; this is where all the trainer pics are (not counting Red's)
-	jr z, .loadSprite
-	ld a, Bank(RedPicFront)
-.loadSprite
+	ld a, [wTrainerPicBank]
 	call UncompressSpriteFromDE
 	ld de, vFrontPic
 	ld a, $77
@@ -7174,17 +7217,17 @@ LoadMonBackPic:
 	ld b, 7
 	ld c, 8
 	call ClearScreenArea
-	ld hl,  wMonHBackSprite - wMonHeader
+	ld hl, wMonHBackSprite - wMonHeader
 	call UncompressMonSprite
-	predef ScaleSpriteByTwo
-	ld de, vBackPic
-	call InterlaceMergeSpriteBuffers ; combine the two buffers to a single 2bpp sprite
+	call LoadBackSpriteUnzoomed
 	ld hl, vSprites
 	ld de, vBackPic
 	ld c, (2*SPRITEBUFFERSIZE)/16 ; count of 16-byte chunks to be copied
 	ld a, [H_LOADEDROMBANK]
 	ld b, a
 	jp CopyVideoData
+
+	ds $8
 
 JumpMoveEffect:
 	call _JumpMoveEffect
@@ -8790,6 +8833,12 @@ PlayBattleAnimationGotID:
 	pop hl
 	ret
 
+LoadBackSpriteUnzoomed:
+	ld a, $66
+	ld de, vBackPic
+	push de
+	jp LoadUncompressedBackSprite
+
 PlayDefeatedWildMonMusic:
 	call WaitForSoundToFinish
 	call EndLowHealthAlarm
@@ -8971,20 +9020,36 @@ PhysicalSpecialSplit: ;Determines if a move is Physical or Special
 	db PHYSICAL;SLASH        EQU $A3
 	db OTHER_M ;SUBSTITUTE   EQU $A4
 	db PHYSICAL;METAL_CLAW   EQU $A5
-	db PHYSICAL;CRUNCH       EQU $A6
-	db PHYSICAL;FAINT_ATTACK EQU $A7
-	db PHYSICAL;OUTRAGE      EQU $A8
-	db SPECIAL ;TWISTER      EQU $A9
-	db PHYSICAL;ROLLOUT      EQU $AA
-	db SPECIAL ;ANCIENTPOWER EQU $AB
-	db PHYSICAL;ROCK_TOMB    EQU $AC
-	db SPECIAL ;SLUDGE_BOMB  EQU $AD
-	db PHYSICAL;CROSS_CHOP   EQU $AE
-	db SPECIAL ;POWDER_SNOW  EQU $AF
-	db SPECIAL ;GIGA_DRAIN   EQU $B0
-	db SPECIAL ;ZAP_CANNON   EQU $B1
-	db PHYSICAL;FLAME_WHEEL  EQU $B2
-	db PHYSICAL;RAPID_SPIN   EQU $B3
-	db OTHER_M ;SCARY_FACE   EQU $B4
-	db PHYSICAL;RETURN       EQU $B5
+	db PHYSICAL;IRON_TAIL    EQU $A6
+	db PHYSICAL;CRUNCH       EQU $A7
+	db PHYSICAL;THIEF        EQU $A8
+	db PHYSICAL;FAINT_ATTACK EQU $A9
+	db PHYSICAL;OUTRAGE      EQU $AA
+	db SPECIAL ;TWISTER      EQU $AB
+	db SPECIAL ;SHADOW_BALL  EQU $AC
+	db PHYSICAL;SHADOW_PUNCH EQU $AD
+	db PHYSICAL;ROLLOUT      EQU $AE
+	db SPECIAL ;ANCIENTPOWER EQU $AF
+	db PHYSICAL;ROCK_TOMB    EQU $B0
+	db PHYSICAL;ROCK_BLAST   EQU $B1
+	db OTHER_M ;CALM_MIND    EQU $B2
+	db SPECIAL ;MUD_SLAP     EQU $B3
+	db PHYSICAL;SAND_TOMB    EQU $B4
+	db SPECIAL ;SLUDGE_BOMB  EQU $B5
+	db PHYSICAL;CROSS_CHOP   EQU $B6
+	db PHYSICAL;BRICK_BREAK  EQU $B7
+	db OTHER_M ;BULK_UP      EQU $B8
+	db SPECIAL ;POWDER_SNOW  EQU $B9
+	db SPECIAL ;GIGA_DRAIN   EQU $BA
+	db PHYSICAL;BULLET_SEED  EQU $BB
+	db SPECIAL ;MAGICAL_LEAF EQU $BC
+	db SPECIAL ;ZAP_CANNON   EQU $BD
+	db SPECIAL ;SHOCK_WAVE   EQU $BE
+	db SPECIAL ;WATER_PULSE  EQU $BF
+	db PHYSICAL;FLAME_WHEEL  EQU $C0
+	db PHYSICAL;RAPID_SPIN   EQU $C1
+	db OTHER_M ;SCARY_FACE   EQU $C2
+	db OTHER_M ;SWEET_SCENT  EQU $C3
+	db PHYSICAL;SECRET_POWER EQU $C4
+	db PHYSICAL;RETURN       EQU $C5
 	db PHYSICAL;STRUGGLE

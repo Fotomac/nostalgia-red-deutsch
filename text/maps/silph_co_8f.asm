@@ -16,9 +16,8 @@ _SilphCo8BattleText1::
 	done
 
 _SilphCo8EndBattleText1::
-	text "Mist, "
-	line "der Mut hat mich"
-	cont "verlassen!"
+	text "Mist, der Mut hat"
+	line "mich verlassen!"
 	prompt
 
 _SilphCo8AfterBattleText1::
@@ -33,8 +32,7 @@ _SilphCo8BattleText2::
 	done
 
 _SilphCo8EndBattleText2::
-	text "Huch!"
-	line "Verloren?"
+	text "Huch! Verloren?"
 	prompt
 
 _SilphCo8AfterBattleText2::
@@ -51,9 +49,8 @@ _SilphCo8BattleText3::
 	done
 
 _SilphCo8EndBattleText3::
-	text "Ups!"
-	line "Brüder, ich habe"
-	cont "versagt!"
+	text "Ups! Brüder,"
+	line "ich habe versagt!"
 	prompt
 
 _SilphCo8AfterBattleText3::

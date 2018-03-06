@@ -3,8 +3,8 @@ _Route16BattleText1::
 	done
 
 _Route16EndBattleText1::
-	text "Wage ja"
-	line "nicht zu lachen!"
+	text "Wage ja nicht zu"
+	line "lachen!"
 	prompt
 
 _Route16AfterBattleText1::
@@ -35,8 +35,7 @@ _Route16BattleText3::
 	done
 
 _Route16EndBattleText3::
-	text "Du"
-	line "kleine Ratte!"
+	text "Du kleine Ratte!"
 	prompt
 
 _Route16AfterBattleText3::
@@ -70,8 +69,7 @@ _Route16BattleText5::
 	done
 
 _Route16EndBattleText5::
-	text "Nein,"
-	line "nein, nein!"
+	text "Nein, nein, nein!"
 	prompt
 
 _Route16AfterBattleText5::
@@ -88,9 +86,8 @@ _Route16BattleText6::
 	done
 
 _Route16EndBattleText6::
-	text "Treibe"
-	line "mich nicht in den"
-	cont "Wahnsinn!"
+	text "Treibe mich nicht"
+	line "in den Wahnsinn!"
 	prompt
 
 _Route16AfterBattleText6::

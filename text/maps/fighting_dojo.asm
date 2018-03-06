@@ -15,8 +15,8 @@ _FightingDojoText_5ce8e::
 	done
 
 _FightingDojoText_5ce93::
-	text ""
-	line "Arrgh! Ich wurde"
+	text "LEIF: Arrgh!"
+	line "Ich wurde"
 	cont "geschlagen!"
 	prompt
 
@@ -53,8 +53,7 @@ _FightingDojoBattleText1::
 	done
 
 _FightingDojoEndBattleText1::
-	text ""
-	line "Ich gebe auf!"
+	text "Ich gebe auf!"
 	prompt
 
 _FightingDojoAfterBattleText1::
@@ -74,9 +73,8 @@ _FightingDojoBattleText2::
 	done
 
 _FightingDojoEndBattleText2::
-	text ""
-	line "Schiedsrichter!"
-	cont "1 Punkt!"
+	text "Schiedsrichter!"
+	line "1 Punkt!"
 	prompt
 
 _FightingDojoAfterBattleText2::
@@ -95,9 +93,8 @@ _FightingDojoBattleText3::
 	done
 
 _FightingDojoEndBattleText3::
-	text ""
-	line "Autsch! Ich habe"
-	cont "eine Prellung!"
+	text "Autsch! Ich habe"
+	line "eine Prellung!"
 	prompt
 
 _FightingDojoAfterBattleText3::
@@ -117,8 +114,7 @@ _FightingDojoBattleText4::
 	done
 
 _FightingDojoEndBattleText4::
-	text "Uff!"
-	line "Ich gebe auf!"
+	text "Uff! Ich gebe auf!"
 	prompt
 
 _FightingDojoAfterBattleText4::

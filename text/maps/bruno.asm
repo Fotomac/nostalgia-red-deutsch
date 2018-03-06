@@ -22,7 +22,7 @@ _BrunoBeforeBattleText::
 	done
 
 _BrunoEndBattleText::
-	text "Wie konnte"
+	text "BRUNO: Wie konnte"
 	line "ich verlieren?"
 	prompt
 

@@ -54,9 +54,9 @@ _CeruleanHouse2Text_74e9b::
 	prompt
 
 _CeruleanHouse2Text_74ea0::
-	text "Die"
-	line "INITIATIVE Deiner"
-	cont "#MON nimmt zu."
+	text "Die VERTEIDIGUNG"
+	line "Deiner #MON"
+	cont "nimmt zu."
 
 	para "Desweiteren ist"
 	line "es Dir möglich,"
@@ -81,7 +81,7 @@ _CeruleanHouse2Text_74ea5::
 	prompt
 
 _CeruleanHouse2Text_74eaa::
-	text "Die VERTEIDIGUNG"
+	text "Die INITIATIVE"
 	line "Deiner #MON"
 	cont "wird verbessert."
 

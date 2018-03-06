@@ -6,8 +6,8 @@ _RocketHideout2BattleText2::
 	done
 
 _RocketHideout2EndBattleText2::
-	text "STOP!"
-	line "Ich ergebe mich!"
+	text "STOP! Ich ergebe"
+	line "mich!"
 	prompt
 
 _RocketHideout2AfterBattleTxt2::

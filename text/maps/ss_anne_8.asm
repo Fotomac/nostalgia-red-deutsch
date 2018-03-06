@@ -11,8 +11,7 @@ _SSAnne8BattleText1::
 	done
 
 _SSAnne8EndBattleText1::
-	text "Oh"
-	line "weh, verloren!"
+	text "Oh weh, verloren!"
 	prompt
 
 _SSAnne8AfterBattleText1::
@@ -26,8 +25,7 @@ _SSAnne8BattleText2::
 	done
 
 _SSAnne8EndBattleText2::
-	text "Mist!"
-	line "Du bist ganz"
+	text "Mist! Du bist ganz"
 	cont "schön gut!"
 	prompt
 
@@ -45,8 +43,7 @@ _SSAnne8BattleText3::
 	done
 
 _SSAnne8EndBattleText3::
-	text "Wow! Du"
-	line "bist cool!"
+	text "Wow! Du bist cool!"
 	prompt
 
 _SSAnne8AfterBattleText3::
@@ -65,8 +62,7 @@ _SSAnne8BattleText4::
 	done
 
 _SSAnne8EndBattleText4::
-	text "Nein!"
-	line "Ich habe die"
+	text "Nein! Ich habe die"
 	cont "ganze Welt für"
 	cont "diese #MON"
 	cont "bereist!"

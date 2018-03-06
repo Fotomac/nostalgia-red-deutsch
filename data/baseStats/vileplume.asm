@@ -18,11 +18,11 @@ db ACID
 db PETAL_DANCE
 db 3 ; growth rate
 ; learnset
-	tmlearn 3,6,8
+	tmlearn 6,8
 	tmlearn 9,10,15
 	tmlearn 20,21,22
 	tmlearn 31,32
 	tmlearn 33,34
 	tmlearn 44
 	tmlearn 50,51
-db 0 ; padding
+db BANK(VileplumePicFront)

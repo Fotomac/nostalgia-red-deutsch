@@ -18,8 +18,7 @@ _SilphCo5BattleText2::
 	done
 
 _SilphCo5EndBattleText2::
-	text ""
-	line "Schluß! Aus!"
+	text "Schluß! Aus!"
 	prompt
 
 _SilphCo5AfterBattleText2::
@@ -35,8 +34,7 @@ _SilphCo5BattleText3::
 	done
 
 _SilphCo5EndBattleText3::
-	text "Finito!"
-	line "Das war's!"
+	text "Finito! Das war's!"
 	prompt
 
 _SilphCo5AfterBattleText3::

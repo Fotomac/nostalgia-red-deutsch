@@ -1,6 +1,5 @@
 _RocketHideout1EndBattleText6::
-	text ""
-	line "Was ist passiert?@@"
+	text "Was ist passiert?@@"
 
 _RocketHideout1BattleText2::
 	text "Wie kommst Du"
@@ -24,8 +23,7 @@ _RocketHideout1BattleText3::
 	done
 
 _RocketHideout1EndBattleText3::
-	text ""
-	line "Mist! Versagt!"
+	text "Mist! Versagt!"
 	prompt
 
 _RocketHideout1AfterBattleTxt3::
@@ -40,9 +38,8 @@ _RocketHideout1BattleText4::
 	done
 
 _RocketHideout1EndBattleText4::
-	text "Ich"
-	line "konnte ihn nicht"
-	cont "stoppen!!!"
+	text "Ich konnte ihn"
+	line "nicht stoppen!!!"
 	prompt
 
 _RocketHideout1AfterBattleTxt4::
@@ -57,9 +54,8 @@ _RocketHideout1BattleText5::
 	done
 
 _RocketHideout1EndBattleText5::
-	text ""
-	line "Das kann nicht"
-	cont "funktionieren!"
+	text "Das kann nicht"
+	line "funktionieren!"
 	prompt
 
 _RocketHideout1AfterBattleTxt5::

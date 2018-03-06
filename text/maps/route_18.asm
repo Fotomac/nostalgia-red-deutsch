@@ -6,8 +6,7 @@ _Route18BattleText1::
 	done
 
 _Route18EndBattleText1::
-	text ""
-	line "Also sowas!"
+	text "Also sowas!"
 	prompt
 
 _Route18AfterBattleText1::
@@ -22,8 +21,7 @@ _Route18BattleText2::
 	done
 
 _Route18EndBattleText2::
-	text "Ich"
-	line "mußte mit Dir"
+	text "Ich mußte mit Dir"
 	cont "kämpfen!"
 	prompt
 
@@ -41,8 +39,7 @@ _Route18BattleText3::
 	done
 
 _Route18EndBattleText3::
-	text ""
-	line "Verdammt!"
+	text "Verdammt!"
 	prompt
 
 _Route18AfterBattleText3::

@@ -5,9 +5,8 @@ _Route6BattleText1::
 	done
 
 _Route6EndBattleText1::
-	text "Ich"
-	line "kann einfach"
-	cont "nie siegen!"
+	text "Ich kann einfach"
+	line "nie siegen!"
 	prompt
 
 _Route6AfterBattleText1::
@@ -22,9 +21,8 @@ _Route6BattleText2::
 	done
 
 _Route6EndBattleText2::
-	text ""
-	line "Verdammt! Ich"
-	cont "hasse es, zu"
+	text "Verdammt! Ich"
+	line "hasse es, zu"
 	cont "verlieren!"
 	prompt
 
@@ -35,9 +33,8 @@ _Route6BattleText3::
 	done
 
 _Route6EndBattleText3::
-	text ""
-	line "Du beliebst zu"
-	cont "scherzen, oder?"
+	text "Du beliebst zu"
+	line "scherzen, oder?"
 	prompt
 
 _Route6AfterBattleText3::
@@ -54,9 +51,8 @@ _Route6BattleText4::
 	done
 
 _Route6EndBattleText4::
-	text "Hmm,"
-	line "ich hätte es"
-	cont "besser überhört!"
+	text "Hmm, ich hätte es"
+	line "besser überhört!"
 	prompt
 
 _Route6AfterBattleText4::
@@ -72,9 +68,8 @@ _Route6BattleText5::
 	done
 
 _Route6EndBattleText5::
-	text ""
-	line "Das hat nicht"
-	cont "ganz geklappt!"
+	text "Das hat nicht"
+	line "ganz geklappt!"
 	prompt
 
 _Route6AfterBattleText5::
@@ -92,9 +87,8 @@ _Route6BattleText6::
 	done
 
 _Route6EndBattleText6::
-	text "Du"
-	line "bist ein zu guter"
-	cont "Trainer!"
+	text "Du bist ein zu"
+	line "guter Trainer!"
 	prompt
 
 _Route6AfterBattleText6::

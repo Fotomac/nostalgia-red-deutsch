@@ -86,7 +86,7 @@ _SilphCo11Text3::
 	done
 
 _SilphCo10Text_62330::
-	text "Arrgh!"
+	text "GIOVANNI: Arrgh!"
 	line "Wieder verloren!"
 	prompt
 
@@ -134,8 +134,8 @@ _SilphCo11BattleText2::
 	done
 
 _SilphCo11EndBattleText2::
-	text "OK! Ich"
-	line "lasse Dich durch!"
+	text "OK! Ich lasse Dich"
+	line "durch!"
 	prompt
 
 _SilphCo11AfterBattleText2::

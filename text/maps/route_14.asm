@@ -7,8 +7,8 @@ _Route14BattleText1::
 
 
 _Route14EndBattleText1::
-	text "Ich"
-	line "war zu schlecht!"
+	text "Ich war zu"
+	line "schlecht!"
 	prompt
 
 _Route14AfterBattleText1::
@@ -27,9 +27,8 @@ _Route14BattleText2::
 	done
 
 _Route14EndBattleText2::
-	text ""
-	line "Sie waren nicht"
-	cont "stark genug..."
+	text "Sie waren nicht"
+	line "stark genug..."
 	prompt
 
 _Route14AfterBattleText2::
@@ -48,8 +47,7 @@ _Route14BattleText3::
 	done
 
 _Route14EndBattleText3::
-	text "Ohh!"
-	line "So ein Mist!"
+	text "Ohh! So ein Mist!"
 	prompt
 
 _Route14AfterBattleText3::
@@ -69,9 +67,8 @@ _Route14BattleText4::
 	done
 
 _Route14EndBattleText4::
-	text ""
-	line "War das eine"
-	cont "Bruchlandung!"
+	text "War das eine"
+	line "Bruchlandung!"
 	prompt
 
 _Route14AfterBattleText4::
@@ -87,8 +84,8 @@ _Route14BattleText5::
 	done
 
 _Route14EndBattleText5::
-	text "Warum"
-	line "hab ich verloren?"
+	text "Warum hab ich"
+	line "verloren?"
 	prompt
 
 _Route14AfterBattleText5::
@@ -105,9 +102,8 @@ _Route14BattleText6::
 	done
 
 _Route14EndBattleText6::
-	text "Ich"
-	line "wußte, ich würde"
-	cont "verlieren!"
+	text "Ich wußte, ich"
+	line "würde verlieren!"
 	prompt
 
 _Route14AfterBattleText6::
@@ -124,8 +120,7 @@ _Route14BattleText7::
 	done
 
 _Route14EndBattleText7::
-	text "Arrg!"
-	line "Hau bloß ab!"
+	text "Arrg! Hau bloß ab!"
 	prompt
 
 _Route14AfterBattleText7::
@@ -140,9 +135,8 @@ _Route14BattleText8::
 	done
 
 _Route14EndBattleText8::
-	text "Du hast"
-	line "mich besiegt?"
-	cont "Oh Mann!"
+	text "Du hast mich"
+	line "besiegt? Oh Mann!"
 	prompt
 
 _Route14AfterBattleText8::
@@ -159,8 +153,8 @@ _Route14BattleText9::
 	done
 
 _Route14EndBattleText9::
-	text "Kurz"
-	line "und schmerzlos!"
+	text "Kurz und"
+	line "schmerzlos!"
 	prompt
 
 _Route14AfterBattleText9::
@@ -180,8 +174,7 @@ _Route14BattleText10::
 	done
 
 _Route14EndBattleText10::
-	text "Voll"
-	line "erwischt!"
+	text "Voll erwischt!"
 	prompt
 
 _Route14AfterBattleText10::

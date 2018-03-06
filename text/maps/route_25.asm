@@ -6,8 +6,8 @@ _Route25BattleText1::
 	done
 
 _Route25EndBattleText1::
-	text "Du bist"
-	line "richtig gut!"
+	text "Du bist richtig"
+	line "gut!"
 	prompt
 
 _Route25AfterBattleText1::
@@ -29,8 +29,8 @@ _Route25BattleText2::
 	done
 
 _Route25EndBattleText2::
-	text "Ich bin"
-	line "nicht sauer!"
+	text "Ich bin nicht"
+	line "sauer!"
 	prompt
 
 _Route25AfterBattleText2::
@@ -47,8 +47,8 @@ _Route25BattleText3::
 	done
 
 _Route25EndBattleText3::
-	text "Ach,"
-	line "so ein Mist..."
+	text "Ach, so ein"
+	line "Mist..."
 	prompt
 
 _Route25AfterBattleText3::
@@ -63,8 +63,8 @@ _Route25BattleText4::
 	done
 
 _Route25EndBattleText4::
-	text "Ich war"
-	line "nicht in Form!"
+	text "Ich war nicht in"
+	line "Form!"
 	prompt
 
 _Route25AfterBattleText4::
@@ -80,9 +80,8 @@ _Route25BattleText5::
 	done
 
 _Route25EndBattleText5::
-	text "Ich"
-	line "wußte auch, daß"
-	cont "ich verlieren"
+	text "Ich wußte auch,"
+	line "daß ich verlieren"
 	cont "würde!"
 	prompt
 
@@ -102,8 +101,8 @@ _Route25BattleText6::
 	done
 
 _Route25EndBattleText6::
-	text "Ich bin"
-	line "nicht neidisch!"
+	text "Ich bin nicht"
+	line "neidisch!"
 	prompt
 
 _Route25AfterBattleText6::
@@ -120,8 +119,8 @@ _Route25BattleText7::
 	done
 
 _Route25EndBattleText7::
-	text "Du hast"
-	line "schwer gekämpft!"
+	text "Du hast schwer"
+	line "gekämpft!"
 	prompt
 
 _Route25AfterBattleText7::
@@ -137,8 +136,8 @@ _Route25BattleText8::
 	done
 
 _Route25EndBattleText8::
-	text "Du hast"
-	line "mich besiegt."
+	text "Du hast mich"
+	line "besiegt."
 	prompt
 
 _Route25AfterBattleText8::
@@ -154,8 +153,8 @@ _Route25BattleText9::
 	done
 
 _Route25EndBattleText9::
-	text "Du hast"
-	line "viel Erfahrung!"
+	text "Du hast viel"
+	line "Erfahrung!"
 	prompt
 
 _Route25AfterBattleText9::

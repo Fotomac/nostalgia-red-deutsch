@@ -35,8 +35,7 @@ _PokemonTower7BattleText1::
 	done
 
 _PokemonTower7EndBattleText1::
-	text ""
-	line "Ich geb auf!"
+	text "Ich geb auf!"
 	prompt
 
 _PokemonTower7AfterBattleText1::
@@ -56,8 +55,8 @@ _PokemonTower7BattleText2::
 	done
 
 _PokemonTower7EndBattleText2::
-	text "Bitte!"
-	line "Laß mich in Ruhe!"
+	text "Bitte! Laß mich"
+	line "in Ruhe!"
 	prompt
 
 _PokemonTower7AfterBattleText2::
@@ -77,8 +76,7 @@ _PokemonTower7BattleText3::
 	done
 
 _PokemonTower7EndBattleText3::
-	text "Leg"
-	line "Dich nicht mit"
+	text "Leg Dich nicht mit"
 	cont "dem TEAM ROCKET"
 	cont "an!"
 	prompt

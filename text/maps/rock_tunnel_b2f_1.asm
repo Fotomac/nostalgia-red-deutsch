@@ -5,8 +5,7 @@ _RockTunnel2BattleText2::
 	done
 
 _RockTunnel2EndBattleText2::
-	text ""
-	line "Ich habe mein"
+	text "Ich habe mein"
 	cont "Bestes gegeben!"
 	prompt
 
@@ -21,9 +20,8 @@ _RockTunnel2BattleText3::
 	done
 
 _RockTunnel2EndBattleText3::
-	text "Hups!"
-	line "Das war zuviel"
-	cont "des Guten!"
+	text "Hups! Das war"
+	line "zuviel des Guten!"
 	prompt
 
 _RockTunnel2AfterBattleText3::
@@ -42,9 +40,8 @@ _RockTunnel2BattleText4::
 	done
 
 _RockTunnel2EndBattleText4::
-	text "Ach,"
-	line "ich bin ja so"
-	cont "neidisch!!!"
+	text "Ach, ich bin ja"
+	line "so neidisch!!!"
 	prompt
 
 _RockTunnel2AfterBattleText4::
@@ -60,8 +57,7 @@ _RockTunnel2BattleText5::
 	done
 
 _RockTunnel2EndBattleText5::
-	text ""
-	line "So weit, so gut."
+	text "So weit, so gut."
 	prompt
 
 _RockTunnel2AfterBattleText5::
@@ -77,8 +73,7 @@ _RockTunnel2BattleText6::
 	done
 
 _RockTunnel2EndBattleText6::
-	text "Ich"
-	line "gebe auf! Du"
+	text "Ich gebe auf! Du"
 	cont "bist besser!"
 	prompt
 
@@ -95,8 +90,8 @@ _RockTunnel2BattleText7::
 	done
 
 _RockTunnel2EndBattleText7::
-	text "Oh!"
-	line "Ich hab verloren!"
+	text "Oh! Ich hab"
+	line "verloren!"
 	prompt
 
 _RockTunnel2AfterBattleText7::
@@ -112,6 +107,5 @@ _RockTunnel2BattleText8::
 	done
 
 _RockTunnel2EndBattleText8::
-	text "Du"
-	line "bist gut!"
+	text "Du bist gut!"
 	prompt

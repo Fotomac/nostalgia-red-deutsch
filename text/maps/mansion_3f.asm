@@ -19,8 +19,7 @@ _Mansion3BattleText2::
 	done
 
 _Mansion3EndBattleText2::
-	text "Wow!"
-	line "Unglaublich!"
+	text "Wow! Unglaublich!"
 	prompt
 
 _Mansion3AfterBattleText2::
@@ -37,6 +36,6 @@ _Mansion3Text5::
 	para "MEW hat ein"
 	line "Junges geboren!"
 
-	para "Wir haben es"
+	para "Ich habe es"
 	line "MEWTU genannt."
 	done

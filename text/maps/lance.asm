@@ -33,7 +33,7 @@ _LanceBeforeBattleText::
 	done
 
 _LanceEndBattleText::
-	text ""
+	text "SIEGFRIED:"
 	line "Es ist vorbei!"
 
 	para "Unfaßbar! Du"
@@ -60,11 +60,9 @@ _LanceAfterBattleText::
 
 	para "Ein weiterer"
 	line "Trainer erwartet"
-	cont "Dich! Es ist..."
-
-	para "<RIVAL>! Auch"
-	line "er hat die TOP"
-	cont "VIER besiegt!"
+	cont "Dich! Auch er hat"
+	cont "die TOP VIER"
+	cont "besiegt!"
 
 	para "Er ist der"
 	line "amtierende"

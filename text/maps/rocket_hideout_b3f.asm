@@ -5,8 +5,8 @@ _RocketHideout3BattleText2::
 	done
 
 _RocketHideout3EndBattleText2::
-	text "Uff! Ich"
-	line "bin am Boden!"
+	text "Uff! Ich bin am"
+	line "Boden!"
 	prompt
 
 _RocketHideout3AfterBattleTxt2::
@@ -24,8 +24,8 @@ _RocketHideout3BattleTxt::
 	done
 
 _RocketHideout3EndBattleText3::
-	text "Was? Ich"
-	line "hab verloren? Ah!"
+	text "Was? Ich hab"
+	line "verloren? Ah!"
 	prompt
 
 _RocketHide3AfterBattleText3::

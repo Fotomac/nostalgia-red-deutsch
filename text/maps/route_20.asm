@@ -4,8 +4,7 @@ _Route20BattleText1::
 	done
 
 _Route20EndBattleText1::
-	text ""
-	line "Platsch!"
+	text "Platsch!"
 	prompt
 
 _Route20AfterBattleText1::
@@ -22,8 +21,7 @@ _Route20BattleText2::
 	done
 
 _Route20EndBattleText2::
-	text ""
-	line "Schluß damit!"
+	text "Schluß damit!"
 	prompt
 
 _Route20AfterBattleText2::
@@ -55,8 +53,7 @@ _Route20BattleText4::
 	done
 
 _Route20EndBattleText4::
-	text "Du"
-	line "kennst keine"
+	text "Du kennst keine"
 	cont "Gnade!"
 	prompt
 
@@ -74,8 +71,7 @@ _Route20BattleText5::
 	done
 
 _Route20EndBattleText5::
-	text ""
-	line "Waschlappen!"
+	text "Waschlappen!"
 	prompt
 
 _Route20AfterBattleText5::
@@ -93,8 +89,8 @@ _Route20BattleText6::
 	done
 
 _Route20EndBattleText6::
-	text "Ich"
-	line "wurde torpediert!"
+	text "Ich wurde"
+	line "torpediert!"
 	prompt
 
 _Route20AfterBattleText6::
@@ -112,8 +108,7 @@ _Route20BattleText7::
 	done
 
 _Route20EndBattleText7::
-	text ""
-	line "Oh nein!"
+	text "Oh nein!"
 	prompt
 
 _Route20AfterBattleText7::
@@ -130,9 +125,8 @@ _Route20BattleText8::
 	done
 
 _Route20EndBattleText8::
-	text ""
-	line "Laß die Finger"
-	cont "von meiner Perle!"
+	text "Laß die Finger"
+	line "von meiner Perle!"
 	prompt
 
 _Route20AfterBattleText8::
@@ -149,8 +143,8 @@ _Route20BattleText9::
 	done
 
 _Route20EndBattleText9::
-	text "Ich"
-	line "bin enttäuscht!"
+	text "Ich bin"
+	line "enttäuscht!"
 	prompt
 
 _Route20AfterBattleText9::

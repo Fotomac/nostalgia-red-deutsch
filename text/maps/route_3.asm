@@ -16,9 +16,8 @@ _Route3BattleText1::
 	done
 
 _Route3EndBattleText1::
-	text "Du"
-	line "hast mich wieder"
-	cont "besiegt!"
+	text "Du hast mich"
+	line "wieder besiegt!"
 	prompt
 
 _Route3AfterBattleText1::
@@ -37,9 +36,8 @@ _Route3BattleText2::
 	done
 
 _Route3EndBattleText2::
-	text "Wäre"
-	line "ich heute doch"
-	cont "nur daheim"
+	text "Wäre ich heute"
+	line "doch nur daheim"
 	cont "geblieben!"
 	prompt
 
@@ -74,9 +72,8 @@ _Route3BattleText4::
 	done
 
 _Route3EndBattleText4::
-	text "Mit"
-	line "diesen #MON"
-	cont "hätte ich auch"
+	text "Mit diesen #MON"
+	line "hätte ich auch"
 	cont "leicht gewonnen!"
 	prompt
 
@@ -95,8 +92,7 @@ _Route3BattleText5::
 	done
 
 _Route3EndBattleText5::
-	text "Bleib"
-	line "immer nett!"
+	text "Bleib immer nett!"
 	prompt
 
 _Route3AfterBattleText5::
@@ -114,8 +110,7 @@ _Route3BattleText6::
 	done
 
 _Route3EndBattleText6::
-	text "Nein!"
-	line "Verloren!"
+	text "Nein! Verloren!"
 	prompt
 
 _Route3AfterBattleText6::
@@ -132,9 +127,8 @@ _Route3BattleText7::
 	done
 
 _Route3EndBattleText7::
-	text "Du"
-	line "hast meine"
-	cont "#MON besiegt!"
+	text "Du hast meine"
+	line "#MON besiegt!"
 	prompt
 
 _Route3AfterBattleText7::
@@ -151,8 +145,7 @@ _Route3BattleText8::
 	done
 
 _Route3EndBattleText8::
-	text ""
-	line "Bleib mir fern!"
+	text "Bleib mir fern!"
 	prompt
 
 _Route3AfterBattleText8::

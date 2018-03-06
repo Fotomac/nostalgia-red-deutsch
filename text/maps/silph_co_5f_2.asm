@@ -1,6 +1,5 @@
 _SilphCo5EndBattleText4::
-	text "Nein!"
-	line "Das Kind hat"
+	text "Nein! Das Kind hat"
 	cont "mich besiegt!"
 	prompt
 

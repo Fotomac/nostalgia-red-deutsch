@@ -4,9 +4,8 @@ _PokemonTower4BattleText1::
 	done
 
 _PokemonTower4EndBattleText1::
-	text "Wohin"
-	line "ist der GEIST"
-	cont "gegangen?"
+	text "Wohin ist der"
+	line "GEIST gegangen?"
 	prompt
 
 _PokemonTower4AfterBattleText1::
@@ -21,8 +20,7 @@ _PokemonTower4BattleText2::
 	done
 
 _PokemonTower4EndBattleText2::
-	text "Was"
-	line "ist passiert?"
+	text "Was ist passiert?"
 	prompt
 
 _PokemonTower4AfterBattleText2::
@@ -38,8 +36,7 @@ _PokemonTower4BattleText3::
 	done
 
 _PokemonTower4EndBattleText3::
-	text "Wer?"
-	line "Was? Wo?"
+	text "Wer? Was? Wo?"
 	prompt
 
 _PokemonTower4AfterBattleText3::

@@ -22,9 +22,9 @@ _Mansion2Text3::
 	text "TAGEBUCH:"
 	line "5. JULI"
 	cont "Der Dschungel"
-	cont "im Niemandsland."
+	cont "im Argentinien."
 
-	para "Wir haben tief"
+	para "Ich habe tief"
 	line "im Dschungel ein"
 	cont "völlig neues"
 	cont "#MON gefunden."
@@ -34,7 +34,7 @@ _Mansion2Text4::
 	text "TAGEBUCH: "
 	line "10. JULI"
 
-	para "Wir nennen das"
+	para "Ich nenne das"
 	line "neuentdeckte"
 	cont "#MON MEW."
 	done

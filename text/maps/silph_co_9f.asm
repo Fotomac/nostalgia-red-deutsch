@@ -38,8 +38,8 @@ _SilphCo9BattleText2::
 	done
 
 _SilphCo9EndBattleText2::
-	text "Du hast"
-	line "mich besiegt!"
+	text "Du hast mich"
+	line "besiegt!"
 	prompt
 
 _SilphCo9AfterBattleText2::
@@ -57,8 +57,8 @@ _SilphCo9BattleText3::
 	done
 
 _SilphCo9EndBattleText3::
-	text "Oje! Ich"
-	line "wurde besiegt!"
+	text "Oje! Ich wurde"
+	line "besiegt!"
 	prompt
 
 _SilphCo9AfterBattleText3::

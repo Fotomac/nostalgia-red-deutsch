@@ -158,7 +158,7 @@ StartMenu_Pokemon:
 	jp z,.loop
 	jp CloseTextDisplay
 .surf
-	bit 4,a ; does the player have the Soul Badge?
+	bit 4,a ; does the player have the Marsh Badge?
 	jp z,.newBadgeRequired
 	callba IsSurfingAllowed
 	ld hl,wd728
@@ -488,6 +488,7 @@ UsableItems_PartyMenu:
 	db CARBOS
 	db CALCIUM
 	db RARE_CANDY
+	db SUN_STONE
 	db LEAF_STONE
 	db FULL_HEAL
 	db REVIVE

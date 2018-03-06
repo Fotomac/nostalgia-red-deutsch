@@ -18,8 +18,7 @@ _SilphCo3BattleText1::
 	done
 
 _SilphCo3EndBattleText1::
-	text ""
-	line "Ich gebe auf!"
+	text "Ich gebe auf!"
 	prompt
 
 _SilphCo3AfterBattleText1::
@@ -36,8 +35,8 @@ _SilphCo3BattleText2::
 	done
 
 _SilphCo3EndBattleText2::
-	text "Du hast"
-	line "mich erwischt!"
+	text "Du hast mich"
+	line "erwischt!"
 	prompt
 
 _SilphCo3AfterBattleText2::

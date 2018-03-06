@@ -5,9 +5,8 @@ _Route13BattleText2::
 	done
 
 _Route13EndBattleText2::
-	text ""
-	line "Mein Vogel-Team"
-	cont "hat verloren?"
+	text "Mein Vogel-Team"
+	line "hat verloren?"
 	prompt
 
 _Route13AfterBattleText2::
@@ -24,8 +23,8 @@ _Route13BattleText3::
 	done
 
 _Route13EndBattleText3::
-	text "Oh!"
-	line "Ich hab verloren!"
+	text "Oh! Ich hab"
+	line "verloren!"
 	prompt
 
 _Route13AfterBattleText3::
@@ -41,9 +40,8 @@ _Route13BattleText4::
 	done
 
 _Route13EndBattleText4::
-	text ""
-	line "Das hat nicht"
-	cont "ganz gereicht!"
+	text "Das hat nicht"
+	line "ganz gereicht!"
 	prompt
 
 _Route13AfterBattleText4::
@@ -61,9 +59,8 @@ _Route13BattleText5::
 	done
 
 _Route13EndBattleText5::
-	text ""
-	line "Wow! Du hast"
-	cont "mit Leichtigkeit"
+	text "Wow! Du hast"
+	line "mit Leichtigkeit"
 	cont "gewonnen!"
 	prompt
 
@@ -81,8 +78,8 @@ _Route13BattleText6::
 	done
 
 _Route13EndBattleText6::
-	text "Ich"
-	line "hab's vermasselt!"
+	text "Ich hab's"
+	line "vermasselt!"
 	prompt
 
 _Route13AfterBattleText6::
@@ -99,8 +96,8 @@ _Route13BattleText7::
 	done
 
 _Route13EndBattleText7::
-	text "Der"
-	line "Wind dreht sich!"
+	text "Der Wind dreht"
+	line "sich!"
 	prompt
 
 _Route13AfterBattleText7::
@@ -116,8 +113,7 @@ _Route13BattleText8::
 	done
 
 _Route13EndBattleText8::
-	text "Oh!"
-	line "Du kleiner"
+	text "Oh! Du kleiner"
 	cont "Wüstling, Du!"
 	prompt
 
@@ -136,8 +132,8 @@ _Route13BattleText9::
 	done
 
 _Route13EndBattleText9::
-	text "Das"
-	line "war schon alles?"
+	text "Das war schon"
+	line "alles?"
 	prompt
 
 _Route13AfterBattleText9::
@@ -170,8 +166,7 @@ _Route13BattleText11::
 	done
 
 _Route13EndBattleText11::
-	text "Die"
-	line "Luft ist raus!"
+	text "Die Luft ist raus!"
 	prompt
 
 _Route13AfterBattleText11::

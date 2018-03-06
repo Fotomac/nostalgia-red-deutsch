@@ -28,7 +28,7 @@ _CeladonGymText_48a5e::
 	done
 
 _CeladonGymText_48a63::
-	text "Ich muß"
+	text "ERIKA: Ich muß"
 	line "meine Niederlage"
 	cont "eingestehen!"
 
@@ -66,17 +66,17 @@ _CeladonGymText9::
 	line "dieses Geschenk:"
 	done
 
-_ReceivedTM21Text::
+_ReceivedTM19Text::
 	text "<PLAYER> erhält"
 	line "@"
 	TX_RAM wcf50
 	text "!@@"
 
-_TM21ExplanationText::
+_TM19ExplanationText::
 	text ""
 
-	para "TM21 ist"
-	line "MEGASAUGER."
+	para "TM19 ist"
+	line "GIGASAUGER."
 
 	para "Dein #MON"
 	line "erhält die Hälfte"
@@ -85,7 +85,7 @@ _TM21ExplanationText::
 	cont "Gegner abzieht!"
 	done
 
-_TM21NoRoomText::
+_TM19NoRoomText::
 	text "Du solltest etwas"
 	line "Platz schaffen!"
 	done
@@ -98,8 +98,8 @@ _CeladonGymBattleText2::
 	done
 
 _CeladonGymEndBattleText2::
-	text "Sei nicht"
-	line "so grob zu mir!"
+	text "Sei nicht so grob"
+	line "zu mir!"
 	prompt
 
 _CeladonGymAfterBattleText2::
@@ -114,9 +114,8 @@ _CeladonGymBattleText3::
 	done
 
 _CeladonGymEndBattleText3::
-	text ""
-	line "Meine Frisur!"
-	cont "Ganz zerzaust!"
+	text "Meine Frisur!"
+	line "Ganz zerzaust!"
 	prompt
 
 _CeladonGymAfterBattleText3::
@@ -137,8 +136,8 @@ _CeladonGymBattleText4::
 	done
 
 _CeladonGymEndBattleText4::
-	text "Ich"
-	line "bin schockiert!"
+	text "Ich bin"
+	line "schockiert!"
 	prompt
 
 _CeladonGymAfterBattleText4::
@@ -178,8 +177,7 @@ _CeladonGymBattleText6::
 	done
 
 _CeladonGymEndBattleText6::
-	text "Oh!"
-	line "Du Grobian!"
+	text "Oh! Du Grobian!"
 	prompt
 
 _CeladonGymAfterBattleText6::
@@ -197,8 +195,7 @@ _CeladonGymBattleText7::
 	done
 
 _CeladonGymEndBattleText7::
-	text "Oh!"
-	line "Ausgezeichnet!"
+	text "Oh! Ausgezeichnet!"
 	prompt
 
 _CeladonGymAfterBattleText7::
@@ -219,8 +216,7 @@ _CeladonGymBattleText8::
 	done
 
 _CeladonGymEndBattleText8::
-	text "Ich"
-	line "habe verloren!"
+	text "Ich habe verloren!"
 	prompt
 
 _CeladonGymAfterBattleText8::

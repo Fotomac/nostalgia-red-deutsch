@@ -14,9 +14,8 @@ _ViridianForestBattleText1::
 	done
 
 _ViridianForestEndBattleText1::
-	text "Ah!"
-	line "RAUPY hat es"
-	cont "nicht geschafft!"
+	text "Ah! RAUPY hat es"
+	line "nicht geschafft!"
 	prompt
 
 _ViridianFrstAfterBattleText1::
@@ -33,9 +32,8 @@ _ViridianForestBattleText2::
 	done
 
 _ViridianForestEndBattleText2::
-	text "Oh!"
-	line "Ich habe kein"
-	cont "kampfbereites"
+	text "Oh! Ich habe kein"
+	line "kampfbereites"
 	cont "#MON mehr!"
 	prompt
 
@@ -64,6 +62,44 @@ _ViridianFrstAfterBattleText3::
 	para "Ich muß hier"
 	line "irgendwo etwas"
 	cont "verloren haben..."
+	done
+
+_ViridianForestBattleText4::
+	text "Ich bin zwar"
+	line "klein, aber ich"
+	cont "will nicht, dass"
+	cont "du mich deswegen"
+	cont "gewinnen lässt!"
+	done
+
+_ViridianForestEndBattleText4::
+	text "Verdammt! Alles"
+	line "ist schief"
+	cont "gegangen!"
+	prompt
+
+_ViridianFrstAfterBattleText4::
+	text "Ich habe"
+	line "meinen Kredit"
+	cont "verspielt..."
+	done
+
+_ViridianForestBattleText5::
+	text "Weißt Du, dass"
+	line "#MON sich"
+	cont "entwickeln?"
+	done
+
+_ViridianForestEndBattleText5::
+	text "Oh! Ich hab"
+	line "verloren!"
+	prompt
+
+_ViridianFrstAfterBattleText5::
+	text "KÄFER-#MON"
+	line "entwickeln sich"
+	cont "schnell! Sie sind"
+	cont "einfach toll!"
 	done
 
 _ViridianForestText8::

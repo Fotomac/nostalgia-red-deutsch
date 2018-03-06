@@ -22,9 +22,8 @@ _Route8BattleText2::
 	done
 
 _Route8EndBattleText2::
-	text ""
-	line "Knapp vorbei ist"
-	cont "auch daneben!"
+	text "Knapp vorbei ist"
+	line "auch daneben!"
 	prompt
 
 _Route8AfterBattleText2::
@@ -39,9 +38,9 @@ _Route8BattleText3::
 	done
 
 _Route8EndBattleText3::
-	text "Ich habe"
-	line "verloren! Das ist"
-	cont "nicht logisch!"
+	text "Ich habe verloren!"
+	line "Das ist nicht"
+	line "logisch!"
 	prompt
 
 _Route8AfterBattleText3::
@@ -58,8 +57,7 @@ _Route8BattleText4::
 	done
 
 _Route8EndBattleText4::
-	text "Warum?"
-	line "Warum nur?"
+	text "Warum? Warum nur?"
 	prompt
 
 _Route8AfterBattleText4::
@@ -79,8 +77,8 @@ _Route8BattleText5::
 	done
 
 _Route8EndBattleText5::
-	text "OK, ich"
-	line "gehe lieber zur"
+	text "OK, ich gehe"
+	line "lieber zur"
 	cont "Schule!"
 	prompt
 
@@ -134,9 +132,8 @@ _Route8BattleText8::
 	done
 
 _Route8EndBattleText8::
-	text ""
-	line "Den Jackpot habe"
-	cont "ich noch nicht"
+	text "Den Jackpot habe"
+	line "ich noch nicht"
 	cont "geknackt..."
 	prompt
 

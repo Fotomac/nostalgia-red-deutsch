@@ -9,7 +9,7 @@ _VictoryRoad2BattleText1::
 	done
 
 _VictoryRoad2EndBattleText1::
-	text "Ahh! "
+	text "Ahh!"
 	prompt
 
 _VictoryRoad2AfterBattleText1::
@@ -27,8 +27,7 @@ _VictoryRoad2BattleText2::
 	done
 
 _VictoryRoad2EndBattleText2::
-	text "Voll"
-	line "erwischt!"
+	text "Voll erwischt!"
 	prompt
 
 _VictoryRoad2AfterBattleText2::
@@ -61,8 +60,7 @@ _VictoryRoad2BattleText4::
 	done
 
 _VictoryRoad2EndBattleText4::
-	text "Nein!"
-	line "Unglaublich!"
+	text "Nein! Unglaublich!"
 	prompt
 
 _VictoryRoad2AfterBattleText4::
@@ -80,8 +78,7 @@ _VictoryRoad2BattleText5::
 	done
 
 _VictoryRoad2EndBattleText5::
-	text "Gut"
-	line "gemacht!"
+	text "Gut gemacht!"
 	prompt
 
 _VictoryRoad2AfterBattleText5::

@@ -165,22 +165,38 @@ const_value = 1
 	const SLASH        ; a3
 	const SUBSTITUTE   ; a4
 	const METAL_CLAW   ; a5
-	const CRUNCH       ; a6
-	const FAINT_ATTACK ; a7
-	const OUTRAGE      ; a8
-	const TWISTER      ; a9
-	const ROLLOUT      ; aa
-	const ANCIENTPOWER ; ab
-	const ROCK_TOMB    ; ac
-	const SLUDGE_BOMB  ; ad
-	const CROSS_CHOP   ; ae
-	const POWDER_SNOW  ; af
-	const GIGA_DRAIN   ; b0
-	const ZAP_CANNON   ; b1
-	const FLAME_WHEEL  ; b2
-	const RAPID_SPIN   ; b3
-	const SCARY_FACE   ; b4
-	const RETURN       ; b5
+	const IRON_TAIL    ; a6
+	const CRUNCH       ; a7
+	const THIEF        ; a8
+	const FAINT_ATTACK ; a9
+	const OUTRAGE      ; aa
+	const TWISTER      ; ab
+	const SHADOW_BALL  ; ac
+	const SHADOW_PUNCH ; ad
+	const ROLLOUT      ; ae
+	const ANCIENTPOWER ; af
+	const ROCK_TOMB    ; b0
+	const ROCK_BLAST   ; b1
+	const CALM_MIND    ; b2
+	const MUD_SLAP     ; b3
+	const SAND_TOMB    ; b4
+	const SLUDGE_BOMB  ; b5
+	const CROSS_CHOP   ; b6
+	const BRICK_BREAK  ; b7
+	const BULK_UP      ; b8
+	const POWDER_SNOW  ; b9
+	const GIGA_DRAIN   ; ba
+	const BULLET_SEED  ; bb
+	const MAGICAL_LEAF ; bc
+	const ZAP_CANNON   ; bd
+	const SHOCK_WAVE   ; be
+	const WATER_PULSE  ; bf
+	const FLAME_WHEEL  ; c0
+	const RAPID_SPIN   ; c1
+	const SCARY_FACE   ; c2
+	const SWEET_SCENT  ; c3
+	const SECRET_POWER ; c4
+	const RETURN       ; c5
 
 NUM_ATTACKS EQU const_value + -1
 

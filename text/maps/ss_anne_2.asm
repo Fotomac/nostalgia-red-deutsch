@@ -11,7 +11,7 @@ _SSAnne2Text1::
 	done
 
 _SSAnneRivalBeforeBattleText::
-	text "<RIVAL>: Sieh an!"
+	text "<RIVAL>: Bonjour!"
 	line "<PLAYER>!"
 
 	para "Ich wußte, ich"
@@ -40,7 +40,7 @@ _SSAnneRivalBeforeBattleText::
 	done
 
 _SSAnneRivalDefeatedText::
-	text "Mist!"
+	text "<RIVAL>: Mist!"
 
 	para "Naja, wenigstens"
 	line "trainierst Du"
@@ -48,8 +48,9 @@ _SSAnneRivalDefeatedText::
 	prompt
 
 _SSAnneRivalWonText::
-	text "<PLAYER>! Bist Du"
-	line "etwa seekrank?"
+	text "<RIVAL>: <PLAYER>!"
+	line "Bist Du etwa"
+	line "seekrank?"
 
 	para "Du solltest Dich"
 	line "in Form bringen, "

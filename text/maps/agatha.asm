@@ -28,7 +28,7 @@ _AgathaBeforeBattleText::
 	done
 
 _AgathaEndBattleText::
-	text "Wirklich!"
+	text "AGATHE: Wirklich!"
 	line "Du bist ein ganz"
 	cont "besonderes Kind!"
 	prompt

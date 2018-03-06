@@ -1,5 +1,10 @@
 _VermilionGymText_5cb6d::
-	text "Hey, Kleiner!"
+	text "Stillgestanden!"
+	line "Willkommen in"
+	cont "der PKMN-ARENA"
+	cont "von ORANIA CITY!"
+
+	para "Was? Hey, Kiddie!"
 	line "Was hast Du hier"
 	cont "verloren?"
 
@@ -9,7 +14,7 @@ _VermilionGymText_5cb6d::
 	cont "ist sicher!"
 
 	para "Laß mich Dir"
-	line "etwas erzählen: "
+	line "etwas erzählen:"
 	cont "Während der"
 	cont "#MON-FELDZÜGE"
 	cont "haben mich meine"

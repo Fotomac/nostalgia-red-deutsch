@@ -38,9 +38,8 @@ _SilphCo2BattleText1::
 	done
 
 _SilphCo2EndBattleText1::
-	text "Woher"
-	line "wußtest Du, daß"
-	cont "ich zum TEAM"
+	text "Woher wußtest Du,"
+	line "daß ich zum TEAM"
 	cont "ROCKET gehöre?"
 	prompt
 
@@ -56,9 +55,8 @@ _SilphCo2BattleText2::
 	done
 
 _SilphCo2EndBattleText2::
-	text ""
-	line "Nicht schlecht,"
-	cont "Herr Specht!"
+	text "Nicht schlecht,"
+	line "Herr Specht!"
 	prompt
 
 _SilphCo2AfterBattleText2::
@@ -73,8 +71,8 @@ _SilphCo2BattleText3::
 	done
 
 _SilphCo2EndBattleText3::
-	text "Das ist"
-	line "hart! Verloren!"
+	text "Das ist hart!"
+	line "Verloren!"
 	prompt
 
 _SilphCo2AfterBattleText3::
@@ -93,8 +91,8 @@ _SilphCo2BattleText4::
 	done
 
 _SilphCo2EndBattleText4::
-	text "Ich bin"
-	line "ein Versager!"
+	text "Ich bin ein"
+	line "Versager!"
 	prompt
 
 _SilphCo2AfterBattleText4::

@@ -1,7 +1,6 @@
 _Route24EndBattleText1::
-	text "Ich"
-	line "habe wohl doch"
-	cont "nichts gesehen!"
+	text "Ich habe wohl doch"
+	line "nichts gesehen!"
 	prompt
 
 _Route24AfterBattleText1::
@@ -19,9 +18,8 @@ _Route24BattleText2::
 	done
 
 _Route24EndBattleText2::
-	text "Das"
-	line "war zuviel des"
-	cont "Guten!"
+	text "Das war zuviel"
+	line "des Guten!"
 	prompt
 
 _Route24AfterBattleText2::
@@ -37,8 +35,8 @@ _Route24BattleText3::
 	done
 
 _Route24EndBattleText3::
-	text "Ich habe"
-	line "auch verloren!"
+	text "Ich habe auch"
+	line "verloren!"
 	prompt
 
 _Route24AfterBattleText3::
@@ -55,8 +53,8 @@ _Route24BattleText4::
 	done
 
 _Route24EndBattleText4::
-	text "Ah!"
-	line "Eiskalt erwischt!"
+	text "Ah! Eiskalt"
+	line "erwischt!"
 	prompt
 
 _Route24AfterBattleText4::
@@ -73,8 +71,8 @@ _Route24BattleText5::
 	done
 
 _Route24EndBattleText5::
-	text "Wie konnte"
-	line "ich verlieren?"
+	text "Wie konnte ich"
+	line "verlieren?"
 	prompt
 
 _Route24AfterBattleText5::
@@ -97,8 +95,7 @@ _Route24BattleText6::
 	done
 
 _Route24EndBattleText6::
-	text "Wow!"
-	line "Du bist gut!"
+	text "Wow! Du bist gut!"
 	prompt
 
 _Route24AfterBattleText6::

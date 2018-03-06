@@ -20,8 +20,7 @@ _PokemonTower6BattleText1::
 	done
 
 _PokemonTower6EndBattleText1::
-	text ""
-	line "Wo bin ich?"
+	text "Wo bin ich?"
 	prompt
 
 _PokemonTower6AfterBattleText1::
@@ -35,9 +34,8 @@ _PokemonTower6BattleText2::
 	done
 
 _PokemonTower6EndBattleText2::
-	text ""
-	line "Irgend etwas hat"
-	cont "mich verlassen!"
+	text "Irgend etwas hat"
+	line "mich verlassen!"
 	prompt
 
 _PokemonTower6AfterBattleText2::

@@ -189,6 +189,19 @@ EvosMovesPointerTable:
 	dw Mon069_EvosMoves
 	dw Mon070_EvosMoves
 	dw Mon071_EvosMoves
+	dw Mon191_EvosMoves ;MissingNo
+	dw Mon192_EvosMoves ;MissingNo
+	dw Mon193_EvosMoves ;MissingNo
+	dw Mon194_EvosMoves ;MissingNo
+	dw Mon195_EvosMoves
+	dw Mon196_EvosMoves
+	dw Mon197_EvosMoves ;MissingNo
+	dw Mon198_EvosMoves ;MissingNo
+	dw Mon199_EvosMoves ;MissingNo
+	dw Mon200_EvosMoves ;MissingNo
+	dw Mon201_EvosMoves ;MissingNo
+	dw Mon202_EvosMoves ;MissingNo
+	dw Mon203_EvosMoves
 
 Mon112_EvosMoves:
 ;RHYDON
@@ -197,6 +210,7 @@ Mon112_EvosMoves:
 ;Learnset
 	db 13,STOMP
 	db 19,FURY_ATTACK
+	db 25,ROCK_BLAST
 	db 31,SCARY_FACE
 	db 37,HORN_DRILL
 	db 54,TAKE_DOWN
@@ -375,6 +389,7 @@ Mon094_EvosMoves:
 ;Evolutions
 	db 0
 ;Learnset
+	db 25,SHADOW_PUNCH
 	db 29,HYPNOSIS
 	db 38,DREAM_EATER
 	db 0
@@ -425,6 +440,7 @@ Mon111_EvosMoves:
 ;Learnset
 	db 13,STOMP
 	db 19,FURY_ATTACK
+	db 25,ROCK_BLAST
 	db 31,SCARY_FACE
 	db 37,HORN_DRILL
 	db 49,TAKE_DOWN
@@ -633,6 +649,7 @@ Mon095_EvosMoves:
 	db 23,HARDEN
 	db 27,RAGE
 	db 36,SLAM
+	db 45,IRON_TAIL
 	db 0
 
 Mon022_EvosMoves:
@@ -955,7 +972,7 @@ Mon050_EvosMoves:
 	db 5,GROWL
 	db 9,DIG
 	db 17,FURY_SWIPES
-	db 25,SAND_ATTACK
+	db 25,MUD_SLAP
 	db 33,SLASH
 	db 41,EARTHQUAKE
 	db 49,FISSURE
@@ -1668,8 +1685,8 @@ Mon051_EvosMoves:
 	db 5,GROWL
 	db 9,DIG
 	db 17,FURY_SWIPES
-	db 25,SAND_ATTACK
-	db 26,TRI_ATTACK
+	db 25,MUD_SLAP
+	db 26,SAND_TOMB
 	db 37,SLASH
 	db 49,EARTHQUAKE
 	db 61,FISSURE
@@ -1987,6 +2004,7 @@ Mon093_EvosMoves:
 	db EV_TRADE,1,GENGAR
 	db 0
 ;Learnset
+	db 25,SHADOW_PUNCH
 	db 29,HYPNOSIS
 	db 38,DREAM_EATER
 	db 0
@@ -2445,6 +2463,7 @@ Mon044_EvosMoves:
 ;GLOOM
 ;Evolutions
 	db EV_ITEM,LEAF_STONE,1,VILEPLUME
+	db EV_ITEM,SUN_STONE,1,BELLOSSOM
 	db 0
 ;Learnset
 	db 15,POISONPOWDER
@@ -2510,4 +2529,114 @@ Mon071_EvosMoves:
 	db 29,ACID
 	db 38,RAZOR_LEAF
 	db 49,SLAM
+	db 0
+
+Mon191_EvosMoves:
+;MISSINGNO_BF
+;Evolutions
+	db 0
+;Learnset
+	db 0
+
+Mon192_EvosMoves:
+;MISSINGNO_C0
+;Evolutions
+	db 0
+;Learnset
+	db 0
+
+Mon193_EvosMoves:
+;MISSINGNO_C1
+;Evolutions
+	db 0
+;Learnset
+	db 0
+
+Mon194_EvosMoves:
+;MISSINGNO_C2
+;Evolutions
+	db 0
+;Learnset
+	db 0
+
+Mon195_EvosMoves:
+;PIKABLU
+;Evolutions
+	db EV_LEVEL,18,RAIBLU
+	db 0
+;Learnset
+	db 3,DEFENSE_CURL
+	db 6,TAIL_WHIP
+	db 10,WATER_GUN
+	db 15,ROLLOUT
+	db 21,BUBBLEBEAM
+	db 28,DOUBLE_EDGE
+	db 36,HYDRO_PUMP
+	db 0
+
+Mon196_EvosMoves:
+;RAIBLU
+;Evolutions
+	db 0
+;Learnset
+	db 3,DEFENSE_CURL
+	db 6,TAIL_WHIP
+	db 10,WATER_GUN
+	db 15,ROLLOUT
+	db 25,BUBBLEBEAM
+	db 36,DOUBLE_EDGE
+	db 48,HYDRO_PUMP
+	db 0
+
+Mon197_EvosMoves:
+;MISSINGNO_C5
+;Evolutions
+	db 0
+;Learnset
+	db 0
+
+Mon198_EvosMoves:
+;MISSINGNO_C6
+;Evolutions
+	db 0
+;Learnset
+	db 0
+
+Mon199_EvosMoves:
+;MISSINGNO_C7
+;Evolutions
+	db 0
+;Learnset
+	db 0
+
+Mon200_EvosMoves:
+;MISSINGNO_C8
+;Evolutions
+	db 0
+;Learnset
+	db 0
+
+Mon201_EvosMoves:
+;MISSINGNO_C9
+;Evolutions
+	db 0
+;Learnset
+	db 0
+
+Mon202_EvosMoves:
+;MISSINGNO_CA
+;Evolutions
+	db 0
+;Learnset
+	db 0
+
+Mon203_EvosMoves:
+;BELLOSSOM
+;Evolutions
+	db 0
+;Learnset
+	db 22,SWEET_SCENT
+	db 33,MAGICAL_LEAF
+	db 44,PETAL_DANCE
+	db 55,SOLARBEAM
 	db 0

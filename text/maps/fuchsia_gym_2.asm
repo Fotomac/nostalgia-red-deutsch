@@ -13,7 +13,7 @@ _KogaExplainToxicText::
 
 _FuchsiaGymText9::
 	text "Nun, da Du Träger"
-	line "des SEELENORDENS"
+	line "des SUMPFORDENS"
 	cont "bist, wird die"
 	cont "ABWEHR Deiner"
 	cont "#MON steigen!"
@@ -82,8 +82,7 @@ _FuchsiaGymBattleText2::
 	done
 
 _FuchsiaGymEndBattleText2::
-	text "Ich"
-	line "habe verloren!"
+	text "Ich habe verloren!"
 	prompt
 
 _FuchsiaGymAfterBattleText2::
@@ -101,9 +100,8 @@ _FuchsiaGymBattleText3::
 	done
 
 _FuchsiaGymEndBattleText3::
-	text "Du"
-	line "hast mich"
-	cont "hereingelegt!"
+	text "Du hast mich"
+	line "hereingelegt!"
 	prompt
 
 _FuchsiaGymAfterBattleText3::
@@ -124,8 +122,8 @@ _FuchsiaGymBattleText4::
 	done
 
 _FuchsiaGymEndBattleText4::
-	text "Oh! Er"
-	line "hat mich besiegt!"
+	text "Oh! Er hat mich"
+	line "besiegt!"
 	prompt
 
 _FuchsiaGymAfterBattleText4::
@@ -170,9 +168,8 @@ _FuchsiaGymBattleText6::
 	done
 
 _FuchsiaGymEndBattleText6::
-	text "Ich"
-	line "habe es"
-	cont "vermasselt!"
+	text "Ich habe es"
+	line "vermasselt!"
 	prompt
 
 _FuchsiaGymAfterBattleText6::

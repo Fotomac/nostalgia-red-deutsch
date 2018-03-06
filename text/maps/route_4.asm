@@ -12,8 +12,7 @@ _Route4BattleText1::
 	done
 
 _Route4EndBattleText1::
-	text "Ach,"
-	line "PILZ-#MON"
+	text "Ach, PILZ-#MON"
 	cont "sind ja so süß!"
 	prompt
 

@@ -5,8 +5,8 @@ _MtMoon1BattleText2::
 	done
 
 _MtMoon1EndBattleText2::
-	text "Wow! Du"
-	line "hast mich total"
+	text "Wow! Du hast"
+	line "mich total"
 	cont "überrumpelt!!!"
 	prompt
 
@@ -22,8 +22,8 @@ _MtMoon1BattleText3::
 	done
 
 _MtMoon1EndBattleText3::
-	text "So ein"
-	line "Mist! Verloren!"
+	text "So ein Mist!"
+	line "Verloren!"
 	prompt
 
 _MtMoon1AfterBattleText3::
@@ -40,8 +40,8 @@ _MtMoon1BattleText4::
 	done
 
 _MtMoon1EndBattleText4::
-	text "Nein! Ich"
-	line "habe verloren!"
+	text "Nein! Ich habe"
+	line "verloren!"
 	prompt
 
 _MtMoon1AfterBattleText4::
@@ -56,9 +56,8 @@ _MtMoon1BattleText5::
 	done
 
 _MtMoon1EndBattleText5::
-	text "Meine"
-	line "#MON bringen"
-	cont "es nicht!"
+	text "Meine #MON"
+	line "bringen es nicht!"
 	prompt
 
 _MtMoon1AfterBattleText5::
@@ -73,8 +72,7 @@ _MtMoon1BattleText6::
 	done
 
 _MtMoon1EndBattleText6::
-	text "Ich hab"
-	line "verloren?"
+	text "Ich hab verloren?"
 	prompt
 
 _MtMoon1AfterBattleText6::
@@ -92,8 +90,8 @@ _MtMoon1BattleText7::
 	done
 
 _MtMoon1EndBattleText7::
-	text "Du"
-	line "hast mich eiskalt"
+	text "Du hast mich"
+	line "eiskalt"
 	cont "erwischt!"
 	prompt
 
@@ -111,8 +109,8 @@ _MtMoon1BattleText8::
 	done
 
 _MtMoon1EndBattleText8::
-	text "Ich"
-	line "hab verloren..."
+	text "Ich hab"
+	line "verloren..."
 	prompt
 
 _MtMoon1AfterBattleText8::

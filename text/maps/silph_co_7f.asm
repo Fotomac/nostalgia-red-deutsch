@@ -95,8 +95,7 @@ _SilphCo7BattleText1::
 	done
 
 _SilphCo7EndBattleText1::
-	text ""
-	line "Licht aus!"
+	text "Licht aus!"
 	prompt
 
 _SilphCo7AfterBattleText1::
@@ -115,9 +114,8 @@ _SilphCo7BattleText2::
 	done
 
 _SilphCo7EndBattleText2::
-	text ""
-	line "Feierabend! Ich"
-	cont "geh nach Hause!"
+	text "Feierabend! Ich"
+	line "geh nach Hause!"
 	prompt
 
 _SilphCo7AfterBattleText2::
@@ -134,8 +132,8 @@ _SilphCo7BattleText3::
 	done
 
 _SilphCo7EndBattleText3::
-	text "Tut mir"
-	line "leid, Brüder..."
+	text "Tut mir leid,"
+	line "Brüder..."
 	prompt
 
 _SilphCo7AfterBattleText3::
@@ -188,7 +186,7 @@ _SilphCo7Text_51ec3::
 	done
 
 _SilphCo7Text_51ec8::
-	text "Mann!"
+	text "<RIVAL>: Mann!"
 	line "Du bist so"
 	cont "gut, daß Du gegen"
 	cont "den ROCKET BOSS"

@@ -14,17 +14,55 @@ _CeruleanGymText_5c7be::
 	line "fängst Du Deine"
 	cont "#MON?"
 
-	para "Meine Strategie"
-	line "basiert auf dem"
-	cont "gnadenlosen"
-	cont "Offensiv-Einsatz"
-	cont "von WASSER-"
-	cont "#MON!"
+	para "Meine Devise ist"
+	line "der offensive"
+	cont "Einsatz von"
+	cont "Wasser-#MON!"
+
+	para "Ich, MISTY,"
+	line "die berühmte"
+	cont "Schönheit, soll"
+	cont "deine Gastgeberin"
+	cont "sein!"
+
+	para "Bist Du bereit,"
+	line "Süßer?"
+	done
+
+_CeruleanGymText_5c7be_2::
+	text "Du mußt neue sein,"
+	line "ich habe Dich"
+	cont "noch nie gesehen!"
+
+	para "Wenn ein Trainer"
+	line "zum Profi werden"
+	cont "möchte, muß er"
+	cont "sich eine"
+	cont "#MON-TAKTIK"
+	cont "erarbeiten!"
+
+	para "Auf welche Weise"
+	line "fängst Du Deine"
+	cont "#MON?"
+
+	para "Meine Devise ist"
+	line "der offensive"
+	cont "Einsatz von"
+	cont "Wasser-#MON!"
+
+	para "Ich, MISTY,"
+	line "die berühmte"
+	cont "Schönheit, soll"
+	cont "deine Gastgeberin"
+	cont "sein!"
+
+	para "Bist Du bereit,"
+	line "Süße?"
 	done
 
 _CeruleanGymText_5c7c3::
-	text "TM11 ist der"
-	line "BLUBBSTRAHL!"
+	text "TM03 ist die"
+	line "AQUAWELLE!"
 
 	para "WASSER-#MON"
 	line "können diese"
@@ -44,7 +82,7 @@ _CeruleanGymText_5c7c8::
 	para "Deine #MON"
 	line "können den"
 	cont "ZERSCHNEIDER"
-	cont "nun jederzeit "
+	cont "nun jederzeit"
 	cont "einsetzen!"
 
 	para "Du kannst kleine"
@@ -58,18 +96,19 @@ _CeruleanGymText_5c7c8::
 	cont "Lieblings-TM!"
 	done
 
-_ReceivedTM11Text::
+_ReceivedTM03Text::
 	text "<PLAYER> erhält"
-	line "TM11!@@"
+	line "TM03!@@"
 
 _CeruleanGymText_5c7d3::
-	text "Du hast momentan"
-	line "keinen Platz für"
-	cont "mein Geschenk!"
+	text "Verdammt, Du hast"
+	line "momentan keinen"
+	cont "Platz für mein"
+	cont "Geschenk!"
 	done
 
 _CeruleanGymText_5c7d8::
-	text "Wow! Du"
+	text "MISTY: Wow! Du"
 	line "bist sehr gut!"
 
 	para "Alles klar!"
@@ -80,15 +119,16 @@ _CeruleanGymText_5c7d8::
 	cont "Deines Triumphes!@@"
 
 _CeruleanGymBattleText1::
-	text "Zuerst fordere"
-	line "ich Dich heraus!"
+	text "Wie? Du? Ich bin"
+	line "schon zu gut für"
+	cont "dich!"
 
 	para "MISTY muß warten!"
 	done
 
 _CeruleanGymEndBattleText1::
-	text "Ich"
-	line "bin überwältigt!"
+	text "Ich bin"
+	line "überwältigt!"
 	prompt
 
 _CeruleanGymAfterBattleText1::
@@ -108,9 +148,8 @@ _CeruleanGymBattleText2::
 	done
 
 _CeruleanGymEndBattleText2::
-	text ""
-	line "Das darf nicht"
-	cont "wahr sein!"
+	text "Das darf nicht"
+	line "wahr sein!"
 	prompt
 
 _CeruleanGymAfterBattleText2::

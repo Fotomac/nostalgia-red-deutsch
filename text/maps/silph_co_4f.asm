@@ -32,9 +32,8 @@ _SilphCo4BattleText3::
 	done
 
 _SilphCo4EndBattleText3::
-	text "Du"
-	line "schwächliches"
-	cont "#MON! Mist!"
+	text "Du schwächliches"
+	line "#MON! Mist!"
 	prompt
 
 _SilphCo4AfterBattleText3::
@@ -51,8 +50,8 @@ _SilphCo4BattleText4::
 	done
 
 _SilphCo4EndBattleText4::
-	text "Wer oder"
-	line "was bist Du?"
+	text "Wer oder was bist"
+	line "Du?"
 	prompt
 
 _SilphCo4AfterBattleText4::

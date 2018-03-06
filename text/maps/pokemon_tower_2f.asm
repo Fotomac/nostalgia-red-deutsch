@@ -12,7 +12,7 @@ _PokemonTower2Text_6062d::
 	done
 
 _PokemonTower2Text_60632::
-	text "Was?"
+	text "<RIVAL>: Was?"
 	line "Du bist eine"
 	cont "harte Nuß!"
 
@@ -49,7 +49,7 @@ _PokemonTower2Text_6063c::
 	cont "habe viel zu tun!"
 	cont "Ich muß weiter!"
 
-	para "Dann bis später!"
+	para "Dann bis spinäter!"
 	done
 
 _PokemonTower2Text2::

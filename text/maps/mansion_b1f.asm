@@ -20,9 +20,8 @@ _Mansion4BattleText2::
 	done
 
 _Mansion4EndBattleText2::
-	text "Was hab"
-	line "ich nur falsch"
-	cont "gemacht?"
+	text "Was hab ich nur"
+	line "falsch gemacht?"
 	prompt
 
 _Mansion4AfterBattleText2::
@@ -38,8 +37,7 @@ _Mansion4Text7::
 	para "MEWTU wird immer"
 	line "stärker."
 
-	para "Wir konnten die"
-	line "unkontrollierten"
-	cont "Wutausbrüche"
-	cont "nicht eindämmen!"
+	para "Es nützt nichts..."
+	line "Ich kann nicht es"
+	cont "kontrollieren!"
 	done

@@ -19,7 +19,7 @@ _RocketHideout4Text_4557a::
 	done
 
 _RocketHideout4Text_4557f::
-	text "NEIN!"
+	text "GIOVANNI: NEIN!"
 	line "Ich habe kläglich"
 	cont "versagt!"
 	prompt
@@ -51,8 +51,8 @@ _RocketHideout4BattleText2::
 	done
 
 _RocketHideout4EndBattleText2::
-	text "Dieser"
-	line "Junge ist einfach"
+	text "Dieser Junge"
+	line "ist einfach"
 	cont "unschlagbar!!!"
 	prompt
 

@@ -102,8 +102,9 @@ _SaffronCityText15::
 	text "..."
 	line "Schnarch..."
 
-	para "Ha! Er hält"
-	line "ein Nickerchen!"
+	para "<PLAYER>: Ha!"
+	line "Er hält ein"
+	cont "Nickerchen!"
 	done
 
 _SaffronCityText16::

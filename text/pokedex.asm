@@ -1750,3 +1750,33 @@ _VictreebelDexEntry::
 	next "dies bestätigen."
 	dex
 
+_PikabluDexEntry::
+	text "Da seine Schwanz-"
+	next "spitze Öl enthält,"
+	next "das leichter als"
+
+	page "Wasser ist, kann"
+	next "es schwimmen, ohne"
+	next "unterzugehen."
+	dex
+
+_RaibluDexEntry::
+	text "Verhält es sich"
+	next "regungslos und"
+	next "lauscht, hört es,"
+
+	page "was sich in wilden"
+	next "und reißenden"
+	next "Flüssen abspielt."
+	dex
+
+_BellossomDexEntry::
+	text "BLUBELLAs kommen"
+	next "zusammen, um zu"
+	next "tanzen. Man sagt,"
+
+	page "dieser Tanz sei"
+	next "ein Ritual, um der"
+	next "Sonne zu huldigen."
+	dex
+

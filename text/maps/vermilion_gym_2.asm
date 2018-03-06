@@ -1,6 +1,6 @@
 _VermilionGymText_5cb72::
 	text "Ich gebe Dir noch"
-	line "einen Tip, Junge!"
+	line "einen Tipp!"
 
 	para "Die Elektrizität"
 	line "ist enorm"
@@ -23,37 +23,37 @@ _VermilionGymText_5cb77::
 	cont "einsetzen!"
 
 	para "Du bist ein"
-	line "besonderer Junge!"
+	line "besonderes Kind!"
 	cont "Nimm das hier!"
 	done
 
-_ReceivedTM24Text::
+_ReceivedTM34Text::
 	text "<PLAYER> erhält"
 	line "@"
 	TX_RAM wcf50
 	text "!@@"
 
-_TM24ExplanationText::
+_TM34ExplanationText::
 	text ""
 
-	para "TM24 ist"
-	line "DONNERBLITZ!"
+	para "TM34 ist"
+	line "SCHOCKWELLE!"
 
 	para "ELEKTRO-#MON"
 	line "können diese"
 	cont "Attacke erlernen!"
 	done
 
-_TM24NoRoomText::
+_TM34NoRoomText::
 	text "Dein Rucksack"
 	line "ist voll!"
 	done
 
 _ReceivedThunderbadgeText::
-	text "Wow!"
+	text "MAJOR BOB: Wow!"
 
 	para "Du weißt, wie man"
-	line "kämpft, Kleiner!"
+	line "kämpft, Kiddie!"
 
 	para "Als Auszeichnung"
 	line "verleihe ich Dir"
@@ -88,8 +88,7 @@ _VermilionGymBattleText2::
 	done
 
 _VermilionGymEndBattleText2::
-	text "Ein"
-	line "Kurzschluß!"
+	text "Ein Kurzschluß!"
 	prompt
 
 _VermilionGymAfterBattleText2::
@@ -107,8 +106,7 @@ _VermilionGymBattleText3::
 	done
 
 _VermilionGymEndBattleText3::
-	text "Wow!"
-	line "Du hast mich"
+	text "Wow! Du hast mich"
 	cont "überrascht!"
 	prompt
 
@@ -122,6 +120,31 @@ _VermilionGymAfterBattleText3::
 	cont "befindet sich"
 	cont "direkt neben dem"
 	cont "ersten!"
+	done
+
+_VermilionGymBattleText4::
+	text "Ich sei nur"
+	line "ein Mädchen,"
+	cont "aber ich will"
+	cont "unseren LEITER"
+	cont "verteidigen!"
+	done
+
+_VermilionGymEndBattleText4::
+	text "Wir können die"
+	line "Demokratie"
+	cont "danken!"
+	prompt
+
+_VermilionGymAfterBattleText4::
+	text "Bist Du jemals"
+	line "nach DIGDAS HOHLE"
+	cont "gereist?"
+
+	para "Es ist voller"
+	line "Schädlinge, aber"
+	cont "sie können dir"
+	cont "behilfich sein!"
 	done
 
 _VermilionGymText_5cbf4::

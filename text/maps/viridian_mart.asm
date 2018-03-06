@@ -28,7 +28,7 @@ _ViridianMartText2::
 	done
 
 _ViridianMartText3::
-	text "Tut mir leid!"
-	line "Alle TRÄNKE sind"
-	cont "ausverkauft!"
+	text "Der Laden hat"
+	line "endlich wieder"
+	cont "TRÄNKE vorrätig."
 	done

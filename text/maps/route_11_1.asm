@@ -4,9 +4,8 @@ _Route11BattleText1::
 	done
 
 _Route11EndBattleText1::
-	text ""
-	line "Das Glück hat"
-	cont "mich verlassen!"
+	text "Das Glück hat"
+	line "mich verlassen!"
 	prompt
 
 _Route11AfterBattleText1::
@@ -22,9 +21,8 @@ _Route11BattleText2::
 	done
 
 _Route11EndBattleText2::
-	text "Immerhin"
-	line "hatte ich eine"
-	cont "Chance!"
+	text "Immerhin hatte ich"
+	line "eine Chance!"
 	prompt
 
 _Route11AfterBattleText2::
@@ -40,8 +38,8 @@ _Route11BattleText3::
 	done
 
 _Route11EndBattleText3::
-	text "Hä?"
-	line "Das ist gemein!"
+	text "Hä? Das ist"
+	line "gemein!"
 	prompt
 
 _Route11AfterBattleText3::
@@ -58,9 +56,8 @@ _Route11BattleText4::
 	done
 
 _Route11EndBattleText4::
-	text ""
-	line "Das war ein"
-	cont "Stromschlag!"
+	text "Das war ein"
+	line "Stromschlag!"
 	prompt
 
 _Route11AfterBattleText4::
@@ -77,8 +74,7 @@ _Route11BattleText5::
 	done
 
 _Route11EndBattleText5::
-	text "Mist!"
-	line "Ich hasse"
+	text "Mist! Ich hasse"
 	cont "schwache #MON!"
 	prompt
 
@@ -95,9 +91,8 @@ _Route11BattleText6::
 	done
 
 _Route11EndBattleText6::
-	text "Es gibt"
-	line "immer ein erstes"
-	cont "Mal..."
+	text "Es gibt immer ein"
+	line "erstes Mal..."
 	prompt
 
 _Route11AfterBattleText6::
@@ -112,7 +107,7 @@ _Route11BattleText7::
 	done
 
 _Route11EndBattleText7::
-	text "Das habe"
+	text "Verdammt, das habe"
 	line "ich kommen sehen!"
 	prompt
 
@@ -129,9 +124,9 @@ _Route11BattleText8::
 	done
 
 _Route11EndBattleText8::
-	text "Ich muß"
-	line "meine #MON"
-	cont "mehr trainieren!"
+	text "Ich muß meine"
+	line "#MON mehr"
+	cont "trainieren!"
 	prompt
 
 _Route11AfterBattleText8::

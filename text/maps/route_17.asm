@@ -5,8 +5,7 @@ _Route17BattleText1::
 	done
 
 _Route17EndBattleText1::
-	text "Die"
-	line "Luft ist raus!"
+	text "Die Luft ist raus!"
 	prompt
 
 _Route17AfterBattleText1::
@@ -17,7 +16,7 @@ _Route17AfterBattleText1::
 
 _Route17BattleText2::
 	text "Was willst Du,"
-	line "Kleiner?"
+	line "Kiddie?"
 	done
 
 _Route17EndBattleText2::
@@ -37,9 +36,8 @@ _Route17BattleText3::
 	done
 
 _Route17EndBattleText3::
-	text "Ich habe"
-	line "mein Bestes"
-	cont "gegeben!"
+	text "Ich habe mein"
+	line "Bestes gegeben!"
 	prompt
 
 _Route17AfterBattleText3::
@@ -55,8 +53,8 @@ _Route17BattleText4::
 	done
 
 _Route17EndBattleText4::
-	text "Ich bin"
-	line "voll auf die Nase"
+	text "Ich bin voll"
+	line "auf die Nase"
 	cont "gefallen!"
 	prompt
 
@@ -72,8 +70,8 @@ _Route17BattleText5::
 	done
 
 _Route17EndBattleText5::
-	text "Du hast"
-	line "mich geerdet!"
+	text "Du hast mich"
+	line "geerdet!"
 	prompt
 
 _Route17AfterBattleText5::
@@ -90,8 +88,8 @@ _Route17BattleText6::
 	done
 
 _Route17EndBattleText6::
-	text "Hey,"
-	line "was sollte das?"
+	text "Hey, was sollte"
+	line "das?"
 	prompt
 
 _Route17AfterBattleText6::
@@ -108,8 +106,8 @@ _Route17BattleText7::
 	done
 
 _Route17EndBattleText7::
-	text "Puh!"
-	line "Eine gute Übung!"
+	text "Puh! Eine gute"
+	line "Übung!"
 	prompt
 
 _Route17AfterBattleText7::
@@ -154,8 +152,8 @@ _Route17BattleText10::
 	done
 
 _Route17EndBattleText10::
-	text "Bist Du"
-	line "nun zufrieden?"
+	text "Bist Du nun"
+	line "zufrieden?"
 	prompt
 
 _Route17AfterBattleText10::

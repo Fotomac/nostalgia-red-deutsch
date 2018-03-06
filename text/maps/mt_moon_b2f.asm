@@ -30,9 +30,8 @@ _MtMoon3Text_49f85::
 	done
 
 _MtMoon3Text_49f8a::
-	text "Na gut!"
-	line "Ich gebe Dir"
-	cont "eins ab!"
+	text "Na gut! Ich gebe"
+	line "Dir eins ab!"
 	prompt
 
 _MtMoon3Text_49f8f::
@@ -69,8 +68,8 @@ _MtMoon3BattleText2::
 	done
 
 _MtMoon3EndBattleText2::
-	text "Grr! Das"
-	line "gibt es nicht!"
+	text "Grr! Das gibt es"
+	line "nicht!"
 	prompt
 
 _MtMoon3AfterBattleText2::
@@ -87,8 +86,7 @@ _MtMoon3BattleText3::
 	done
 
 _MtMoon3EndBattleText3::
-	text "NEIN!"
-	line "Ich hab's"
+	text "NEIN! Ich hab's"
 	cont "vermasselt!"
 	prompt
 
@@ -108,12 +106,12 @@ _MtMoon3BattleText4::
 _MtMoon3EndBattleText4::
 	text "Du bist"
 	line "'ne harte Nuß,"
-	cont "Kleiner!"
+	cont "Kiddie!"
 	prompt
 
 _MtMoon3AfterBattleText4::
 	text "Wenn Du ein Fossil"
-	line "hast, gib es her"
+	line "hast, sag mir wo"
 	cont "und verschwinde!"
 	done
 
@@ -125,8 +123,7 @@ _MtMoon3BattleText5::
 	done
 
 _MtMoon3EndBattleText5::
-	text ""
-	line "Ich bin sauer!"
+	text "Ich bin sauer!"
 	prompt
 
 _MtMoon3AfterBattleText5::

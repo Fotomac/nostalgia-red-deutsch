@@ -288,7 +288,7 @@ TrainerClassMoveChoiceModifications:
 	db 1,0    ; BIKER
 	db 1,3,0  ; BURGLAR
 	db 1,0    ; ENGINEER
-	db 1,2,0  ; JUGGLER_X
+	db 1,3,0  ; SWIMMER_F
 	db 1,3,0  ; FISHER
 	db 1,3,0  ; SWIMMER
 	db 0      ; CUE_BALL
@@ -323,6 +323,7 @@ TrainerClassMoveChoiceModifications:
 	db 1,0    ; CHANNELER
 	db 1,0    ; AGATHA
 	db 1,3,0  ; LANCE
+	db 1,3,0  ; JANINE
 
 INCLUDE "engine/battle/trainer_pic_money_pointers.asm"
 
@@ -344,7 +345,7 @@ TrainerAI:
 	ld a,[wLinkState]
 	cp LINK_STATE_BATTLING
 	ret z
-	ld a,[wTrainerClass] ; what trainer class is this?
+	ld a,[wTrainerAINumber]
 	dec a
 	ld c,a
 	ld b,0
@@ -384,7 +385,7 @@ TrainerAIPointers:
 	dbw 3,GenericAI
 	dbw 3,GenericAI
 	dbw 3,GenericAI
-	dbw 3,JugglerAI ; juggler_x
+	dbw 3,GenericAI
 	dbw 3,GenericAI
 	dbw 3,GenericAI
 	dbw 3,GenericAI
@@ -419,6 +420,7 @@ TrainerAIPointers:
 	dbw 3,GenericAI
 	dbw 2,AgathaAI ; agatha
 	dbw 1,LanceAI ; lance
+	dbw 2,KogaAI ; janine
 
 JugglerAI:
 	cp $40
@@ -691,7 +693,16 @@ SwitchEnemyMon:
 	ld bc,4
 	call CopyData
 
+	ld hl, SpecialTrainerIDs
+	ld a, [wTrainerClass]
+	ld de, 1
+	call IsInArray
+	jr c, .specialTrainer1
 	ld hl, AIBattleWithdrawText
+	jr .next1
+.specialTrainer1
+	ld hl, AIBattleWithdrawText2
+.next1
 	call PrintText
 
 	; This wFirstMonsNotOutYet variable is abused to prevent the player from
@@ -710,6 +721,10 @@ SwitchEnemyMon:
 
 AIBattleWithdrawText:
 	TX_FAR _AIBattleWithdrawText
+	db "@"
+
+AIBattleWithdrawText2:
+	TX_FAR _AIBattleWithdrawText2
 	db "@"
 
 AIUseFullHeal:
@@ -830,9 +845,22 @@ AIPrintItemUse_:
 	ld a,[wAIItem]
 	ld [wd11e],a
 	call GetItemName
+	ld hl, SpecialTrainerIDs
+	ld a, [wTrainerClass]
+	ld de, 1
+	call IsInArray
+	jr c, .specialTrainer2
 	ld hl, AIBattleUseItemText
+	jr .next2
+.specialTrainer2
+	ld hl, AIBattleUseItemText2
+.next2
 	jp PrintText
 
 AIBattleUseItemText:
 	TX_FAR _AIBattleUseItemText
+	db "@"
+
+AIBattleUseItemText2:
+	TX_FAR _AIBattleUseItemText2
 	db "@"

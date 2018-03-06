@@ -39,7 +39,7 @@ _Route22RivalAfterBattleText1::
 	done
 
 _Route22RivalDefeatedText1::
-	text "Oh nein!"
+	text "<RIVAL>: Oh nein!"
 	line "Soviel Glück wie"
 	cont "Du kann man"
 	cont "nicht haben!"
@@ -94,11 +94,12 @@ _Route22RivalAfterBattleText2::
 
 	para "Ich glaube, Du"
 	line "bist Dir dessen"
-	cont "bewußt! Bis dann!"
+	cont "bewußt! Bis dann,"
+	cont "und tschüss!"
 	done
 
 _Route22RivalDefeatedText2::
-	text "Was!?"
+	text "<RIVAL>: Was!?"
 
 	para "Ich war zu"
 	line "unvorsichtig!"

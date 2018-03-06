@@ -4,8 +4,8 @@ _VictoryRoad3BattleText2::
 	done
 
 _VictoryRoad3EndBattleText2::
-	text "Du bist"
-	line "das Wunderkind!"
+	text "Du bist das"
+	line "Wunderkind!"
 	prompt
 
 _VictoryRoad3AfterBattleText2::
@@ -21,9 +21,9 @@ _VictoryRoad3BattleText3::
 	done
 
 _VictoryRoad3EndBattleText3::
-	text "Das"
-	line "darf doch nicht"
-	cont "wahr sein! Grrr!"
+	text "Das darf doch"
+	line "nicht wahr sein!"
+	cont "Grrr!"
 	prompt
 
 _VictoryRoad3AfterBattleText3::
@@ -38,8 +38,8 @@ _VictoryRoad3BattleText4::
 	done
 
 _VictoryRoad3EndBattleText4::
-	text "Ich"
-	line "fasse es nicht!"
+	text "Ich fasse es"
+	line "nicht!"
 	prompt
 
 _VictoryRoad3AfterBattleText4::
@@ -58,9 +58,8 @@ _VictoryRoad3BattleText5::
 	done
 
 _VictoryRoad3EndBattleText5::
-	text "Cool!"
-	line "Du bist wirklich"
-	cont "stark!"
+	text "Cool! Du bist"
+	line "wirklich stark!"
 	prompt
 
 _VictoryRoad3AfterBattleText5::

@@ -270,7 +270,7 @@ _OaksLabRivalChallengeText::
 	done
 
 _OaksLabText_1d3be::
-	text "WAS?"
+	text "<RIVAL>: WAS?"
 	line "Unmöglich! Ich"
 	cont "habe mir das"
 	cont "falsche #MON"

@@ -43,7 +43,7 @@ _GaryChampionIntroText::
 	done
 
 _GaryDefeatedText::
-	text "NEIN!"
+	text "<RIVAL>: NEIN!"
 	line "Das kann nicht"
 	cont "wahr sein! Meine"
 	cont "besten #MON"
@@ -62,7 +62,7 @@ _GaryDefeatedText::
 	prompt
 
 _GaryVictoryText::
-	text "Haha! Ich"
+	text "<RIVAL>: Haha! Ich"
 	line "habe GEWONNEN!"
 
 	para "Ich bin einfach "
@@ -150,9 +150,9 @@ _GaryText_76125::
 	cont "und Vertrauen "
 	cont "entgegengebracht!"
 
-	para "So wirst Du"
-	line "niemals Sieger"
-	cont "werden!"
+	para "So kannst Du"
+	line "niemals hoffen,"
+	cont "Sieger zu werden!"
 	done
 
 _GaryText_7612a::

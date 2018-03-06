@@ -5,8 +5,7 @@ _Route9BattleText1::
 	done
 
 _Route9EndBattleText1::
-	text "Du"
-	line "hast gewonnen!"
+	text "Du hast gewonnen!"
 	prompt
 
 _Route9AfterBattleText1::
@@ -23,9 +22,8 @@ _Route9BattleText2::
 	done
 
 _Route9EndBattleText2::
-	text ""
-	line "Schnell und"
-	cont "präzise besiegt!"
+	text "Schnell und"
+	line "präzise besiegt!"
 	prompt
 
 _Route9AfterBattleText2::
@@ -40,9 +38,8 @@ _Route9BattleText3::
 	done
 
 _Route9EndBattleText3::
-	text ""
-	line "Mit Dir habe ich"
-	cont "mich übernommen!"
+	text "Mit Dir habe ich"
+	line "mich übernommen!"
 	prompt
 
 _Route9AfterBattleText3::
@@ -58,9 +55,8 @@ _Route9BattleText4::
 	done
 
 _Route9EndBattleText4::
-	text "Das"
-	line "war zuviel des"
-	cont "Guten!"
+	text "Das war zuviel des"
+	line "Guten!"
 	prompt
 
 _Route9AfterBattleText4::
@@ -78,8 +74,8 @@ _Route9BattleText5::
 	done
 
 _Route9EndBattleText5::
-	text "War das"
-	line "etwa schon alles?"
+	text "War das etwa"
+	line "schon alles?"
 
 	para "Oh! Ich habe kein"
 	line "einsatzbereites"
@@ -100,8 +96,7 @@ _Route9BattleText6::
 	done
 
 _Route9EndBattleText6::
-	text "Was ist"
-	line "passiert?"
+	text "Was ist passiert?"
 	prompt
 
 _Route9AfterBattleText6::
@@ -139,8 +134,8 @@ _Route9BattleText8::
 	done
 
 _Route9EndBattleText8::
-	text "Haha!"
-	line "Ein fairer Kampf!"
+	text "Haha! Ein"
+	line "fairer Kampf!"
 	prompt
 
 _Route9AfterBattleText8::
@@ -157,9 +152,8 @@ _Route9BattleText9::
 	done
 
 _Route9EndBattleText9::
-	text ""
-	line "Meine"
-	cont "KÄFER-#MON..."
+	text "Meine KÄFER-"
+	line "#MON..."
 	prompt
 
 _Route9AfterBattleText9::

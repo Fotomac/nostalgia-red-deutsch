@@ -10,8 +10,7 @@ _RockTunnel2BattleText9::
 	done
 
 _RockTunnel2EndBattleText9::
-	text "Ich"
-	line "bin erschöpft!"
+	text "Ich bin erschöpft!"
 	prompt
 
 _RockTunnel2AfterBattleText9::

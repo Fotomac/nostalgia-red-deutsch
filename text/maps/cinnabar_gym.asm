@@ -17,7 +17,7 @@ _BlaineBattleText::
 	done
 
 _BlaineEndBattleText::
-	text "Mein Feuer"
+	text "PYRO: Mein Feuer"
 	line "ist erloschen!"
 
 	para "Du hast Dir den"
@@ -64,7 +64,7 @@ _TM38ExplanationText::
 	cont "Attacke erlernen!"
 
 	para "GLUTEXO und"
-	line "PONITA sind dafür"
+	line "VULPIX sind dafür"
 	cont "prädestiniert!"
 	done
 
@@ -82,8 +82,8 @@ _CinnabarGymText_7595f::
 	done
 
 _CinnabarGymText_75964::
-	text "Autsch!"
-	line "Heiß, sehr heiß!"
+	text "Autsch! Heiß,"
+	line "sehr heiß!"
 	prompt
 
 _CinnabarGymText_75969::
@@ -103,8 +103,7 @@ _CinnabarGymText_75994::
 	done
 
 _CinnabarGymText_75999::
-	text "Ich"
-	line "ergebe mich!"
+	text "Ich ergebe mich!"
 	prompt
 
 _CinnabarGymText_7599e::
@@ -121,8 +120,7 @@ _CinnabarGymText_759c9::
 	done
 
 _CinnabarGymText_759ce::
-	text "Nein!"
-	line "Das war"
+	text "Nein! Das war"
 	cont "unprofessionell!"
 	prompt
 
@@ -180,8 +178,8 @@ _CinnabarGymText_75a68::
 	done
 
 _CinnabarGymText_75a6d::
-	text "Autsch!"
-	line "Du bist zu stark!"
+	text "Autsch! Du bist"
+	line "zu stark!"
 	prompt
 
 _CinnabarGymText_75a72::
@@ -198,8 +196,8 @@ _CinnabarGymText_75a9d::
 	done
 
 _CinnabarGymText_75aa2::
-	text "Oh! Ich"
-	line "habe verloren!"
+	text "Oh! Ich habe"
+	line "verloren!"
 	prompt
 
 _CinnabarGymText_75aa7::

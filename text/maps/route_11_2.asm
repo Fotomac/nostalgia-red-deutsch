@@ -1,6 +1,5 @@
 _Route11EndBattleText9::
-	text "Au!"
-	line "Der Funke ist"
+	text "Au! Der Funke ist"
 	cont "übergesprungen!"
 	prompt
 
@@ -17,8 +16,7 @@ _Route11BattleText10::
 	done
 
 _Route11EndBattleText10::
-	text "Das"
-	line "war schwach!"
+	text "Das war schwach!"
 	prompt
 
 _Route11AfterBattleText10::

@@ -22,7 +22,7 @@ _ViridianGymText_74ace::
 	done
 
 _ViridianGymText_74ad3::
-	text "Ha!"
+	text "GIOVANNI: Ha!"
 	line "Der Kampf war"
 	cont "hart, aber fair!"
 	cont "Du hast gewonnen!"
@@ -106,9 +106,8 @@ _ViridianGymBattleText1::
 	done
 
 _ViridianGymEndBattleText1::
-	text "Mir"
-	line "gehen die"
-	cont "#MON aus!!!"
+	text "Mir gehen die"
+	line "#MON aus!!!"
 	prompt
 
 _ViridianGymAfterBattleText1::
@@ -126,9 +125,8 @@ _ViridianGymBattleText2::
 	done
 
 _ViridianGymEndBattleText2::
-	text ""
-	line "Meister, verzeih"
-	cont "mir!"
+	text "Meister, verzeih"
+	line "mir!"
 	prompt
 
 _ViridianGymAfterBattleText2::
@@ -144,9 +142,8 @@ _ViridianGymBattleText3::
 	done
 
 _ViridianGymEndBattleText3::
-	text ""
-	line "Deine #MON"
-	cont "harmonieren gut"
+	text "Deine #MON"
+	line "harmonieren gut"
 	cont "mit Dir!"
 	prompt
 
@@ -180,9 +177,8 @@ _ViridianGymBattleText5::
 	done
 
 _ViridianGymEndBattleText5::
-	text ""
-	line "Ich habe den"
-	cont "Halt verloren!"
+	text "Ich habe den"
+	line "Halt verloren!"
 	prompt
 
 _ViridianGymAfterBattleText5::
@@ -216,9 +212,8 @@ _ViridianGymBattleText7::
 	done
 
 _ViridianGymEndBattleText7::
-	text ""
-	line "Sie kringeln sich"
-	cont "vor Lachen! NEIN!"
+	text "Sie kringeln sich"
+	line "vor Lachen! NEIN!"
 	prompt
 
 _ViridianGymAfterBattleText7::
@@ -237,8 +232,7 @@ _ViridianGymBattleText8::
 	done
 
 _ViridianGymEndBattleText8::
-	text "Ich"
-	line "wurde besiegt?"
+	text "Ich wurde besiegt?"
 	prompt
 
 _ViridianGymAfterBattleText8::

@@ -25,7 +25,7 @@ _LoreleiBeforeBattleText::
 	done
 
 _LoreleiEndBattleText::
-	text "Wie"
+	text "LORELEI: Wie"
 	line "kannst Du es"
 	cont "wagen?"
 	prompt

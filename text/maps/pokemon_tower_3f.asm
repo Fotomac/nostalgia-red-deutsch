@@ -4,8 +4,8 @@ _PokemonTower3BattleText1::
 	done
 
 _PokemonTower3EndBattleText1::
-	text "Buu!"
-	line "Ich wurde erlöst!"
+	text "Buu! Ich wurde"
+	line "erlöst!"
 	prompt
 
 _PokemonTower3AfterBattleText1::
@@ -20,8 +20,7 @@ _PokemonTower3BattleText2::
 	done
 
 _PokemonTower3EndBattleText2::
-	text "Hmm?"
-	line "Was mache ich"
+	text "Hmm? Was mache ich"
 	cont "hier?"
 	prompt
 
@@ -36,8 +35,7 @@ _PokemonTower3BattleText3::
 	done
 
 _PokemonTower3EndBattleText3::
-	text "Puh!"
-	line "Der Geist ist"
+	text "Puh! Der Geist ist"
 	cont "verschwunden!"
 	prompt
 
