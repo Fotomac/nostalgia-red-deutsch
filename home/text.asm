@@ -632,6 +632,7 @@ TextCommandSounds::
 	db $0B, SFX_GET_ITEM_1
 	db $12, SFX_CAUGHT_MON
 	db $0E, SFX_POKEDEX_RATING ; unused?
+	db $0F, SFX_LEVEL_UP
 	db $10, SFX_GET_ITEM_2
 	db $11, SFX_GET_KEY_ITEM
 	db $13, SFX_DEX_PAGE_ADDED

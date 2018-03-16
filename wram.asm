@@ -2934,8 +2934,12 @@ wSeafoamIslands5CurScript:: ; d668
 	ds 1
 wRoute18GateCurScript:: ; d669
 	ds 1
+wKogasHouse1FCurScript::
+	ds 1
+wKogasHouseB1FCurScript::
+	ds 1
 
-	ds 84
+	ds 82
 wGameProgressFlagsEnd::
 
 	ds 36

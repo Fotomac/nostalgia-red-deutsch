@@ -1,7 +1,7 @@
-KogasHouseEntranceScript:
+KogasHouse1FScript:
 	jp EnableAutoTextBoxDrawing
 
-KogasHouseEntranceTextPointers:
+KogasHouse1FTextPointers:
 	dw KogasHouseEntranceText
 
 KogasHouseEntranceText:

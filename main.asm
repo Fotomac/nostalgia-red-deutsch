@@ -2038,6 +2038,16 @@ INCLUDE "scripts/silphco11.asm"
 INCLUDE "data/mapObjects/silphco11.asm"
 SilphCo11Blocks: INCBIN "maps/silphco11.blk"
 
+INCLUDE "data/mapHeaders/kogashouse1f.asm"
+INCLUDE "scripts/kogashouse1f.asm"
+INCLUDE "data/mapObjects/kogashouse1f.asm"
+KogasHouse1FBlocks: INCBIN "maps/kogashouse1f.blk"
+
+INCLUDE "data/mapHeaders/kogashouseb1f.asm"
+INCLUDE "scripts/kogashouseb1f.asm"
+INCLUDE "data/mapObjects/kogashouseb1f.asm"
+KogasHouseB1FBlocks: INCBIN "maps/kogashouseb1f.blk"
+
 INCLUDE "engine/hidden_object_functions18.asm"
 
 

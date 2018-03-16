@@ -60,7 +60,7 @@ KogasHouseB1FTextPointers:
 	dw KogasHouseB1FText7
 	dw KogasHouseB1FText8
 
-KogasHouseTrainerHeader0:
+KogasHouseB1FTrainerHeader0:
 	dbEventFlagBit EVENT_BEAT_KOGAS_HOUSE_TRAINER_0
 	db ($4 << 4) ; trainer's view range
 	dwEventFlagAddress EVENT_BEAT_KOGAS_HOUSE_TRAINER_0
@@ -69,7 +69,7 @@ KogasHouseTrainerHeader0:
 	dw KogasHouseEndBattleText1 ; TextEndBattle
 	dw KogasHouseEndBattleText1 ; TextEndBattle
 
-KogasHouseTrainerHeader1:
+KogasHouseB1FTrainerHeader1:
 	dbEventFlagBit EVENT_BEAT_KOGAS_HOUSE_TRAINER_1
 	db ($4 << 4) ; trainer's view range
 	dwEventFlagAddress EVENT_BEAT_KOGAS_HOUSE_TRAINER_1
@@ -78,7 +78,7 @@ KogasHouseTrainerHeader1:
 	dw KogasHouseEndBattleText2 ; TextEndBattle
 	dw KogasHouseEndBattleText2 ; TextEndBattle
 
-KogasHouseTrainerHeader2:
+KogasHouseB1FTrainerHeader2:
 	dbEventFlagBit EVENT_BEAT_KOGAS_HOUSE_TRAINER_2
 	db ($3 << 4) ; trainer's view range
 	dwEventFlagAddress EVENT_BEAT_KOGAS_HOUSE_TRAINER_2
@@ -87,7 +87,7 @@ KogasHouseTrainerHeader2:
 	dw KogasHouseEndBattleText3 ; TextEndBattle
 	dw KogasHouseEndBattleText3 ; TextEndBattle
 
-KogasHouseTrainerHeader3:
+KogasHouseB1FTrainerHeader3:
 	dbEventFlagBit EVENT_BEAT_KOGAS_HOUSE_TRAINER_3
 	db ($3 << 4) ; trainer's view range
 	dwEventFlagAddress EVENT_BEAT_KOGAS_HOUSE_TRAINER_3
@@ -159,7 +159,7 @@ KogasHouseB1FText8:
 
 KogasHouseB1FText2:
 	TX_ASM
-	ld hl, KogasHouseTrainerHeader0
+	ld hl, KogasHouseB1FTrainerHeader0
 	call TalkToTrainer
 	jp TextScriptEnd
 
@@ -177,7 +177,7 @@ KogasHouseAfterBattleText1:
 
 KogasHouseB1FText3:
 	TX_ASM
-	ld hl, KogasHouseTrainerHeader1
+	ld hl, KogasHouseB1FTrainerHeader1
 	call TalkToTrainer
 	jp TextScriptEnd
 
@@ -195,7 +195,7 @@ KogasHouseAfterBattleText2:
 
 KogasHouseB1FText4:
 	TX_ASM
-	ld hl, KogasHouseTrainerHeader2
+	ld hl, KogasHouseB1FTrainerHeader2
 	call TalkToTrainer
 	jp TextScriptEnd
 
@@ -213,7 +213,7 @@ KogasHouseAfterBattleText3:
 
 KogasHouseB1FText5:
 	TX_ASM
-	ld hl, KogasHouseTrainerHeader3
+	ld hl, KogasHouseB1FTrainerHeader3
 	call TalkToTrainer
 	jp TextScriptEnd
 

@@ -39,7 +39,7 @@ _JanineGiveTM46Text::
 _ReceivedTM46Text::
 	text "<PLAYER> erhält"
 	line "@"
-	TX_RAM wcf4b
+	TX_RAM wcf50
 	text "!@@"
 
 _TM46ExplanationText::

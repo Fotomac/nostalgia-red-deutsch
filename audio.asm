@@ -346,7 +346,7 @@ Music_RivalAlternateStart::
 
 ; an alternate tempo for MeetRival which is slightly slower
 Music_RivalAlternateTempo::
-	ld c, BANK(Music_MeetRival)
+	ld c, 0 ; BANK(Music_MeetRival)
 	ld a, MUSIC_MEET_RIVAL
 	jp PlayMusic
 ;	ld hl, wChannelCommandPointers
@@ -369,7 +369,7 @@ Music_Cities1AlternateTempo::
 	ld [wAudioFadeOutControl], a
 	ld c, 100
 	call DelayFrames ; wait for the fade-out to finish
-	ld c, BANK(Music_Cities1)
+	ld c, 0 ; BANK(Music_Cities1)
 	ld a, MUSIC_CITIES1
 	jp PlayMusic
 ;	ld hl, wChannelCommandPointers
